@@ -1,5 +1,3 @@
-
-
 import express from "express";
 import cors from "cors";
 
@@ -17,22 +15,6 @@ function clampDay(day, max) {
   if (!Number.isFinite(d) || d < 1 || d > max) return null;
   return d;
 }
-
-
-
-  const key = `${novenaId}:${d}`;
-  const data = {
-    novenaId,
-    day: d,
-    title: title || `Dia ${d}`,
-    sections: finalSections,
-    optional: null,
-    updatedAt: nowISO(),
-  };
-
-  days.set(key, data);
-}
-
 
 function slugifyPt(s) {
   return String(s)
@@ -19920,8 +19902,6 @@ function publishDay({ novenaId, day, title, sections, meditation, prays }) {
   const d = clampDay(day, novena.daysCount);
   if (!d) return;
 
-  // Se vier pronto em "sections", usa.
-  // Se não vier, tenta montar sections com meditation/prays (fallback).
   const finalSections = Array.isArray(sections)
     ? sections
     : [
@@ -19976,14 +19956,10 @@ for (const d of daysSeed) {
     novenaId: String(d.novenaId),
     day: Number(d.day),
     title: d.title,
-    sections: d.sections, // ✅ usa seu conteúdo já pronto em sections
+    sections: d.sections,
   });
 }
 
-// =====================
-// Progresso (mock)
-// =====================
-const progress = Object.create(null);
 const requireUserId = (req) => req.header("x-user-id")?.trim() || null;
 
 // =====================
@@ -20054,7 +20030,6 @@ app.get("/v1/novenas/:novenaId/days/:day", (req, res) => {
 });
 
 app.get("/v1/prayers/common", (req, res) => {
-  // ✅ devolve só as orações comuns
   res.json({ items: commonPrayersClean, total: commonPrayersClean.length });
 });
 
@@ -20149,24 +20124,6 @@ app.post("/v1/users/me/progress/complete-day", (req, res) => {
 
   res.json({ ok: true, progress: p });
 });
-
-
-function publishDay({ novenaId, day, title, sections, meditation, prays }) {
-  const novena = novenas.get(novenaId);
-  if (!novena) return;
-
-  const d = clampDay(day, novena.daysCount);
-  if (!d) return;
-
-  // Se vier pronto em "sections", usa.
-  // Se não vier, tenta montar sections com meditation/prays (fallback).
-  const finalSections = Array.isArray(sections) ? sections : [
-    ...(title ? [{ type: "title", text: "Oração do dia" }] : []),
-    ...(meditation ? [{ type: "text", text: String(meditation) }] : []),
-    ...(Array.isArray(prays)
-      ? prays.map(p => ({ type: "prayer", text: String(p) }))
-      : []),
-  ];
 
 // =====================
 // Start
