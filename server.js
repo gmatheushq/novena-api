@@ -577,16 +577,9 @@ for (const it of seed) {
 
 // Orações comuns (mínimas)
 const commonPrayers = [
-  {
-    id: "sinal_da_cruz",
-    title: "Sinal da Cruz",
-    sections: [{ type: "prayer", text: "Em nome do Pai, do Filho e do Espírito Santo. Amém." }]
-  },
-  {
-    id: "gloria_ao_pai",
-    title: "Glória ao Pai",
-    sections: [{ type: "prayer", text: "Glória ao Pai, ao Filho e ao Espírito Santo, como era no princípio, agora e sempre. Amém." }]
-  },
+  { id: "sinal_da_cruz", title: "Sinal da Cruz", sections: [{ type: "prayer", text: "..." }] },
+  { id: "gloria_ao_pai", title: "Glória ao Pai", sections: [{ type: "prayer", text: "..." }] },
+
 
   // ===== Novena a Santo Atanásio =====
 {
@@ -19915,22 +19908,81 @@ Amém.`
 
 ];
 
-// Publica automaticamente o daysSeed dentro do Map `days`
+// =====================
+// Days storage + publish
+// =====================
+const days = new Map();
+
+function publishDay({ novenaId, day, title, sections, meditation, prays }) {
+  const novena = novenas.get(String(novenaId));
+  if (!novena) return;
+
+  const d = clampDay(day, novena.daysCount);
+  if (!d) return;
+
+  // Se vier pronto em "sections", usa.
+  // Se não vier, tenta montar sections com meditation/prays (fallback).
+  const finalSections = Array.isArray(sections)
+    ? sections
+    : [
+        ...(title ? [{ type: "title", text: "Oração do dia" }] : []),
+        ...(meditation ? [{ type: "text", text: String(meditation) }] : []),
+        ...(Array.isArray(prays)
+          ? prays.map((p) => ({ type: "prayer", text: String(p) }))
+          : []),
+      ];
+
+  const key = `${String(novenaId)}:${d}`;
+  const data = {
+    novenaId: String(novenaId),
+    day: d,
+    title: title || `Dia ${d}`,
+    sections: finalSections,
+    optional: null,
+    updatedAt: nowISO(),
+  };
+
+  days.set(key, data);
+}
+
+// =====================
+// Split commonPrayers (mixed array) into:
+// - daysSeed: items that have {novenaId, day, sections}
+// - commonPrayersClean: items that have {id, sections}
+// =====================
+const daysSeed = commonPrayers.filter(
+  (x) =>
+    x &&
+    typeof x === "object" &&
+    x.novenaId &&
+    Number.isFinite(Number(x.day)) &&
+    Array.isArray(x.sections)
+);
+
+const commonPrayersClean = commonPrayers.filter(
+  (x) =>
+    x &&
+    typeof x === "object" &&
+    x.id &&
+    Array.isArray(x.sections)
+);
+
+// Publica automaticamente os dias dentro do Map `days`
 for (const d of daysSeed) {
-  if (!d) continue; // <-- evita quebrar se vier undefined/null
-  const novena = novenas.get(d.novenaId);
+  const novena = novenas.get(String(d.novenaId));
   if (!novena) continue;
+
   publishDay({
-    novenaId: d.novenaId,
-    day: d.day,
+    novenaId: String(d.novenaId),
+    day: Number(d.day),
     title: d.title,
-    meditation: d.meditation,
-    prays: d.prays
+    sections: d.sections, // ✅ usa seu conteúdo já pronto em sections
   });
 }
 
-
+// =====================
 // Progresso (mock)
+// =====================
 const progress = Object.create(null);
 const requireUserId = (req) => req.header("x-user-id")?.trim() || null;
 
@@ -19956,16 +20008,17 @@ app.get("/v1/novenas", (req, res) => {
   let items = [...novenas.values()];
 
   if (q) {
-    items = items.filter(n =>
-      n.title.toLowerCase().includes(q) ||
-      (n.label || "").toLowerCase().includes(q) ||
-      (n.periodo || "").toLowerCase().includes(q) ||
-      (n.mes || "").toLowerCase().includes(q)
+    items = items.filter(
+      (n) =>
+        n.title.toLowerCase().includes(q) ||
+        (n.label || "").toLowerCase().includes(q) ||
+        (n.periodo || "").toLowerCase().includes(q) ||
+        (n.mes || "").toLowerCase().includes(q)
     );
   }
-  if (type) items = items.filter(n => n.type === type);
-  if (status) items = items.filter(n => n.status === status);
-  if (mes) items = items.filter(n => (n.mes || "").toLowerCase().includes(mes));
+  if (type) items = items.filter((n) => n.type === type);
+  if (status) items = items.filter((n) => n.status === status);
+  if (mes) items = items.filter((n) => (n.mes || "").toLowerCase().includes(mes));
 
   res.json({ items, total: items.length });
 });
@@ -19983,6 +20036,7 @@ app.get("/v1/novenas/:novenaId/days/:day", (req, res) => {
   const day = clampDay(req.params.day, novena.daysCount);
   if (!day) return res.status(400).json({ error: "INVALID_DAY" });
 
+  // ⚠️ IMPORTANTÍSSIMO: a key usa o ID da novena (mesmo formato do publishDay)
   const key = `${novena.id}:${day}`;
   const data = days.get(key);
 
@@ -19992,7 +20046,7 @@ app.get("/v1/novenas/:novenaId/days/:day", (req, res) => {
       day,
       title: `Dia ${day}`,
       sections: [{ type: "text", text: "Conteúdo ainda não publicado." }],
-      optional: null
+      optional: null,
     });
   }
 
@@ -20000,7 +20054,8 @@ app.get("/v1/novenas/:novenaId/days/:day", (req, res) => {
 });
 
 app.get("/v1/prayers/common", (req, res) => {
-  res.json({ items: commonPrayers, total: commonPrayers.length });
+  // ✅ devolve só as orações comuns
+  res.json({ items: commonPrayersClean, total: commonPrayersClean.length });
 });
 
 // Lista de meses disponíveis (pra UI)
@@ -20020,7 +20075,9 @@ app.post("/v1/admin/novenas/:novenaId/days/:day", (req, res) => {
 
   const body = req.body || {};
   if (!body.title || !Array.isArray(body.sections)) {
-    return res.status(400).json({ error: "INVALID_BODY", hint: "Require { title, sections[] }" });
+    return res
+      .status(400)
+      .json({ error: "INVALID_BODY", hint: "Require { title, sections[] }" });
   }
 
   const key = `${novena.id}:${day}`;
@@ -20030,7 +20087,7 @@ app.post("/v1/admin/novenas/:novenaId/days/:day", (req, res) => {
     title: String(body.title),
     sections: body.sections,
     optional: body.optional ?? null,
-    updatedAt: nowISO()
+    updatedAt: nowISO(),
   };
 
   days.set(key, data);
@@ -20053,7 +20110,7 @@ app.get("/v1/users/me/progress", (req, res) => {
     completedDays: [],
     streak: 0,
     lastCompletedAt: null,
-    updatedAt: nowISO()
+    updatedAt: nowISO(),
   };
 
   res.json(p);
@@ -20077,7 +20134,7 @@ app.post("/v1/users/me/progress/complete-day", (req, res) => {
     completedDays: [],
     streak: 0,
     lastCompletedAt: null,
-    updatedAt: nowISO()
+    updatedAt: nowISO(),
   });
 
   if (!p.completedDays.includes(d)) p.completedDays.push(d);
@@ -20092,6 +20149,7 @@ app.post("/v1/users/me/progress/complete-day", (req, res) => {
 
   res.json({ ok: true, progress: p });
 });
+
 
 function publishDay({ novenaId, day, title, sections, meditation, prays }) {
   const novena = novenas.get(novenaId);
