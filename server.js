@@ -1,16 +1,4 @@
-// server.js — Novenas API (1 arquivo só)
-// ✅ Sem tags / sem knownFor
-// ✅ Com "label" (rótulo) revisado teologicamente
-// ✅ Seed com mês = mês de INÍCIO do período
-// ✅ Endpoints: listar novenas, detalhes, dias, orações comuns, meses
-// ✅ Admin simples pra publicar dia (sections)
-// ✅ Progresso (mock) por x-user-id
-//
-// Rodar (Node 18+):
-//   npm init -y
-//   npm i express cors
-//   npm pkg set type=module
-//   node server.js
+
 
 import express from "express";
 import cors from "cors";
