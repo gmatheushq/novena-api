@@ -2267,11 +2267,6 @@ Amém.`
 
 ];
 
-// Dias (conteúdo) — começa vazio e você publica depois via admin
-/**
- * key: `${novenaId}:${day}`
- */
-const days = new Map();
 
 // =====================
 // ✅ Conteúdo embutido (EXEMPLOS) — preenche o Map `days` ao iniciar
@@ -19893,6 +19888,9 @@ Amém.`
 // =====================
 // Days storage + publish
 // =====================
+// =====================
+// Days storage + publish
+// =====================
 const days = new Map();
 
 function publishDay({ novenaId, day, title, sections, meditation, prays }) {
@@ -19912,9 +19910,9 @@ function publishDay({ novenaId, day, title, sections, meditation, prays }) {
           : []),
       ];
 
-  const key = `${String(novenaId)}:${d}`;
+  const key = `${novena.id}:${d}`; // ✅ usa o id oficial da novena
   const data = {
-    novenaId: String(novenaId),
+    novenaId: novena.id,
     day: d,
     title: title || `Dia ${d}`,
     sections: finalSections,
@@ -19926,9 +19924,7 @@ function publishDay({ novenaId, day, title, sections, meditation, prays }) {
 }
 
 // =====================
-// Split commonPrayers (mixed array) into:
-// - daysSeed: items that have {novenaId, day, sections}
-// - commonPrayersClean: items that have {id, sections}
+// Split commonPrayers (mixed array)
 // =====================
 const daysSeed = commonPrayers.filter(
   (x) =>
@@ -19959,6 +19955,7 @@ for (const d of daysSeed) {
     sections: d.sections,
   });
 }
+
 
 const requireUserId = (req) => req.header("x-user-id")?.trim() || null;
 
