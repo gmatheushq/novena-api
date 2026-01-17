@@ -18,22 +18,7 @@ function clampDay(day, max) {
   return d;
 }
 
-function publishDay({ novenaId, day, title, sections, meditation, prays }) {
-  const novena = novenas.get(novenaId);
-  if (!novena) return;
 
-  const d = clampDay(day, novena.daysCount);
-  if (!d) return;
-
-  // Se vier pronto em "sections", usa.
-  // Se não vier, tenta montar sections com meditation/prays (fallback).
-  const finalSections = Array.isArray(sections) ? sections : [
-    ...(title ? [{ type: "title", text: "Oração do dia" }] : []),
-    ...(meditation ? [{ type: "text", text: String(meditation) }] : []),
-    ...(Array.isArray(prays)
-      ? prays.map(p => ({ type: "prayer", text: String(p) }))
-      : []),
-  ];
 
   const key = `${novenaId}:${d}`;
   const data = {
@@ -20107,6 +20092,23 @@ app.post("/v1/users/me/progress/complete-day", (req, res) => {
 
   res.json({ ok: true, progress: p });
 });
+
+function publishDay({ novenaId, day, title, sections, meditation, prays }) {
+  const novena = novenas.get(novenaId);
+  if (!novena) return;
+
+  const d = clampDay(day, novena.daysCount);
+  if (!d) return;
+
+  // Se vier pronto em "sections", usa.
+  // Se não vier, tenta montar sections com meditation/prays (fallback).
+  const finalSections = Array.isArray(sections) ? sections : [
+    ...(title ? [{ type: "title", text: "Oração do dia" }] : []),
+    ...(meditation ? [{ type: "text", text: String(meditation) }] : []),
+    ...(Array.isArray(prays)
+      ? prays.map(p => ({ type: "prayer", text: String(p) }))
+      : []),
+  ];
 
 // =====================
 // Start
