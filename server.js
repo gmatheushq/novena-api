@@ -25,546 +25,32 @@ function slugifyPt(s) {
     .replace(/^_+|_+$/g, "");
 }
 
+/**
+ * Gera id a partir do nome. Mantido por compat.
+ * MAS: agora aceitamos `id` explícito no seed (recomendado).
+ */
 function makeId(nome, type) {
   const base = slugifyPt(nome);
   if (type === "plan") return base.startsWith("plano_") ? base : `plano_${base}`;
   return base.startsWith("novena_") ? base : `novena_${base}`;
 }
 
-// =====================
-// Seed (consolidado) — mês = mês de INÍCIO do período
-// Labels revisados teologicamente
-// type: "novena" | "plan"
-// =====================
-const seed = [
-  // NOVEMBRO
-  {
-    nome: "Novena da Imaculada Conceição",
-    periodo: "29/nov – 07/dez",
-    mes: "Novembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Celebra Maria concebida sem o pecado original, por singular graça de Deus."
-  },
-  {
-    nome: "Novena de Nossa Senhora das Graças",
-    periodo: "18 – 26",
-    mes: "Novembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Devoção ligada à Medalha Milagrosa e à intercessão de Maria pelas graças de Deus."
-  },
-
-  // DEZEMBRO
-  {
-    nome: "Novena de Natal",
-    periodo: "16 – 24",
-    mes: "Dezembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Preparação espiritual para celebrar o nascimento de Jesus Cristo."
-  },
-  {
-    nome: "Novena a Santa Maria Mãe de Deus",
-    periodo: "23/dez – 31/dez",
-    mes: "Dezembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Honra Maria como Mãe de Deus, verdade central da fé cristã."
-  },
-  {
-    nome: "Novena da Epifania",
-    periodo: "28/dez – 05/jan",
-    mes: "Dezembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Celebra a manifestação de Jesus como Salvador de todos os povos."
-  },
-
-  // JANEIRO
-  {
-    nome: "Novena a Santo Antão",
-    periodo: "08 – 16",
-    mes: "Janeiro",
-    type: "novena",
-    daysCount: 9,
-    label: "Santo eremita, pai do monaquismo cristão e modelo de vida ascética."
-  },
-  {
-    nome: "Novena a São Sebastião",
-    periodo: "11 – 19",
-    mes: "Janeiro",
-    type: "novena",
-    daysCount: 9,
-    label: "Mártir cristão, testemunha de fidelidade a Cristo até a morte."
-  },
-  {
-    nome: "Novena a São Francisco de Sales",
-    periodo: "15 – 23",
-    mes: "Janeiro",
-    type: "novena",
-    daysCount: 9,
-    label: "Doutor da Igreja, mestre da mansidão e patrono dos comunicadores."
-  },
-  {
-    nome: "Novena a Santo Tomás de Aquino",
-    periodo: "19 – 27",
-    mes: "Janeiro",
-    type: "novena",
-    daysCount: 9,
-    label: "Doutor da Igreja e referência maior da teologia cristã."
-  },
-  {
-    nome: "Novena a São João Bosco",
-    periodo: "22 – 30",
-    mes: "Janeiro",
-    type: "novena",
-    daysCount: 9,
-    label: "Educador e pastor da juventude, fundador da Família Salesiana."
-  },
-  {
-    nome: "Novena a Nossa Senhora das Candeias",
-    periodo: "24/jan – 01/fev",
-    mes: "Janeiro",
-    type: "novena",
-    daysCount: 9,
-    label: "Celebra Cristo como luz do mundo, apresentado no templo por Maria."
-  },
-  {
-    nome: "Novena da Purificação",
-    periodo: "24/jan – 01/fev",
-    mes: "Janeiro",
-    type: "novena",
-    daysCount: 9,
-    label: "Recorda a apresentação do Senhor e a purificação ritual segundo a Lei."
-  },
-  {
-    nome: "Novena a São Brás",
-    periodo: "25/jan – 02/fev",
-    mes: "Janeiro",
-    type: "novena",
-    daysCount: 9,
-    label: "Bispo e mártir, tradicionalmente invocado pela saúde da garganta."
-  },
-
-  // FEVEREIRO
-  {
-    nome: "Novena a Nossa Senhora de Lourdes",
-    periodo: "02 – 10",
-    mes: "Fevereiro",
-    type: "novena",
-    daysCount: 9,
-    label: "Recorda as aparições marianas e o chamado à conversão e à oração."
-  },
-
-  // MARÇO
-  {
-    nome: "Novena a São Patrício",
-    periodo: "08 – 16",
-    mes: "Março",
-    type: "novena",
-    daysCount: 9,
-    label: "Missionário e bispo, responsável pela evangelização da Irlanda."
-  },
-  {
-    nome: "Novena a São José",
-    periodo: "10 – 18",
-    mes: "Março",
-    type: "novena",
-    daysCount: 9,
-    label: "Esposo de Maria, pai adotivo de Jesus e patrono da Igreja universal."
-  },
-  {
-    nome: "Novena da Anunciação do Senhor",
-    periodo: "16 – 24",
-    mes: "Março",
-    type: "novena",
-    daysCount: 9,
-    label: "Celebra a Encarnação do Verbo e o consentimento de Maria."
-  },
-
-  // ABRIL
-  {
-    nome: "Novena a Santa Gemma Galgani",
-    periodo: "02 – 10",
-    mes: "Abril",
-    type: "novena",
-    daysCount: 9,
-    label: "Mística italiana, conhecida por sua profunda união com a Paixão de Cristo."
-  },
-  {
-    nome: "Novena a São Jorge",
-    periodo: "14 – 23",
-    mes: "Abril",
-    type: "novena",
-    daysCount: 9,
-    label: "Mártir cristão, símbolo da coragem e da fé diante da perseguição."
-  },
-  {
-    nome: "Novena a Santa Gianna Beretta Molla",
-    periodo: "19 – 27",
-    mes: "Abril",
-    type: "novena",
-    daysCount: 9,
-    label: "Médica e mãe, testemunho da dignidade da vida humana."
-  },
-  {
-    nome: "Novena a Santa Catarina de Siena",
-    periodo: "20 – 28",
-    mes: "Abril",
-    type: "novena",
-    daysCount: 9,
-    label: "Doutora da Igreja, mística e promotora da reforma espiritual."
-  },
-  {
-    nome: "Novena a Santo Atanásio",
-    periodo: "23/abr – 01/mai",
-    mes: "Abril",
-    type: "novena",
-    daysCount: 9,
-    label: "Bispo e doutor da Igreja, defensor da fé na divindade de Cristo."
-  },
-
-  // MAIO
-  {
-    nome: "Novena a Nossa Senhora de Fátima",
-    periodo: "04 – 12",
-    mes: "Maio",
-    type: "novena",
-    daysCount: 9,
-    label: "Recorda as aparições e o chamado à conversão, oração e penitência."
-  },
-  {
-    nome: "Novena a Santa Rita de Cássia",
-    periodo: "11 – 20",
-    mes: "Maio",
-    type: "novena",
-    daysCount: 9,
-    label: "Religiosa agostiniana, exemplo de perseverança e confiança em Deus."
-  },
-  {
-    nome: "Novena a Nossa Senhora Auxiliadora",
-    periodo: "15 – 23",
-    mes: "Maio",
-    type: "novena",
-    daysCount: 9,
-    label: "Título mariano que expressa a confiança da Igreja na intercessão de Maria."
-  },
-  {
-    nome: "Novena a São José de Anchieta",
-    periodo: "31/mai – 08/jun",
-    mes: "Maio",
-    type: "novena",
-    daysCount: 9,
-    label: "Missionário jesuíta e evangelizador do Brasil."
-  },
-  {
-    nome: "Trezena a Santo Antônio",
-    periodo: "31/mai – 12/jun",
-    mes: "Maio",
-    type: "novena",
-    daysCount: 13,
-    label: "Sacerdote franciscano, grande pregador e doutor da Igreja."
-  },
-
-  // JUNHO
-  {
-    nome: "Novena a São João Batista",
-    periodo: "15 – 23",
-    mes: "Junho",
-    type: "novena",
-    daysCount: 9,
-    label: "Profeta e precursor que preparou o caminho do Senhor."
-  },
-  {
-    nome: "Novena a São Pedro e São Paulo",
-    periodo: "20 – 28",
-    mes: "Junho",
-    type: "novena",
-    daysCount: 9,
-    label: "Apóstolos e colunas da Igreja, testemunhas da fé até o martírio."
-  },
-
-  // JULHO
-  {
-    nome: "Novena a São Bento",
-    periodo: "02 – 10",
-    mes: "Julho",
-    type: "novena",
-    daysCount: 9,
-    label: "Pai do monaquismo ocidental e mestre da vida espiritual."
-  },
-  {
-    nome: "Novena a Nossa Senhora do Carmo",
-    periodo: "07 – 15",
-    mes: "Julho",
-    type: "novena",
-    daysCount: 9,
-    label: "Título mariano ligado à espiritualidade carmelita."
-  },
-  {
-    nome: "Novena a Santa Ana e São Joaquim",
-    periodo: "17 – 25",
-    mes: "Julho",
-    type: "novena",
-    daysCount: 9,
-    label: "Pais de Maria, exemplos de fé transmitida em família."
-  },
-  {
-    nome: "Novena a São João Maria Vianney",
-    periodo: "26/jul – 03/ago",
-    mes: "Julho",
-    type: "novena",
-    daysCount: 9,
-    label: "Sacerdote exemplar e patrono dos párocos."
-  },
-
-  // AGOSTO
-  {
-    nome: "Novena a Santa Filomena",
-    periodo: "01 – 09",
-    mes: "Agosto",
-    type: "novena",
-    daysCount: 9,
-    label: "Virgem e mártir venerada pela piedade popular."
-  },
-  {
-    nome: "Novena a Santa Clara",
-    periodo: "02 – 10",
-    mes: "Agosto",
-    type: "novena",
-    daysCount: 9,
-    label: "Fundadora das Clarissas e exemplo de vida evangélica."
-  },
-  {
-    nome: "Novena de Nossa Senhora da Assunção",
-    periodo: "06 – 14",
-    mes: "Agosto",
-    type: "novena",
-    daysCount: 9,
-    label: "Celebra a Assunção de Maria ao céu em corpo e alma."
-  },
-  {
-    nome: "Novena a São Roque",
-    periodo: "07 – 15",
-    mes: "Agosto",
-    type: "novena",
-    daysCount: 9,
-    label: "Peregrino e exemplo de caridade para com os doentes."
-  },
-  {
-    nome: "Novena a Santa Mônica",
-    periodo: "18 – 26",
-    mes: "Agosto",
-    type: "novena",
-    daysCount: 9,
-    label: "Exemplo de perseverança na oração e confiança em Deus."
-  },
-  {
-    nome: "Novena a Santo Agostinho",
-    periodo: "19 – 27",
-    mes: "Agosto",
-    type: "novena",
-    daysCount: 9,
-    label: "Bispo e doutor da Igreja, mestre da conversão interior."
-  },
-
-  // SETEMBRO
-  {
-    nome: "Novena de Nossa Senhora das Dores",
-    periodo: "06 – 14",
-    mes: "Setembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Medita a união de Maria com a Paixão de Cristo."
-  },
-  {
-    nome: "Novena de São Pio de Pietrelcina",
-    periodo: "14 – 22",
-    mes: "Setembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Sacerdote capuchinho, conhecido por sua intensa vida espiritual."
-  },
-  {
-    nome: "Novena de São Vicente de Paulo",
-    periodo: "18 – 26",
-    mes: "Setembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Apóstolo da caridade e serviço aos pobres."
-  },
-  {
-    nome: "Novena aos Santos Arcanjos",
-    periodo: "20 – 28",
-    mes: "Setembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Honra os arcanjos Miguel, Gabriel e Rafael, servidores de Deus."
-  },
-  {
-    nome: "Novena de Santa Teresinha do Menino Jesus",
-    periodo: "22 – 30",
-    mes: "Setembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Doutora da Igreja e testemunha da confiança total em Deus."
-  },
-  {
-    nome: "Novena de São Francisco de Assis",
-    periodo: "25/set – 03/out",
-    mes: "Setembro",
-    type: "novena",
-    daysCount: 9,
-    label: "Fundador da Ordem Franciscana e modelo de vida evangélica."
-  },
-
-  // OUTUBRO
-  {
-    nome: "Novena a Nossa Senhora Aparecida",
-    periodo: "03 – 11",
-    mes: "Outubro",
-    type: "novena",
-    daysCount: 9,
-    label: "Padroeira do Brasil e sinal do cuidado materno de Maria."
-  },
-  {
-    nome: "Novena de Santa Edwiges",
-    periodo: "07 – 15",
-    mes: "Outubro",
-    type: "novena",
-    daysCount: 9,
-    label: "Exemplo de caridade cristã e confiança em Deus."
-  },
-  {
-    nome: "Novena de São Geraldo Majella",
-    periodo: "07 – 15",
-    mes: "Outubro",
-    type: "novena",
-    daysCount: 9,
-    label: "Religioso redentorista, exemplo de humildade e obediência."
-  },
-  {
-    nome: "Novena a São João Paulo II",
-    periodo: "13 – 21",
-    mes: "Outubro",
-    type: "novena",
-    daysCount: 9,
-    label: "Papa e testemunha da fé cristã no mundo contemporâneo."
-  },
-  {
-    nome: "Novena a São Judas Tadeu",
-    periodo: "19 – 27",
-    mes: "Outubro",
-    type: "novena",
-    daysCount: 9,
-    label: "Apóstolo e mártir, testemunha fiel de Cristo."
-  },
-  {
-    nome: "Novena das Almas",
-    periodo: "24/out – 01/nov",
-    mes: "Outubro",
-    type: "novena",
-    daysCount: 9,
-    label: "Oração pelos fiéis defuntos em comunhão com a Igreja."
-  },
-
-  // MÓVEIS E LIVRES
-  {
-    nome: "Novena de São Miguel Arcanjo",
-    periodo: "Qualquer época",
-    mes: "Móveis e Livres",
-    type: "novena",
-    daysCount: 9,
-    label: "Arcanjo, defensor da fidelidade a Deus."
-  },
-  {
-    nome: "Quaresma de São Miguel (40 dias)",
-    periodo: "15/ago – 29/set",
-    mes: "Móveis e Livres",
-    type: "plan",
-    daysCount: 40,
-    label: "Tempo de oração e penitência inspirado na tradição cristã."
-  },
-  {
-    nome: "Novena ao Divino Espírito Santo",
-    periodo: "Móvel",
-    mes: "Móveis e Livres",
-    type: "novena",
-    daysCount: 9,
-    label: "Invocação da ação do Espírito Santo na vida da Igreja."
-  },
-  {
-    nome: "Novena ao Sagrado Coração de Jesus",
-    periodo: "Móvel",
-    mes: "Móveis e Livres",
-    type: "novena",
-    daysCount: 9,
-    label: "Expressa a devoção ao amor misericordioso de Cristo."
-  },
-  {
-    nome: "Novena à Sagrada Família",
-    periodo: "Qualquer época",
-    mes: "Móveis e Livres",
-    type: "novena",
-    daysCount: 9,
-    label: "Contempla Jesus, Maria e José como modelo de vida familiar."
-  },
-  {
-    nome: "Novena de Pentecostes",
-    periodo: "Móvel",
-    mes: "Móveis e Livres",
-    type: "novena",
-    daysCount: 9,
-    label: "Preparação para celebrar a vinda do Espírito Santo."
-  },
-  {
-    nome: "Novena de Santo Expedito",
-    periodo: "Qualquer época",
-    mes: "Móveis e Livres",
-    type: "novena",
-    daysCount: 9,
-    label: "Mártir cristão venerado pela piedade popular."
-  }
-];
-
-// =====================
-// Storage
-// =====================
-/**
- * Novena:
- * { id, title, label, type, daysCount, periodo, mes, contentType, status, version, createdAt, updatedAt }
- */
-const novenas = new Map();
-
-for (const it of seed) {
-  const id = makeId(it.nome, it.type);
-  if (novenas.has(id)) continue;
-
-  novenas.set(id, {
-    id,
-    title: it.nome,
-    label: it.label ?? null,
-    type: it.type,
-    daysCount: it.daysCount ?? 9,
-    periodo: it.periodo,
-    mes: it.mes,
-    contentType: "original",
-    status: "draft", // você ativa quando publicar conteúdo
-    version: 1,
-    createdAt: nowISO(),
-    updatedAt: nowISO()
-  });
+function isValidSection(x) {
+  return (
+    x &&
+    typeof x === "object" &&
+    typeof x.type === "string" &&
+    typeof x.text === "string"
+  );
 }
 
-// Orações comuns (mínimas)
-const commonPrayers = [
-  { id: "sinal_da_cruz", title: "Sinal da Cruz", sections: [{ type: "prayer", text: "..." }] },
-  { id: "gloria_ao_pai", title: "Glória ao Pai", sections: [{ type: "prayer", text: "..." }] },
-
-
-  // ===== Novena a Santo Atanásio =====
-{
+// =====================
+// Seed (mínimo)
+// - Você pode adicionar outras novenas depois.
+// - Repare que aqui a gente fixa o `id` pra casar com o modelo do Atanásio.
+// =====================
+const seed = [
+  {
   novenaId: "novena_santo_atanasio",
   day: 1,
   title: "Primeiro dia – Santo Atanásio, defensor da verdade",
@@ -19882,81 +19368,14 @@ Amém.`
     ]
   }
 ]
+]
 
-];
-
-// =====================
-// Days storage + publish
-// =====================
-// =====================
-// Days storage + publish
-// =====================
-const days = new Map();
-
-function publishDay({ novenaId, day, title, sections, meditation, prays }) {
-  const novena = novenas.get(String(novenaId));
-  if (!novena) return;
-
-  const d = clampDay(day, novena.daysCount);
-  if (!d) return;
-
-  const finalSections = Array.isArray(sections)
-    ? sections
-    : [
-        ...(title ? [{ type: "title", text: "Oração do dia" }] : []),
-        ...(meditation ? [{ type: "text", text: String(meditation) }] : []),
-        ...(Array.isArray(prays)
-          ? prays.map((p) => ({ type: "prayer", text: String(p) }))
-          : []),
-      ];
-
-  const key = `${novena.id}:${d}`; // ✅ usa o id oficial da novena
-  const data = {
-    novenaId: novena.id,
-    day: d,
-    title: title || `Dia ${d}`,
-    sections: finalSections,
-    optional: null,
-    updatedAt: nowISO(),
-  };
-
-  days.set(key, data);
-}
+// Publica automaticamente os dias seed
+for (const d of daysSeed) publishDay(d);
 
 // =====================
-// Split commonPrayers (mixed array)
+// Auth helper
 // =====================
-const daysSeed = commonPrayers.filter(
-  (x) =>
-    x &&
-    typeof x === "object" &&
-    x.novenaId &&
-    Number.isFinite(Number(x.day)) &&
-    Array.isArray(x.sections)
-);
-
-const commonPrayersClean = commonPrayers.filter(
-  (x) =>
-    x &&
-    typeof x === "object" &&
-    x.id &&
-    Array.isArray(x.sections)
-);
-
-// Publica automaticamente os dias dentro do Map `days`
-for (const d of daysSeed) {
-  const novena = novenas.get(String(d.novenaId));
-  if (!novena) continue;
-
-  publishDay({
-    novenaId: String(d.novenaId),
-    day: Number(d.day),
-    title: d.title,
-    sections: d.sections,
-  });
-}
-
-
 const requireUserId = (req) => req.header("x-user-id")?.trim() || null;
 
 // =====================
@@ -19986,7 +19405,8 @@ app.get("/v1/novenas", (req, res) => {
         n.title.toLowerCase().includes(q) ||
         (n.label || "").toLowerCase().includes(q) ||
         (n.periodo || "").toLowerCase().includes(q) ||
-        (n.mes || "").toLowerCase().includes(q)
+        (n.mes || "").toLowerCase().includes(q) ||
+        n.id.toLowerCase().includes(q)
     );
   }
   if (type) items = items.filter((n) => n.type === type);
@@ -19997,19 +19417,24 @@ app.get("/v1/novenas", (req, res) => {
 });
 
 app.get("/v1/novenas/:novenaId", (req, res) => {
-  const item = novenas.get(req.params.novenaId);
-  if (!item) return res.status(404).json({ error: "NOVENA_NOT_FOUND" });
-  res.json(item);
+  const resolved = resolveNovenaId(req.params.novenaId);
+  if (!resolved) return res.status(404).json({ error: "NOVENA_NOT_FOUND" });
+
+  res.json(novenas.get(resolved));
 });
 
+/**
+ * GET /v1/novenas/:novenaId/days/:day
+ * Retorna o dia publicado; se não existir, retorna placeholder.
+ */
 app.get("/v1/novenas/:novenaId/days/:day", (req, res) => {
-  const novena = novenas.get(req.params.novenaId);
-  if (!novena) return res.status(404).json({ error: "NOVENA_NOT_FOUND" });
+  const resolved = resolveNovenaId(req.params.novenaId);
+  if (!resolved) return res.status(404).json({ error: "NOVENA_NOT_FOUND" });
 
+  const novena = novenas.get(resolved);
   const day = clampDay(req.params.day, novena.daysCount);
   if (!day) return res.status(400).json({ error: "INVALID_DAY" });
 
-  // ⚠️ IMPORTANTÍSSIMO: a key usa o ID da novena (mesmo formato do publishDay)
   const key = `${novena.id}:${day}`;
   const data = days.get(key);
 
@@ -20020,69 +19445,107 @@ app.get("/v1/novenas/:novenaId/days/:day", (req, res) => {
       title: `Dia ${day}`,
       sections: [{ type: "text", text: "Conteúdo ainda não publicado." }],
       optional: null,
+      version: 1
     });
   }
 
   res.json(data);
 });
 
+/**
+ * Orações comuns
+ */
 app.get("/v1/prayers/common", (req, res) => {
-  res.json({ items: commonPrayersClean, total: commonPrayersClean.length });
+  res.json({ items: commonPrayers, total: commonPrayers.length });
 });
 
-// Lista de meses disponíveis (pra UI)
+/**
+ * Lista meses (pra UI)
+ */
 app.get("/v1/months", (req, res) => {
   const set = new Set();
   for (const n of novenas.values()) if (n.mes) set.add(n.mes);
   res.json({ items: [...set], total: set.size });
 });
 
-// Admin simples pra publicar dia (depois você protege com auth/token)
+/**
+ * Admin: publicar/editar um dia
+ * POST /v1/admin/novenas/:novenaId/days/:day
+ * body: { title, sections[], optional?, version? }
+ */
 app.post("/v1/admin/novenas/:novenaId/days/:day", (req, res) => {
-  const novena = novenas.get(req.params.novenaId);
-  if (!novena) return res.status(404).json({ error: "NOVENA_NOT_FOUND" });
+  const resolved = resolveNovenaId(req.params.novenaId);
+  if (!resolved) return res.status(404).json({ error: "NOVENA_NOT_FOUND" });
 
+  const novena = novenas.get(resolved);
   const day = clampDay(req.params.day, novena.daysCount);
   if (!day) return res.status(400).json({ error: "INVALID_DAY" });
 
   const body = req.body || {};
-  if (!body.title || !Array.isArray(body.sections)) {
+  const title = body.title;
+  const sections = body.sections;
+
+  if (!title || !Array.isArray(sections)) {
     return res
       .status(400)
       .json({ error: "INVALID_BODY", hint: "Require { title, sections[] }" });
   }
 
-  const key = `${novena.id}:${day}`;
-  const data = {
+  const result = publishDay({
     novenaId: novena.id,
     day,
-    title: String(body.title),
-    sections: body.sections,
+    title,
+    sections,
     optional: body.optional ?? null,
-    updatedAt: nowISO(),
-  };
+    version: body.version ?? 1
+  });
 
-  days.set(key, data);
-  novena.updatedAt = nowISO();
-  res.json({ ok: true, saved: data });
+  if (!result.ok) return res.status(400).json(result);
+
+  res.json({ ok: true, saved: result.saved });
 });
 
-// Progress (mock)
+/**
+ * Admin: publicar a novena (muda status)
+ * POST /v1/admin/novenas/:novenaId/publish
+ * body: { status: "active" | "draft" }
+ */
+app.post("/v1/admin/novenas/:novenaId/publish", (req, res) => {
+  const resolved = resolveNovenaId(req.params.novenaId);
+  if (!resolved) return res.status(404).json({ error: "NOVENA_NOT_FOUND" });
+
+  const novena = novenas.get(resolved);
+  const status = String(req.body?.status || "active").toLowerCase();
+
+  if (!["active", "draft"].includes(status)) {
+    return res.status(400).json({ error: "INVALID_STATUS", hint: 'Use "active" ou "draft"' });
+  }
+
+  novena.status = status;
+  novena.updatedAt = nowISO();
+  res.json({ ok: true, novena });
+});
+
+// =====================
+// Progress (mock em memória)
+// =====================
 app.get("/v1/users/me/progress", (req, res) => {
   const userId = requireUserId(req);
   if (!userId) return res.status(401).json({ error: "MISSING_X_USER_ID" });
 
-  const novenaId = (req.query.novenaId || "").toString().trim();
-  if (!novenaId) return res.status(400).json({ error: "MISSING_NOVENA_ID" });
+  const resolved = resolveNovenaId(req.query.novenaId);
+  if (!resolved) return res.status(400).json({ error: "MISSING_OR_INVALID_NOVENA_ID" });
 
+  const novena = novenas.get(resolved);
   const user = (progress[userId] ||= Object.create(null));
-  const p = user[novenaId] || {
-    novenaId,
+
+  const p = user[novena.id] || {
+    novenaId: novena.id,
     currentDay: 1,
     completedDays: [],
     streak: 0,
     lastCompletedAt: null,
-    updatedAt: nowISO(),
+    updatedAt: nowISO()
   };
 
   res.json(p);
@@ -20093,9 +19556,10 @@ app.post("/v1/users/me/progress/complete-day", (req, res) => {
   if (!userId) return res.status(401).json({ error: "MISSING_X_USER_ID" });
 
   const { novenaId, day, completedAt } = req.body || {};
-  const novena = novenas.get(String(novenaId || ""));
-  if (!novena) return res.status(404).json({ error: "NOVENA_NOT_FOUND" });
+  const resolved = resolveNovenaId(novenaId);
+  if (!resolved) return res.status(404).json({ error: "NOVENA_NOT_FOUND" });
 
+  const novena = novenas.get(resolved);
   const d = clampDay(day, novena.daysCount);
   if (!d) return res.status(400).json({ error: "INVALID_DAY" });
 
@@ -20106,7 +19570,7 @@ app.post("/v1/users/me/progress/complete-day", (req, res) => {
     completedDays: [],
     streak: 0,
     lastCompletedAt: null,
-    updatedAt: nowISO(),
+    updatedAt: nowISO()
   });
 
   if (!p.completedDays.includes(d)) p.completedDays.push(d);
@@ -20127,5 +19591,5 @@ app.post("/v1/users/me/progress/complete-day", (req, res) => {
 // =====================
 const PORT = process.env.PORT || 3333;
 app.listen(PORT, () => {
-  console.log(`✅ Novenas API rodando em http://localhost:${PORT}`);
+  console.log(`Novenas API rodando em http://localhost:${PORT}`);
 });
