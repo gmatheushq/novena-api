@@ -1026,8 +1026,8 @@ Glória ao Pai`
 //NOVENA A SÃO SEBASTIAO
 
 const sebastiao = upsertNovena({
-    slug: makeSlug("NOVENA D"),
-    titulo: "NOVENA D",
+    slug: makeSlug("NOVENA A SÃO SEBASTIÃO"),
+    titulo: "NOVENA A SÃO SEBASTIÃO",
     periodo_inicio: "11/01",
     periodo_fim: "19/01",
     subtitulo: "São Sebastião, intercessor nas tribulações, guardião do povo fiel",
@@ -1202,8 +1202,8 @@ Glória ao Pai`
 // NOVENA A SÃO FRANCISCO DE SALES
 
 const sales = upsertNovena({
-    slug: makeSlug("NOVENA D"),
-    titulo: "NOVENA D",
+    slug: makeSlug("NOVENA A SÃO FRANCISCO DE SALES"),
+    titulo: "NOVENA A SÃO FRANCISCO DE SALES",
     periodo_inicio: "15/01",
     periodo_fim: "23/01",
     subtitulo: "São Francisco de Sales, padroeiro dos comunicadores",
@@ -1374,9 +1374,9 @@ Ave-Maria
 Glória ao Pai`
   );
 
-const trocar = upsertNovena({
-    slug: makeSlug("NOVENA D"),
-    titulo: "NOVENA D",
+const candeias = upsertNovena({
+    slug: makeSlug("NOVENA A NOSSA SENHORA DAS CANDEIAS"),
+    titulo: "NOVENA A NOSSA SENHORA DAS CANDEIAS",
     periodo_inicio: "24/01",
     periodo_fim: "01/02",
     subtitulo: "A Mãe que apresenta a Luz ao mundo.",
@@ -1395,7 +1395,7 @@ Amém.`
   });
 
   upsertDia(
-    trocar.id,
+    candeias.id,
     1,
     "PRIMEIRO DIA – NOSSA SENHORA DAS CANDEIAS, MÃE DA LUZ",
     `Ó Nossa Senhora das Candeias, vós apresentastes ao mundo a Luz que jamais se apaga: Jesus Cristo, vosso Filho amado.
@@ -1412,7 +1412,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    trocar.id,
+    candeias.id,
     2,
     "SEGUNDO DIA – NOSSA SENHORA DAS CANDEIAS, OBEDIENTE À LEI DO SENHOR",
     `Ó Mãe fiel, mesmo sendo pura e cheia de graça, apresentastes-vos no Templo em obediência à Lei do Senhor, oferecendo vosso Filho a Deus.
@@ -1429,7 +1429,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    trocar.id,
+    candeias.id,
     3,
     "TERCEIRO DIA – NOSSA SENHORA DAS CANDEIAS, MODELO DE FÉ",
     `Ó Virgem Santíssima, vossa fé sustentou cada passo de vossa missão. No silêncio e na confiança, guardáveis tudo em vosso coração.
@@ -1446,7 +1446,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    trocar.id,
+    candeias.id,
     4,
     "QUARTO DIA – NOSSA SENHORA DAS CANDEIAS, MÃE DA ESPERANÇA",
     `Ó Mãe cheia de esperança, mesmo ouvindo as palavras proféticas sobre dores futuras, permanecestes firme na confiança em Deus.
@@ -1463,7 +1463,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    trocar.id,
+    candeias.id,
     5,
     "QUINTO DIA – NOSSA SENHORA DAS CANDEIAS, COMPANHEIRA DOS QUE SOFREM",
     `Ó Mãe dolorosa, que aceitastes em vosso coração a espada da dor anunciada por Simeão, olhai por todos os que sofrem.
@@ -1480,7 +1480,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    trocar.id,
+    candeias.id,
     6,
     "SEXTO DIA – NOSSA SENHORA DAS CANDEIAS, LUZ NO CAMINHO",
     `Ó Mãe da Luz, conduzi-nos sempre pelo caminho do bem. Iluminai nossas decisões e afastai de nós todo erro e toda escuridão.
@@ -1497,7 +1497,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    trocar.id,
+    candeias.id,
     7,
     "SÉTIMO DIA – NOSSA SENHORA DAS CANDEIAS, PROTETORA DAS FAMÍLIAS",
     `Ó Mãe Santíssima, apresentastes Jesus no Templo e O consagrastes ao Pai. Olhai com amor para nossas famílias.
@@ -1514,7 +1514,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    trocar.id,
+    candeias.id,
     8,
     "OITAVO DIA – NOSSA SENHORA DAS CANDEIAS, GUIA DOS CRISTÃOS",
     `Ó Virgem fiel, sede nossa guia no caminho da fé. Ajudai-nos a viver como verdadeiros discípulos de Jesus, sendo luz para os outros.
@@ -1531,7 +1531,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    trocar.id,
+    candeias.id,
     9,
     "NONO DIA – NOSSA SENHORA DAS CANDEIAS, NOSSA MÃE E INTERCESSORA",
     `Ó Nossa Senhora das Candeias, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos e necessidades.
