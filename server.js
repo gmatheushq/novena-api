@@ -503,7 +503,1051 @@ Ave-Maria
 Glória ao Pai`
   );
 
-  console.log("Seed inicial inserido ✅ (2 novenas)");
+//novena de natal
+
+  const natal = upsertNovena({
+    slug: makeSlug("NOVENA DE NATAL"),
+    titulo: "NOVENA DE NATAL",
+    periodo_inicio: "16/12",
+    periodo_fim: "24/12",
+    subtitulo: "Preparando o coração para o nascimento de Jesus",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Senhor Deus, Pai de amor e misericórdia, ao nos aproximarmos da festa do Natal, preparamos nosso coração para acolher o mistério do Vosso Filho que se fez homem por amor a nós. Enviai sobre nós o Vosso Espírito Santo, para que esta novena seja tempo de graça, conversão e esperança.
+
+Que, ao meditarmos o nascimento de Jesus, possamos abrir nossa vida à Sua presença salvadora. Concedei-nos a graça de viver este tempo com fé sincera, amor verdadeiro e profunda alegria cristã, para que o Natal do Senhor produza frutos abundantes em nossa vida.
+Amém.`,
+
+    oracao_final: `Senhor Jesus, que Vos fizestes pequeno por amor a nós, ajudai-nos a viver o verdadeiro espírito do Natal.
+Enchei nosso coração de fé, esperança e caridade.
+Que a alegria do Vosso nascimento permaneça em nossa vida, hoje e sempre.
+Amém.`
+  });
+
+  upsertDia(
+    natal.id,
+    1,
+    "PRIMEIRO DIA – O TEMPO DA ESPERA",
+    `Senhor Jesus, durante séculos o povo de Deus aguardou com esperança a vinda do Salvador. A história da salvação é marcada pela promessa e pela confiança no cumprimento da Palavra de Deus.
+
+Neste primeiro dia da novena, ensinai-nos a viver o tempo da espera com paciência e fé. Ajudai-nos a compreender que o Natal não é apenas uma data, mas um convite a esperar o Senhor todos os dias, com o coração vigilante e aberto.
+
+Que saibamos esperar com esperança, confiantes de que Deus jamais abandona Seu povo.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    natal.id,
+    2,
+    "SEGUNDO DIA – A PROMESSA DE DEUS",
+    `Senhor Deus, fiel às Suas promessas, anunciastes desde o início a vinda do Messias. Vossos profetas prepararam o caminho para o Salvador, alimentando a esperança do povo.
+
+Ajudai-nos a confiar em Vossa Palavra, mesmo quando o tempo passa e as promessas parecem distantes. Fortalecei nossa fé para que jamais duvidemos de Vosso amor e de Vosso cuidado.
+
+Que o Natal renove em nós a certeza de que Deus cumpre tudo o que promete.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    natal.id,
+    3,
+    "TERCEIRO DIA –MARIA, MÃE DO SALVADOR",
+    `Virgem Maria, escolhida para ser a Mãe do Filho de Deus, vós acolhestes o anúncio do anjo com humildade e confiança. Em vosso “sim”, a salvação entrou no mundo.
+
+Ensinai-nos a acolher Jesus em nossa vida com a mesma fé e disponibilidade. Que nosso coração seja uma morada digna para o Salvador que vem ao nosso encontro.
+
+Acompanhai-nos neste caminho de preparação para o Natal do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    natal.id,
+    4,
+    "QUARTO DIA – JOSÉ, HOMEM JUSTO E FIEL",
+    `São José, homem justo e silencioso, fostes escolhido para proteger a Sagrada Família. Com confiança, aceitastes a vontade de Deus e cuidastes de Maria e do Menino Jesus.
+
+Ensinai-nos a obedecer a Deus com fidelidade, mesmo quando não compreendemos Seus planos. Ajudai-nos a viver com responsabilidade, amor e espírito de serviço.
+
+Que, a vosso exemplo, saibamos confiar plenamente no Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    natal.id,
+    5,
+    "QUINTO DIA – MARIA, O CAMINHO ATÉ BELÉM",
+    `Senhor Jesus, Maria e José enfrentaram dificuldades e incertezas no caminho até Belém. Mesmo cansados, confiaram na providência de Deus.
+
+Ajudai-nos a perseverar nas dificuldades da vida, confiantes de que o Senhor caminha conosco. Que possamos transformar nossos desafios em oportunidades de fé e crescimento espiritual.
+
+Preparai nosso coração para acolher-Vos com simplicidade e amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    natal.id,
+    6,
+    "SEXTO DIA – O NASCIMENTO DO SALVADOR",
+    `Menino Jesus, nascido na simplicidade de uma manjedoura, viestes ao mundo para nos revelar o amor infinito de Deus. Escolhestes a pobreza e a humildade para nos ensinar o verdadeiro valor da vida.
+
+Ajudai-nos a reconhecer Vossa presença nos pequenos gestos, nas pessoas simples e nas situações do dia a dia. Que o Natal nos ensine a viver com mais amor, partilha e solidariedade.
+
+Que possamos acolher-Vos com alegria e gratidão.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    natal.id,
+    7,
+    "SÉTIMO DIA – MARIA, OS PASTORES, OS PRIMEIROS A ADORAR",
+    `Senhor Jesus, os pastores, simples e humildes, foram os primeiros a receber o anúncio do Vosso nascimento. Com alegria, foram ao Vosso encontro e Vos adoraram.
+
+Ensinai-nos a ter um coração simples e disponível, capaz de reconhecer Vossa presença. Ajudai-nos a escutar a voz de Deus e a responder com prontidão ao Seu chamado.
+
+Que nossa vida seja um testemunho vivo do Vosso amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    natal.id,
+    8,
+    "OITAVO DIA – A LUZ QUE ILUMINA O MUNDO",
+    `Jesus, Luz do mundo, viestes para dissipar as trevas do pecado e da desesperança. Vosso nascimento trouxe ao mundo a luz da salvação.
+
+Iluminai nosso caminho e afastai de nós tudo aquilo que nos impede de viver como filhos da luz. Que o Natal renove em nós o desejo de viver segundo o Evangelho.
+
+Fazei-nos instrumentos da Vossa luz no mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    natal.id,
+    9,
+    "NONO DIA – O NATAL EM NOSSO CORAÇÃO",
+    `Senhor Jesus, ao final desta novena, desejamos preparar em nosso coração um lugar para Vosso nascimento. Que não falte espaço para o amor, o perdão e a paz.
+
+Transformai nossa vida com Vossa presença e fazei de nosso lar um sinal da Vossa paz. Que o Natal não seja apenas uma celebração exterior, mas um verdadeiro encontro convosco.
+
+Vinde, Senhor Jesus, nascer em nosso coração.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+//  NOVENA A SANTA MARIA, MÃE DE DEUS
+
+const stamaria = upsertNovena({
+    slug: makeSlug("NOVENA A SANTA MARIA, MÃE DE DEUS  "),
+    titulo: "NOVENA A SANTA MARIA, MÃE DE DEUS  ",
+    periodo_inicio: "24/12",
+    periodo_fim: "01/01",
+    subtitulo: "Santa Maria, Mãe de Deus e nossa Mãe",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Santa Maria, Mãe de Deus e nossa Mãe, escolhida pelo Pai para dar ao mundo o Seu Filho amado, nós vos louvamos e bendizemos pelo grande mistério da Encarnação. Em vosso seio virginal, o Verbo eterno se fez carne para a salvação da humanidade.
+
+Acolhei-nos como vossos filhos e ensinai-nos a amar Jesus como vós O amastes. Concedei-nos a graça de rezar esta novena com fé sincera, coração humilde e espírito de confiança, para que, por vossa intercessão materna, alcancemos as graças de que necessitamos para nossa vida e salvação, conforme a vontade de Deus.
+Amém.`,
+    oracao_final: `Ó Santa Maria, Mãe de Deus, rogai por nós.
+Sede nossa Mãe, nossa proteção e nosso refúgio.
+Conduzi-nos sempre a Jesus, caminho, verdade e vida.
+Amém.`
+  });
+
+  upsertDia(
+    stamaria.id,
+    1,
+    "PRIMEIRO DIA – MARIA, MÃE DE DEUS",
+    `Ó Santa Maria, proclamada Mãe de Deus pela Igreja, reconhecemos em vós o grande mistério do amor divino. Em vosso seio, Aquele que é Deus eterno assumiu nossa humanidade para nos salvar.
+
+Ajudai-nos a contemplar com reverência esse mistério de fé e a reconhecer a grandeza do amor de Deus por nós. Que nossa vida seja resposta agradecida a esse dom tão sublime.
+
+Ensinai-nos a honrar-vos como Mãe de Deus e nossa Mãe, confiando sempre em vossa proteção.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stamaria.id,
+    2,
+    "SEGUNDO DIA – MARIA, MÃE DA VIDA",
+    `Ó Mãe Santíssima, em vosso seio o Autor da vida tomou carne. Vós acolhestes com amor e cuidado Aquele que veio trazer vida nova à humanidade.
+
+Ajudai-nos a respeitar e defender a vida em todas as suas fases. Ensinai-nos a cuidar com amor daqueles que nos foram confiados e a valorizar o dom da vida como graça de Deus.
+
+Que aprendamos a viver com gratidão e responsabilidade diante da vida.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stamaria.id,
+    3,
+    "TERCEIRO DIA – MARIA, MÃE DA FÉ",
+    `Ó Virgem fiel, vossa fé sustentou cada passo de vossa missão. Mesmo sem compreender plenamente os desígnios de Deus, confiastes inteiramente em Sua Palavra.
+
+Ensinai-nos a viver uma fé firme, capaz de permanecer mesmo nas dificuldades e provações. Ajudai-nos a confiar no Senhor quando o caminho parece escuro.
+
+Que nossa fé cresça a cada dia, sustentada pela oração e pela confiança em Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stamaria.id,
+    4,
+    "QUARTO DIA – MARIA, MÃE DA ESPERANÇA",
+    `Ó Mãe cheia de esperança, mesmo diante das incertezas, guardastes no coração a certeza das promessas de Deus.
+
+Renovai nossa esperança quando somos tentados ao desânimo. Ajudai-nos a confiar que Deus age em nosso favor, mesmo quando não percebemos.
+
+Que aprendamos a esperar com paciência e perseverança, certos do amor fiel do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stamaria.id,
+    5,
+    "QUINTO DIA – MARIA, MÃE DO AMOR",
+    `Ó Santa Maria, vosso coração esteve sempre aberto ao amor de Deus e ao amor pelos irmãos. Em vossa vida, o amor foi vivido com entrega total e fidelidade.
+
+Ensinai-nos a amar como Jesus nos ensinou, com generosidade, perdão e misericórdia. Ajudai-nos a viver a caridade no dia a dia, especialmente com aqueles que mais precisam.
+
+Que sejamos sinais do amor de Deus no mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stamaria.id,
+    6,
+    "SEXTO DIA – MARIA, MÃE DOS SOFREDORES",
+    `Ó Mãe dolorosa, que estivestes ao pé da cruz, conhecendo a dor e o sofrimento, olhai com compaixão para todos os que sofrem.
+
+Intercedei pelos doentes, aflitos, abandonados e desesperançados. Alcançai-lhes conforto, força e paz.
+
+Ajudai-nos a unir nossos sofrimentos aos de Cristo, oferecendo-os com fé e confiança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stamaria.id,
+    7,
+    "SÉTIMO DIA – MARIA, MÃE DA IGREJA",
+    `Ó Mãe Santíssima, confiada por Jesus como Mãe de todos os discípulos, acompanhastes a Igreja nascente com oração e amor.
+
+Intercedei pelo Papa, pelos bispos, sacerdotes, religiosos e por todo o povo de Deus. Ajudai-nos a amar a Igreja e a viver nossa fé em comunhão.
+
+Que sejamos fiéis ao Evangelho e testemunhas do amor de Cristo no mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stamaria.id,
+    8,
+    "OITAVO DIA – MARIA, MÃE DA PAZ",
+    `Ó Rainha da Paz, em vossos braços o Príncipe da Paz veio ao mundo. Vosso coração é fonte de serenidade e reconciliação.
+
+Intercedei pela paz em nossas famílias, comunidades e no mundo inteiro. Ajudai-nos a ser instrumentos de paz, promovendo o diálogo, o perdão e a reconciliação.
+
+Que a paz de Cristo reine em nossos corações.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stamaria.id,
+    9,
+    "NONO DIA – MARIA, NOSSA MÃE E INTERCESSORA",
+    `Ó Santa Maria, Mãe de Deus e nossa Mãe, acolhei esta novena que rezamos com fé e amor. Apresentai a Deus nossos pedidos e necessidades.
+
+Consagrai-nos ao vosso coração materno e conduzi-nos sempre a Jesus. Protegei nossas famílias e fortalecei nossa caminhada cristã.
+
+Obrigado, Mãe querida, por vosso cuidado constante e por vossa intercessão poderosa.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  // NOVENA DA EPIFANIA
+
+  const epifania = upsertNovena({
+    slug: makeSlug("NOVENA DA EPIFANIA DO SENHOR"),
+    titulo: "NOVENA DA EPIFANIA DO SENHOR",
+    periodo_inicio: "28/12",
+    periodo_fim: "05/01",
+    subtitulo: "O Menino se revela como luz das nações",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Senhor Deus, Pai de bondade, na Epifania Vosso Filho se manifestou como luz para todos os povos, revelando-se não apenas a Israel, mas a toda a humanidade. Nós Vos louvamos por esse mistério de amor, no qual Jesus Cristo é reconhecido como Salvador do mundo inteiro.
+
+Concedei-nos a graça de rezar esta novena com fé sincera e coração aberto, para que possamos reconhecer a presença do Vosso Filho em nossa vida. Que, iluminados por Sua luz, caminhemos com confiança no caminho da salvação e sejamos testemunhas do Vosso amor no mundo.
+Amém.`,
+    oracao_final: `Senhor Jesus Cristo, luz das nações, iluminai nosso coração e nossa vida.
+Conduzi-nos sempre pelo caminho da verdade e da salvação.
+Que, guiados por Vossa luz, possamos um dia contemplar-Vos face a face na glória do Céu.
+Amém.`
+  });
+
+  upsertDia(
+    epifania.id,
+    1,
+    "PRIMEIRO DIA – JESUS, LUZ PARA TODAS AS NAÇÕES",
+    `Senhor Jesus, na Epifania Vos manifestastes como luz que brilha para todos os povos, sem distinção. Vossa presença ilumina as trevas do pecado e da ignorância, trazendo esperança e salvação.
+
+Ajudai-nos a acolher Vossa luz em nossa vida e a permitir que ela transforme nosso coração. Que nunca nos acostumemos à escuridão, mas busquemos sempre caminhar na verdade e no amor.
+
+Iluminai nossas escolhas e conduzi-nos pelo caminho da vida eterna.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    epifania.id,
+    2,
+    "SEGUNDO DIA – A ESTRELA QUE GUIA AO SALVADOR",
+    `Senhor Jesus, uma estrela guiou os Magos até Belém, conduzindo-os ao encontro convosco. Esse sinal luminoso foi expressão da fidelidade de Deus, que guia os que O buscam com sinceridade.
+
+Ajudai-nos a reconhecer os sinais que Deus coloca em nosso caminho. Que saibamos escutar Sua voz e seguir Sua orientação, mesmo quando o caminho parece longo ou difícil.
+
+Fazei-nos atentos à Vossa presença e dóceis à Vossa vontade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    epifania.id,
+    3,
+    "TERCEIRO DIA – OS MAGOS EM CAMINHO",
+    `Senhor Jesus, os Magos deixaram tudo para buscar o Rei recém-nascido. Sua caminhada foi marcada pela fé, pela coragem e pela perseverança.
+
+Ensinai-nos a sair de nossas comodidades e a colocar-Vos no centro de nossa vida. Que não tenhamos medo de caminhar quando sois Vós que nos chamais.
+
+Fortalecei nossa fé para que jamais desistamos da busca pelo Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    epifania.id,
+    4,
+    "QUARTO DIA – A ADORAÇÃO AO MENINO DEUS",
+    `Menino Jesus, os Magos prostraram-se diante de Vós e Vos adoraram, reconhecendo-Vos como verdadeiro Deus e verdadeiro Rei.
+
+Ensinai-nos a adorar-Vos com humildade e reverência. Que nossa oração seja sincera e nossa vida um louvor constante ao Vosso nome.
+
+Ajudai-nos a colocar Deus acima de todas as coisas e a reconhecer Vossa presença em nosso dia a dia.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    epifania.id,
+    5,
+    "QUINTO DIA – OURO, INCENSO E MIRRA",
+    `Senhor Jesus, os Magos ofereceram ouro, incenso e mirra, símbolos de realeza, divindade e sacrifício.
+
+Ensinai-nos a oferecer-Vos o melhor de nós mesmos: nosso tempo, nossa fé, nosso amor e nossa fidelidade. Que nossa vida seja uma oferta agradável a Deus.
+
+Ajudai-nos a viver com generosidade e espírito de entrega.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    epifania.id,
+    6,
+    "SEXTO DIA – JESUS, REI DOS CORAÇÕES",
+    `Menino Jesus, embora nascido na simplicidade, sois o verdadeiro Rei do universo. Vosso reino não é de poder humano, mas de amor, justiça e paz.
+
+Reinai em nosso coração e em nossa vida. Ajudai-nos a rejeitar tudo o que nos afasta de Vosso reino e a viver segundo os valores do Evangelho.
+
+Que sejamos fiéis súditos do Vosso amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    epifania.id,
+    7,
+    "SÉTIMO DIA – A REVELAÇÃO A TODOS OS POVOS",
+    `Senhor Jesus, na Epifania manifestastes que a salvação é destinada a todos os povos e nações. Em Vós, todos são chamados a participar da vida divina.
+
+Ajudai-nos a viver a fraternidade e a acolher todos como irmãos. Que sejamos instrumentos de unidade, respeito e amor no mundo.
+
+Fazei de nós testemunhas da Vossa luz entre todos os povos.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    epifania.id,
+    8,
+    "OITAVO DIA – UM NOVO CAMINHO",
+    `Senhor Jesus, após o encontro convosco, os Magos retornaram por outro caminho, transformados pela experiência com o Salvador.
+
+Que o encontro convosco também transforme nossa vida. Ajudai-nos a abandonar caminhos de pecado e a trilhar uma vida nova, iluminada por Vossa graça.
+
+Renovai nosso coração e nossas atitudes.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    epifania.id,
+    9,
+    "NONO DIA – TESTEMUNHAS DA LUZ",
+    `Senhor Jesus, ao final desta novena, desejamos ser testemunhas da Vossa luz no mundo. Que nossa vida reflita Vossa presença e vosso amor.
+
+Enviai-nos como anunciadores do Evangelho, para que outros possam encontrar-Vos e reconhecer-Vos como Salvador.
+
+Concedei-nos perseverança na fé e fidelidade até o fim.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+//NOVENA A SÃO SEBASTIAO
+
+const sebastiao = upsertNovena({
+    slug: makeSlug("NOVENA D"),
+    titulo: "NOVENA D",
+    periodo_inicio: "11/01",
+    periodo_fim: "19/01",
+    subtitulo: "São Sebastião, intercessor nas tribulações, guardião do povo fiel",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó glorioso São Sebastião, fiel servo de Deus e corajoso mártir de Cristo, nós recorremos à vossa poderosa intercessão. Vós que permanecestes firmes na fé, mesmo diante das perseguições, das dores e da morte, ajudai-nos a viver com fidelidade o Evangelho de Jesus Cristo.
+
+Intercedei por nós junto ao Senhor, para que, ao rezarmos esta novena, sejamos fortalecidos na fé, na esperança e no amor. Alcançai-nos as graças de que necessitamos para nossa vida espiritual e corporal, se assim for da vontade de Deus, e ensinai-nos a perseverar até o fim no caminho da salvação.
+Amém.`,
+    oracao_final: `Ó glorioso São Sebastião, mártir fiel de Cristo,
+rogai por nós, para que sejamos fortalecidos na fé,
+firmes na esperança e perseverantes no amor.
+Protegei-nos de todo mal e conduzi-nos à vida eterna.
+Amém.
+`
+  });
+
+  upsertDia(
+    sebastiao.id,
+    1,
+    "PRIMEIRO DIA – SÃO SEBASTIÃO, TESTEMUNHA DA FÉ",
+    `Ó São Sebastião, desde jovem escolhestes servir a Deus com fidelidade. Mesmo vivendo em meio a um ambiente hostil à fé cristã, jamais negastes o nome de Jesus.
+
+Ajudai-nos a dar testemunho da nossa fé com coragem, especialmente em um mundo que tantas vezes rejeita os valores do Evangelho. Que não tenhamos medo de professar nossa fé com palavras e atitudes.
+
+Fortalecei-nos para que sejamos cristãos autênticos em todas as circunstâncias da vida.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sebastiao.id,
+    2,
+    "SEGUNDO DIA – SÃO SEBASTIÃO, SERVO FIEL DE CRISTO",
+    `Ó glorioso mártir, vossa vida foi inteiramente dedicada ao serviço de Cristo e à defesa dos cristãos perseguidos. Mesmo ocupando posição de destaque, escolhestes servir com humildade e amor.
+
+Ensinai-nos a colocar Deus acima de tudo e a viver nossa vocação com fidelidade. Ajudai-nos a servir ao Senhor e aos irmãos sem buscar reconhecimento, mas apenas a Sua glória.
+
+Que nossa vida seja sinal do amor de Deus no mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sebastiao.id,
+    3,
+    "TERCEIRO DIA – SÃO SEBASTIÃO, EXEMPLO DE CORAGEM",
+    `Ó São Sebastião, diante das ameaças e dos sofrimentos, não recuastes nem abandonastes a fé. Vossa coragem foi sustentada pela confiança total em Deus.
+
+Ajudai-nos a enfrentar com coragem as dificuldades da vida, sem desânimo ou medo. Que saibamos confiar no Senhor mesmo nas horas mais difíceis.
+
+Fortalecei nosso coração para que jamais nos afastemos de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sebastiao.id,
+    4,
+    "QUARTO DIA – SÃO SEBASTIÃO, FORTALEZA NA PROVAÇÃO",
+    `Ó fiel mártir, mesmo ferido e quase morto, não desististes de vossa missão. Vosso testemunho revela que a força que vem de Deus supera qualquer dor.
+
+Intercedei por todos os que enfrentam enfermidades, perseguições e sofrimentos físicos ou espirituais. Alcançai-nos força, paciência e perseverança.
+
+Ensinai-nos a oferecer nossas dores a Deus com fé e confiança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sebastiao.id,
+    5,
+    "QUINTO DIA – SÃO SEBASTIÃO, DEFENSOR DOS CRISTÃOS",
+    `Ó São Sebastião, fostes defensor dos cristãos perseguidos, encorajando-os a permanecer firmes na fé e na esperança.
+
+Intercedei pela Igreja, para que permaneça fiel ao Evangelho. Protegei os que sofrem perseguição por causa da fé e fortalecei todos os cristãos.
+
+Que jamais nos falte coragem para defender a verdade e o amor de Cristo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sebastiao.id,
+    6,
+    "SEXTO DIA – SÃO SEBASTIÃO, MODELO DE FIDELIDADE",
+    `Ó glorioso São Sebastião, até o fim permanecestes fiel a Cristo, entregando vossa própria vida por amor ao Senhor.
+
+Ajudai-nos a viver com fidelidade nossos compromissos cristãos. Que não nos deixemos levar pela acomodação ou pelo medo.
+
+Ensinai-nos a perseverar na fé, confiantes na graça de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sebastiao.id,
+    7,
+    "SÉTIMO DIA – SÃO SEBASTIÃO, INTERCESSOR PODEROSO",
+    `Ó glorioso mártir, a Igreja reconhece em vós um poderoso intercessor junto a Deus, especialmente nas horas de perigo, enfermidade e tribulação.
+
+Apresentai ao Senhor nossas necessidades e súplicas. Alcançai-nos as graças que mais necessitamos para nossa vida e salvação.
+
+Aumentai nossa confiança na oração e na intercessão dos santos.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sebastiao.id,
+    8,
+    "OITAVO DIA – SÃO SEBASTIÃO, PROTETOR CONTRA OS MALES",
+    `Ó São Sebastião, invocado como protetor contra as doenças, epidemias e perigos, confiamos à vossa intercessão nossas vidas e nossas famílias.
+
+Protegei-nos de todo mal do corpo e da alma. Alcançai-nos saúde, paz e confiança na providência divina.
+
+Que, protegidos por vossa intercessão, caminhemos sempre sob a graça de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sebastiao.id,
+    9,
+    "NONO DIA – SÃO SEBASTIÃO, MÁRTIR DA ESPERANÇA",
+    `Ó glorioso São Sebastião, vosso martírio foi testemunho de esperança na vida eterna. Mesmo diante da morte, permanecestes firme na fé.
+
+Ajudai-nos a viver com os olhos voltados para o Céu, confiantes na promessa da ressurreição. Que jamais percamos a esperança, mesmo nas tribulações.
+
+Conduzi-nos no caminho da fé até a glória eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+
+// NOVENA A SÃO FRANCISCO DE SALES
+
+const sales = upsertNovena({
+    slug: makeSlug("NOVENA D"),
+    titulo: "NOVENA D",
+    periodo_inicio: "15/01",
+    periodo_fim: "23/01",
+    subtitulo: "São Francisco de Sales, padroeiro dos comunicadores",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó glorioso São Francisco de Sales, bispo zeloso, doutor da Igreja e mestre da mansidão cristã, nós recorremos à vossa intercessão confiante. Vós que soubestes anunciar o Evangelho com amor, paciência e firmeza, ensinai-nos a viver nossa fé com serenidade e confiança em Deus.
+
+Intercedei por nós junto ao Senhor, para que, ao rezarmos esta novena, aprendamos a buscar a santidade no cotidiano, com humildade, equilíbrio e amor. Alcançai-nos as graças de que necessitamos para nossa vida espiritual e para o cumprimento da vontade de Deus, se assim for de Seu agrado.
+Amém`,
+    oracao_final: `Ó São Francisco de Sales,
+mestre da mansidão e da caridade,
+ensinai-nos a amar a Deus sobre todas as coisas
+e a viver o Evangelho com fidelidade e alegria.
+Rogai por nós, hoje e sempre.
+Amém.`
+  });
+
+  upsertDia(
+    sales.id,
+    1,
+    "PRIMEIRO DIA – SÃO FRANCISCO DE SALES, BUSCADOR DA SANTIDADE",
+    `Ó São Francisco de Sales, desde jovem buscastes a santidade com ardor e perseverança. Em meio às lutas interiores e às dificuldades da vida, jamais deixastes de confiar na misericórdia de Deus.
+
+Ajudai-nos a compreender que a santidade é um chamado para todos e que pode ser vivida no dia a dia, nas pequenas coisas, com fidelidade e amor.
+
+Ensinai-nos a não desanimar diante de nossas fraquezas, mas a confiar sempre na graça divina.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sales.id,
+    2,
+    "SEGUNDO DIA – SÃO FRANCISCO DE SALES, EXEMPLO DE MANSIDÃO",
+    `Ó santo da mansidão, vossa vida foi marcada pela paciência, pela doçura e pela serenidade, mesmo diante das contrariedades e perseguições.
+
+Ensinai-nos a dominar nossos impulsos, palavras e atitudes. Ajudai-nos a responder ao mal com o bem e a viver a caridade mesmo nas situações mais difíceis.
+
+Que nossa vida reflita a mansidão do Coração de Cristo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sales.id,
+    3,
+    "TERCEIRO DIA – SÃO FRANCISCO DE SALES, MESTRE DA ORAÇÃO",
+    `Ó São Francisco de Sales, ensinastes que a oração é o fundamento da vida cristã e o alimento da alma. Vós convidáveis todos a cultivar uma relação íntima com Deus.
+
+Ajudai-nos a rezar com constância, simplicidade e confiança. Que a oração seja para nós fonte de força, paz e discernimento.
+
+Ensinai-nos a unir oração e ação, vivendo sempre na presença de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sales.id,
+    4,
+    "QUARTO DIA – SÃO FRANCISCO DE SALES, APÓSTOLO DA CARIDADE",
+    `Ó santo doutor, toda a vossa missão foi marcada pela caridade. Anunciastes a verdade com amor e jamais separastes a fé da misericórdia.
+
+Ensinai-nos a viver a caridade nas palavras, nos gestos e nas atitudes. Que saibamos corrigir com amor, servir com humildade e amar sem medidas.
+
+Fazei de nós instrumentos da caridade de Cristo no mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sales.id,
+    5,
+    "QUINTO DIA – SÃO FRANCISCO DE SALES, GUIA DAS ALMAS",
+    `Ó São Francisco de Sales, fostes sábio diretor espiritual e conduzistes muitas almas no caminho da santidade, com prudência e discernimento.
+
+Ajudai-nos a escutar a voz de Deus e a buscar Sua vontade em todas as coisas. Concedei-nos sabedoria para orientar nossas escolhas e fidelidade para seguir o caminho do bem.
+
+Que jamais nos afastemos da verdade do Evangelho.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sales.id,
+    6,
+    "SEXTO DIA – SÃO FRANCISCO DE SALES, MODELO DE HUMILDADE",
+    `Ó santo humilde, mesmo dotado de grande sabedoria e conhecimento, permanecestes simples e acessível a todos.
+
+Livrai-nos do orgulho e da vaidade. Ensinai-nos a reconhecer nossas limitações e a confiar na ação de Deus em nossa vida.
+
+Que aprendamos a viver com humildade e espírito de serviço.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sales.id,
+    7,
+    "SÉTIMO DIA – SÃO FRANCISCO DE SALES, DEFENSOR DA VERDADE",
+    `Ó doutor da Igreja, defendestes a fé católica com coragem, clareza e amor, sem jamais recorrer à violência ou ao ódio.
+
+Ajudai-nos a testemunhar a verdade com respeito e caridade. Que saibamos anunciar o Evangelho com palavras e com a própria vida.
+
+Concedei-nos firmeza na fé e equilíbrio nas atitudes.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sales.id,
+    8,
+    "OITAVO DIA – SÃO FRANCISCO DE SALES, SANTO DO COTIDIANO",
+    `Ó São Francisco de Sales, ensinastes que a santidade não está reservada a poucos, mas é possível em todas as vocações e estados de vida.
+
+Ajudai-nos a santificar nossas atividades diárias, nosso trabalho, nossa família e nossas relações. Que tudo o que fizermos seja para a glória de Deus.
+
+Ensinai-nos a viver com alegria a vocação que recebemos.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    sales.id,
+    9,
+    "NONO DIA – SÃO FRANCISCO DE SALES, INTERCESSOR PODEROSO",
+    `Ó glorioso São Francisco de Sales, acolhei esta novena que rezamos com fé e confiança. Apresentai ao Senhor nossas necessidades e intenções.
+
+Intercedei por nossas famílias, por nossa vida espiritual e por todos aqueles que necessitam de luz, paz e orientação. Conduzi-nos no caminho da santidade e da vida eterna.
+
+Obrigado por vosso exemplo e vossa intercessão constante.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+const trocar = upsertNovena({
+    slug: makeSlug("NOVENA D"),
+    titulo: "NOVENA D",
+    periodo_inicio: "24/01",
+    periodo_fim: "01/02",
+    subtitulo: "A Mãe que apresenta a Luz ao mundo.",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Maria Santíssima, Nossa Senhora das Candeias, Mãe da Luz verdadeira, que apresentastes o Menino Jesus no Templo como luz para iluminar as nações, nós recorremos à vossa intercessão com fé e confiança.
+
+Vós que levastes em vossos braços Aquele que é a Luz do mundo, iluminai nosso caminho e afastai de nossa vida toda escuridão do pecado, do medo e da desesperança. Concedei-nos a graça de rezar esta novena com coração sincero, para que, guiados pela luz de Cristo, vivamos na fé, na esperança e no amor, alcançando as graças necessárias para nossa vida e salvação, conforme a vontade de Deus.
+Amém.`,
+    oracao_final: `Ó Nossa Senhora das Candeias,
+Mãe da Luz e nossa Mãe,
+iluminai nosso caminho com a luz de Cristo.
+Protegei-nos de todo mal
+e conduzi-nos à vida eterna.
+Amém.`
+  });
+
+  upsertDia(
+    trocar.id,
+    1,
+    "PRIMEIRO DIA – NOSSA SENHORA DAS CANDEIAS, MÃE DA LUZ",
+    `Ó Nossa Senhora das Candeias, vós apresentastes ao mundo a Luz que jamais se apaga: Jesus Cristo, vosso Filho amado.
+
+Ajudai-nos a reconhecer essa luz em nossa vida e a acolhê-la com fé. Que jamais caminhemos nas trevas do pecado, mas sigamos sempre iluminados pela presença de Cristo.
+
+Iluminai nosso coração e nossas escolhas, para que vivamos segundo a vontade de Deus.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    2,
+    "SEGUNDO DIA – NOSSA SENHORA DAS CANDEIAS, OBEDIENTE À LEI DO SENHOR",
+    `Ó Mãe fiel, mesmo sendo pura e cheia de graça, apresentastes-vos no Templo em obediência à Lei do Senhor, oferecendo vosso Filho a Deus.
+
+Ensinai-nos a viver na obediência e na humildade, aceitando com amor os caminhos que Deus nos propõe. Que saibamos cumprir nossa missão com fidelidade, mesmo nas pequenas coisas.
+
+Ajudai-nos a confiar plenamente nos desígnios do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    3,
+    "TERCEIRO DIA – NOSSA SENHORA DAS CANDEIAS, MODELO DE FÉ",
+    `Ó Virgem Santíssima, vossa fé sustentou cada passo de vossa missão. No silêncio e na confiança, guardáveis tudo em vosso coração.
+
+Ajudai-nos a fortalecer nossa fé, especialmente quando não compreendemos os acontecimentos da vida. Que aprendamos a confiar em Deus em todas as circunstâncias.
+
+Sede nossa guia nos momentos de dúvida e incerteza.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    4,
+    "QUARTO DIA – NOSSA SENHORA DAS CANDEIAS, MÃE DA ESPERANÇA",
+    `Ó Mãe cheia de esperança, mesmo ouvindo as palavras proféticas sobre dores futuras, permanecestes firme na confiança em Deus.
+
+Renovai nossa esperança quando enfrentamos dificuldades e sofrimentos. Ajudai-nos a acreditar que Deus transforma a dor em salvação e a cruz em vida nova.
+
+Que jamais percamos a esperança nas promessas do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    5,
+    "QUINTO DIA – NOSSA SENHORA DAS CANDEIAS, COMPANHEIRA DOS QUE SOFREM",
+    `Ó Mãe dolorosa, que aceitastes em vosso coração a espada da dor anunciada por Simeão, olhai por todos os que sofrem.
+
+Intercedei pelos aflitos, doentes, angustiados e desesperançados. Concedei-lhes conforto, força e paz.
+
+Ajudai-nos a unir nossos sofrimentos aos de Cristo, oferecendo-os com fé e amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    6,
+    "SEXTO DIA – NOSSA SENHORA DAS CANDEIAS, LUZ NO CAMINHO",
+    `Ó Mãe da Luz, conduzi-nos sempre pelo caminho do bem. Iluminai nossas decisões e afastai de nós todo erro e toda escuridão.
+
+Ajudai-nos a discernir a vontade de Deus em nossa vida e a caminhar com segurança sob a luz do Evangelho.
+
+Que sejamos guiados pela luz de Cristo em todas as nossas ações.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    7,
+    "SÉTIMO DIA – NOSSA SENHORA DAS CANDEIAS, PROTETORA DAS FAMÍLIAS",
+    `Ó Mãe Santíssima, apresentastes Jesus no Templo e O consagrastes ao Pai. Olhai com amor para nossas famílias.
+
+Protegei nossos lares, fortalecei os vínculos de amor e afastai todo mal. Que nossas casas sejam iluminadas pela presença de Cristo.
+
+Intercedei para que reine a paz, o diálogo e a fé em nossas famílias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    8,
+    "OITAVO DIA – NOSSA SENHORA DAS CANDEIAS, GUIA DOS CRISTÃOS",
+    `Ó Virgem fiel, sede nossa guia no caminho da fé. Ajudai-nos a viver como verdadeiros discípulos de Jesus, sendo luz para os outros.
+
+Que nossa vida reflita a luz de Cristo por meio de gestos de amor, caridade e misericórdia.
+
+Fazei de nós instrumentos da luz de Deus no mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    9,
+    "NONO DIA – NOSSA SENHORA DAS CANDEIAS, NOSSA MÃE E INTERCESSORA",
+    `Ó Nossa Senhora das Candeias, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos e necessidades.
+
+Iluminai nossa vida, fortalecei nossa fé e conduzi-nos sempre a Jesus, a Luz verdadeira. Protegei-nos em todos os momentos e ajudai-nos a caminhar rumo à vida eterna.
+
+Obrigado, Mãe querida, por vossa luz e proteção.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  console.log("Seed inicial inserido ");
 }
 
 seedIfEmpty();
@@ -785,3 +1829,11 @@ app.listen(PORT, () => {
   console.log(`✅ Novena API rodando: http://localhost:${PORT}`);
   console.log(`DB: ${DB_PATH}`);
 });
+
+
+
+
+
+
+
+
