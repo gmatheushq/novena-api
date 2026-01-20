@@ -4200,248 +4200,7 @@ Ave-Maria
 Glória ao Pai`
   );
 
-  //TREZENA A SANTO ANTÔNIO
-  const antonio = upsertNovena({
-    slug: makeSlug("TREZENA A SANTO ANTÔNIO"),
-    titulo: "TREZENA A SANTO ANTÔNIO",
-    periodo_inicio: "31/05",
-    periodo_fim: "12/06",
-    subtitulo: "Da intimidade com a Palavra nasceu a luz de sua doutrina",
-    como_rezar: COMO_REZAR_PADRAO,
-    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
-    oracao_inicial: `Ó Deus de infinita bondade, que concedestes a Santo Antônio a graça de anunciar o Evangelho com sabedoria, amor e poder, fazendo dele luz para os fiéis, consolo para os aflitos e auxílio para os necessitados, nós Vos louvamos e bendizemos por tão grande dom à Igreja.
 
-Por intercessão de Santo Antônio, concedei-nos a graça de rezar esta trezena com fé sincera, coração confiante e espírito humilde. Que, a exemplo deste grande santo, aprendamos a amar Vossa Palavra, a viver a caridade e a confiar plenamente em Vossa providência. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
-Amém.`,
-    oracao_final: `Ó glorioso Santo Antônio,
-amigo dos pobres e auxílio dos necessitados,
-rogai por nós junto a Deus.
-Alcançai-nos as graças de que precisamos,
-fortalecei nossa fé
-e conduzi-nos sempre pelo caminho do bem.
-Amém.`
-  });
-
-  upsertDia(
-    antonio.id,
-    1,
-    "PRIMEIRO DIA – SANTO ANTÔNIO, CHAMADO POR DEUS",
-    `Santo Antônio, desde jovem ouvistes o chamado de Deus e respondestes com generosidade, deixando tudo para seguir Cristo.
-
-Ajudai-nos a escutar o chamado de Deus em nossa vida. Que saibamos responder com coragem e fidelidade, sem medo das renúncias.
-
-Ensinai-nos a confiar que Deus conduz nossos passos.
-
-(Fazer o pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-  upsertDia(
-    antonio.id,
-    2,
-    "SEGUNDO DIA – SANTO ANTÔNIO, AMANTE DA PALAVRA DE DEUS",
-    `Santo Antônio, vossa vida foi profundamente marcada pelo amor à Palavra de Deus, que estudáveis, meditáveis e anunciáveis com zelo.
-
-Ajudai-nos a amar as Sagradas Escrituras. Que a Palavra de Deus ilumine nossas decisões e fortaleça nossa fé.
-
-Ensinai-nos a viver segundo o Evangelho.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-  upsertDia(
-    antonio.id,
-    3,
-    "TERCEIRO DIA – SANTO ANTÔNIO, PODEROSO PREGADOR",
-    `Santo Antônio, fostes grande pregador, capaz de tocar os corações e conduzir muitos à conversão.
-
-Ajudai-nos a testemunhar nossa fé com palavras e atitudes. Que nossa vida seja anúncio vivo do Evangelho.
-
-Dai-nos coragem para viver e proclamar a verdade cristã.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-  upsertDia(
-    antonio.id,
-    4,
-    "QUARTO DIA – SANTO ANTÔNIO, DEFENSOR DOS POBRES",
-    `Santo Antônio, vosso coração era sensível às necessidades dos pobres, dos aflitos e dos esquecidos.
-
-Ajudai-nos a reconhecer Cristo nos que sofrem. Que sejamos generosos, solidários e atentos às dores do próximo.
-
-Ensinai-nos a viver a verdadeira caridade cristã.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-  upsertDia(
-    antonio.id,
-    5,
-    "QUINTO DIA – SANTO ANTÔNIO, AMIGO DOS AFLITOS",
-    `Santo Antônio, tantos recorrem a vós em momentos de angústia e encontram consolo e esperança.
-
-Intercedei por nós em nossas dificuldades. Ajudai-nos a confiar em Deus mesmo nas horas mais difíceis.
-
-Que jamais percamos a esperança na misericórdia divina.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-  upsertDia(
-    antonio.id,
-    6,
-    "SEXTO DIA – SANTO ANTÔNIO, INTERCESSOR DAS CAUSAS DIFÍCEIS",
-    `Santo Antônio, sois conhecido como poderoso intercessor nas causas difíceis e urgentes.
-
-Apresentai a Deus nossas necessidades e pedidos. Fortalecei nossa fé para confiar que nada é impossível para Deus.
-
-Ensinai-nos a esperar com paciência e confiança.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-  upsertDia(
-    antonio.id,
-    7,
-    "SÉTIMO DIA – SANTO ANTÔNIO, EXEMPLO DE HUMILDADE",
-    `Santo Antônio, apesar de vossa sabedoria e dons, permanecestes profundamente humilde.
-
-Livrai-nos do orgulho e da vaidade. Ensinai-nos a reconhecer que tudo vem de Deus.
-
-Que saibamos servir com simplicidade e amor.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-  upsertDia(
-    antonio.id,
-    8,
-    "OITAVO DIA – SANTO ANTÔNIO, MODELO DE VIDA CONSAGRADA",
-    `Santo Antônio, vivestes com fidelidade os votos religiosos, entregando-vos totalmente a Deus.
-
-Ajudai-nos a viver com fidelidade nossa vocação, seja ela qual for. Que sejamos fiéis aos compromissos assumidos com Deus.
-
-Ensinai-nos a viver com coração indiviso.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-  upsertDia(
-    antonio.id,
-    9,
-    "NONO DIA – SANTO ANTÔNIO, AMANTE DA EUCARISTIA",
-    `Santo Antônio, encontráveis na Eucaristia força, luz e intimidade com Cristo.
-
-Ajudai-nos a amar o Santíssimo Sacramento. Que a Eucaristia seja o centro de nossa vida cristã.
-
-Ensinai-nos a viver em comunhão com Jesus.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-    upsertDia(
-    antonio.id,
-    10,
-    "DÉCIMO DIA – SANTO ANTÔNIO, PROTETOR DAS FAMÍLIAS",
-    `Santo Antônio, muitas famílias recorrem à vossa intercessão com confiança.
-
-Protegei nossos lares. Ajudai-nos a viver o amor, o perdão e a fé em família.
-
-Que nossos lares sejam lugares de paz e oração.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-    upsertDia(
-    antonio.id,
-    11,
-    "DÉCIMO PRIMEIRO DIA – SANTO ANTÔNIO, GUIA DOS JOVENS",
-    `Santo Antônio, sede guia e proteção para os jovens, que enfrentam tantos desafios.
-
-Ajudai-os a fazer boas escolhas e a seguir o caminho do bem. Que encontrem em Deus o sentido de sua vida.
-
-Protegei-os de todo mal.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-    upsertDia(
-    antonio.id,
-    12,
-    "DÉCIMO SEGUNDO DIA – SANTO ANTÔNIO, EXEMPLO DE CONFIANÇA EM DEUS",
-    `Santo Antônio, em tudo confiastes na providência divina.
-
-Ajudai-nos a confiar mais em Deus e menos em nossas próprias forças. Que saibamos entregar nossas preocupações ao Senhor.
-
-Ensinai-nos o abandono confiante nas mãos de Deus.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
-
-    upsertDia(
-    antonio.id,
-    13,
-    "DÉCIMO TERCEIRO DIA – SANTO ANTÔNIO, NOSSO PODEROSO INTERCESSOR",
-    `Santo Antônio, acolhei esta trezena que rezamos com fé e amor. Apresentai a Deus nossos pedidos e necessidades.
-
-Intercedei por nossa vida espiritual, por nossas famílias e por todos os que recorrem a vós com confiança.
-
-Conduzi-nos no caminho da santidade e da vida eterna.
-
-(Pedido pessoal)
-
-Pai-Nosso
-Ave-Maria
-Glória ao Pai`
-  );
 
  
   //NOVENA A SÃO JOÃO BATISTA
@@ -8688,7 +8447,1444 @@ Pai-Nosso
 Ave-Maria
 Glória ao Pai`
   );
+
+  //NOVENA DAS ALMAS DO PURGATÓRIO.
+
+  const almas = upsertNovena({
+    slug: makeSlug("NOVENA DAS ALMAS DO PURGATÓRIO"),
+    titulo: "NOVENA DAS ALMAS DO PURGATÓRIO",
+    periodo_inicio: "24/10",
+    periodo_fim: "01/11",
+    subtitulo: "A esperança não decepciona aqueles que aguardam no Senhor",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita misericórdia, que amais todas as almas criadas por Vós e desejais que nenhuma se perca, nós Vos louvamos e bendizemos pelo dom da redenção e pela esperança da vida eterna. Em Vosso amor, permitis que as almas que partiram deste mundo sejam purificadas para entrar na plenitude da Vossa presença.
+
+Recebei, Senhor, esta novena que oferecemos em sufrágio pelas almas do Purgatório. Concedei-nos a graça de rezar com coração compassivo, espírito de caridade e fé viva. Que nossas orações, sacrifícios e ofertas alcancem alívio às almas sofredoras e apressam o momento em que poderão contemplar Vosso rosto. E que, ao intercedermos por elas, sejamos também purificados e conduzidos no caminho da santidade.
+Amém.`,
+    oracao_final: `Ó Deus de infinita misericórdia,
+concedei às almas do Purgatório
+o descanso eterno
+e fazei brilhar sobre elas a Vossa luz.
+Que, livres de toda mancha,
+possam louvar-Vos para sempre
+na alegria do Céu.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    almas.id,
+    1,
+    "PRIMEIRO DIA – AS ALMAS DO PURGATÓRIO, AMADAS POR DEUS",
+    `Ó almas santas do Purgatório, sois profundamente amadas por Deus e destinadas à glória eterna.
+
+Ajudai-nos a recordar que a vida não termina aqui. Que vivamos com os olhos voltados para o Céu.
+
+Senhor, tende misericórdia das almas que mais sofrem.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    almas.id,
+    2,
+    "SEGUNDO DIA – AS ALMAS DO PURGATÓRIO, PURIFICADAS NO AMOR",
+    `Ó almas benditas, estais sendo purificadas para entrar na presença santa de Deus.
+
+Ensinai-nos a aceitar a purificação já nesta vida, por meio da conversão e do amor.
+
+Senhor, alivai as dores das almas que mais necessitam.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    almas.id,
+    3,
+    "TERCEIRO DIA – AS ALMAS DO PURGATÓRIO, SEDENTAS DE DEUS",
+    `Ó almas santas, vosso maior desejo é contemplar a Deus face a face.
+
+Despertai em nós o desejo do Céu. Que não nos apeguemos excessivamente às coisas passageiras.
+
+Senhor, apressai o encontro dessas almas convosco.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    almas.id,
+    4,
+    "QUARTO DIA – AS ALMAS DO PURGATÓRIO, SOCORRIDAS PELA ORAÇÃO",
+    `Ó almas benditas, não podeis mais merecer, mas dependeis de nossas orações.
+
+Ajudai-nos a compreender o valor da oração pelos falecidos. Que sejamos fiéis nessa obra de misericórdia.
+
+Senhor, recebei nossas orações como alívio para essas almas.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    almas.id,
+    5,
+    "QUINTO DIA – AS ALMAS DO PURGATÓRIO, ESQUECIDAS PELOS VIVOS",
+    `Ó almas santas, muitas vezes sois esquecidas pelos que ainda vivem na terra.
+
+Despertai em nós um coração atento e caridoso. Que nunca nos esqueçamos de rezar por vós.
+
+Senhor, socorrei especialmente as almas mais abandonadas.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    almas.id,
+    6,
+    "SEXTO DIA – AS ALMAS DO PURGATÓRIO, UNIDAS À CRUZ DE CRISTO",
+    `Ó almas benditas, vossas dores estão unidas ao sacrifício redentor de Cristo.
+
+Ajudai-nos a oferecer nossos sofrimentos por amor a Deus e pelas almas.
+
+Senhor, aplicai os méritos da cruz às almas que sofrem no Purgatório.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    almas.id,
+    7,
+    "SÉTIMO DIA – AS ALMAS DO PURGATÓRIO, ESPERANÇA DA GLÓRIA",
+    `Ó almas santas, viveis na esperança certa da glória eterna.
+
+Ensinai-nos a esperar com paciência e fé. Que não desanimemos nas provações da vida.
+
+Senhor, fortalecei a esperança das almas que aguardam Vossa luz.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    almas.id,
+    8,
+    "OITAVO DIA – AS ALMAS DO PURGATÓRIO, GRATIDÃO PELAS ORAÇÕES",
+    `Ó almas benditas, sois profundamente gratas por cada oração oferecida por vós.
+
+Ajudai-nos a compreender que nenhuma oração é inútil aos olhos de Deus.
+
+Senhor, acolhei com amor cada sufrágio oferecido.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    almas.id,
+    9,
+    "NONO DIA – AS ALMAS DO PURGATÓRIO, INTERCESSORAS NO CÉU",
+    `Ó almas santas, quando chegardes à glória do Céu, lembrai-vos de nós diante de Deus.
+
+Recebei esta novena como expressão de nosso amor e caridade. Que nossas orações vos conduzam rapidamente à luz eterna.
+
+Senhor, concedei o descanso eterno às almas do Purgatório.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  // NOVENA DE SÃO MIGUEL ARCANJO
+
+  const miguel = upsertNovena({
+    slug: makeSlug("NOVENA DE SÃO MIGUEL ARCANJO"),
+    titulo: "NOVENA DE SÃO MIGUEL ARCANJO",
+    periodo_inicio: "20/09",
+    periodo_fim: "28/09",
+    subtitulo: "Príncipe das milícias celestes",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus todo-poderoso e eterno, que constituístes São Miguel Arcanjo como príncipe das milícias celestes e defensor do Vosso povo contra as forças do mal, nós Vos louvamos e bendizemos por este poderoso protetor que jamais abandona os que confiam em Vós.
+
+Por intercessão de São Miguel Arcanjo, concedei-nos a graça de rezar esta novena com fé vigilante, coração firme e espírito confiante. Que, sustentados por sua proteção, sejamos fortalecidos no combate espiritual, livres das ciladas do inimigo e conduzidos no caminho da verdade, da justiça e da paz. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `São Miguel Arcanjo,
+defendei-nos no combate.
+Sede nosso auxílio contra as maldades
+e ciladas do demônio.
+Que Deus manifeste sobre ele o Seu poder,
+nós Vos suplicamos.
+E vós, príncipe da milícia celeste,
+pelo poder divino,
+precipitai no inferno a Satanás
+e aos outros espíritos malignos
+que andam pelo mundo
+para perder as almas.
+Amém.`
+  });
+
+  upsertDia(
+    miguel.id,
+    1,
+    "PRIMEIRO DIA – SÃO MIGUEL ARCANJO, DEFENSOR DA GLÓRIA DE DEUS",
+    `São Miguel Arcanjo, vosso nome proclama: “Quem como Deus?”
+
+Ajudai-nos a colocar Deus acima de tudo. Que rejeitemos tudo o que tenta ocupar o lugar que pertence somente ao Senhor.
+
+Ensinai-nos a viver para a glória de Deus.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    miguel.id,
+    2,
+    "SEGUNDO DIA – SÃO MIGUEL ARCANJO, GUERREIRO DO CÉU",
+    `São Miguel Arcanjo, fostes escolhido para combater e vencer as forças do mal.
+
+Defendei-nos nas lutas espirituais. Protegei-nos das tentações, dos enganos e de todo mal visível ou invisível.
+
+Ensinai-nos a confiar no poder de Deus que vence todo mal.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    miguel.id,
+    3,
+    "TERCEIRO DIA – SÃO MIGUEL ARCANJO, PROTETOR DO POVO DE DEUS",
+    `São Miguel Arcanjo, fostes enviado para proteger o povo fiel do Senhor.
+
+Guardai nossas famílias, nossas casas e nossos caminhos. Livrai-nos dos perigos do corpo e da alma.
+
+Ensinai-nos a viver sob a proteção do Céu.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    miguel.id,
+    4,
+    "QUARTO DIA – SÃO MIGUEL ARCANJO, FIDELIDADE SEM RESERVAS",
+    `São Miguel Arcanjo, permanecestes fiel a Deus desde o princípio, sem hesitação nem orgulho.
+
+Ajudai-nos a viver a fidelidade a Deus em todas as circunstâncias. Que não sejamos vencidos pelo pecado nem pela dúvida.
+
+Ensinai-nos a escolher Deus todos os dias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    miguel.id,
+    5,
+    "QUINTO DIA – SÃO MIGUEL ARCANJO, LUZ NA ESCURIDÃO",
+    `São Miguel Arcanjo, fostes luz contra as trevas e verdade contra a mentira.
+
+Iluminai nossas decisões e pensamentos. Ajudai-nos a discernir o bem do mal.
+
+Ensinai-nos a caminhar sempre na verdade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    miguel.id,
+    6,
+    "SEXTO DIA – SÃO MIGUEL ARCANJO, DEFESA CONTRA AS TENTAÇÕES",
+    `São Miguel Arcanjo, defensor poderoso nas horas de provação.
+
+Afastai de nós as tentações que nos afastam de Deus. Fortalecei-nos quando somos fracos.
+
+Ensinai-nos a recorrer ao Céu no momento da luta.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    miguel.id,
+    7,
+    "SÉTIMO DIA – SÃO MIGUEL ARCANJO, GUARDA DAS ALMAS",
+    `São Miguel Arcanjo, sois guardião das almas que pertencem a Deus.
+
+Protegei nossa alma do pecado mortal. Ajudai-nos a viver na graça de Deus.
+
+Ensinai-nos a valorizar a salvação eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    miguel.id,
+    8,
+    "OITAVO DIA – SÃO MIGUEL ARCANJO, AUXÍLIO NA HORA DA MORTE",
+    `São Miguel Arcanjo, estai presente na hora de nossa morte, conduzindo-nos à presença de Deus.
+
+Ajudai-nos a viver preparados para a eternidade. Que nossa vida seja vivida em vigilância e fé.
+
+Ensinai-nos a esperar com confiança o encontro com Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    miguel.id,
+    9,
+    "NONO DIA – SÃO MIGUEL ARCANJO, NOSSO PODEROSO INTERCESSOR",
+    `São Miguel Arcanjo, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos, intenções e agradecimentos.
+
+Defendei-nos no combate espiritual, protegei-nos em vida e conduzi-nos, um dia, à alegria eterna do Céu.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
   
+  const espiritosanto = upsertNovena({
+    slug: makeSlug("NOVENA AO DIVINO ESPÍRITO SANTO"),
+    titulo: "NOVENA AO DIVINO ESPÍRITO SANTO",
+    periodo_inicio: "sexta-feira após a Ascensão do Senhor",
+    periodo_fim: "sábado antes de Pentecostes",
+    subtitulo: "Vinde, Espírito Santo, enchei os corações dos vossos fiéis e acendei neles o fogo do vosso amor",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Divino Espírito Santo,
+amor eterno do Pai e do Filho,
+alma da Igreja e fonte de toda santidade,
+nós Vos adoramos, louvamos e bendizemos.
+
+Vinde, Espírito Santo, e enchei os nossos corações.
+Iluminai nossa mente, fortalecei nossa vontade e inflamai nosso coração com o Vosso amor.
+Afastai de nós tudo o que nos impede de ouvir a voz de Deus e conduzi-nos pelo caminho da verdade, da paz e da santidade.
+
+Concedei-nos a graça de rezar esta novena com coração dócil, espírito aberto e sincero desejo de conversão. Derramai sobre nós Vossos dons e frutos, e concedei-nos, se for da vontade de Deus, as graças que necessitamos para nossa vida e salvação.
+Amém.`,
+    oracao_final: `Vinde, Espírito Santo,
+enchei os corações dos Vossos fiéis
+e acendei neles o fogo do Vosso amor.
+
+Enviai o Vosso Espírito
+e tudo será criado,
+e renovareis a face da terra.
+
+Ó Deus, que instruístes os corações dos fiéis
+com a luz do Espírito Santo,
+fazei que apreciemos retamente todas as coisas
+segundo o mesmo Espírito
+e gozemos sempre de Sua consolação.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    espiritosanto.id,
+    1,
+    "PRIMEIRO DIA – DIVINO ESPÍRITO SANTO, LUZ DA ALMA",
+    `Vinde, Espírito Santo, luz divina que ilumina toda escuridão.
+
+Iluminai nossa mente e nosso coração. Ajudai-nos a enxergar nossa vida à luz de Deus e a reconhecer o caminho que devemos seguir.
+
+Livrai-nos da confusão, da dúvida e do erro.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    espiritosanto.id,
+    2,
+    "SEGUNDO DIA – DIVINO ESPÍRITO SANTO, FOGO DE AMOR",
+    `Vinde, Espírito Santo, fogo que aquece os corações frios e renova os cansados.
+
+Inflamai nosso coração com o amor de Deus. Curai nossa indiferença espiritual e renovai nosso desejo de amar.
+
+Que nosso amor seja sincero e fiel.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    espiritosanto.id,
+    3,
+    "TERCEIRO DIA – DIVINO ESPÍRITO SANTO, DOADOR DOS DONS",
+    `Vinde, Espírito Santo, e derramai sobre nós Vossos santos dons.
+
+Concedei-nos sabedoria, entendimento, conselho, fortaleza, ciência, piedade e temor de Deus. Que esses dons nos conduzam à santidade.
+
+Ajudai-nos a viver segundo a vontade do Pai.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    espiritosanto.id,
+    4,
+    "QUARTO DIA – DIVINO ESPÍRITO SANTO, MESTRE INTERIOR",
+    `Vinde, Espírito Santo, mestre da verdade e guia seguro das almas.
+
+Ensinai-nos a ouvir a voz de Deus no silêncio do coração. Ajudai-nos a discernir o bem e a rejeitar o mal.
+
+Que sejamos dóceis à Vossa ação.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    espiritosanto.id,
+    5,
+    "QUINTO DIA – DIVINO ESPÍRITO SANTO, CONSOLADOR DOS AFLITOS",
+    `Vinde, Espírito Santo, doce consolador das almas feridas.
+
+Consolai os corações aflitos, curai as feridas da alma e fortalecei os que sofrem.
+
+Derramai sobre nós a paz que vem de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    espiritosanto.id,
+    6,
+    "SEXTO DIA – DIVINO ESPÍRITO SANTO, FORÇA NA FRAQUEZA",
+    `Vinde, Espírito Santo, força dos fracos e auxílio dos que lutam.
+
+Sustentai-nos nas tentações, nas quedas e nos momentos de desânimo. Dai-nos fortaleza para perseverar no bem.
+
+Que nunca desistamos de buscar a santidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    espiritosanto.id,
+    7,
+    "SÉTIMO DIA – DIVINO ESPÍRITO SANTO, FONTE DE UNIDADE",
+    `Vinde, Espírito Santo, e renovai a face da Igreja.
+
+Concedei-nos espírito de comunhão, humildade e amor fraterno. Curai as divisões e fortalecei os laços de unidade.
+
+Fazei-nos instrumentos de paz.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    espiritosanto.id,
+    8,
+    "OITAVO DIA – DIVINO ESPÍRITO SANTO, SANTIFICADOR DAS ALMAS",
+    `Vinde, Espírito Santo, e santificai-nos.
+
+Purificai nosso coração de todo pecado e desordem. Ajudai-nos a crescer na graça e na fidelidade a Deus.
+
+Que nossa vida seja um louvor ao Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    espiritosanto.id,
+    9,
+    "NONO DIA – DIVINO ESPÍRITO SANTO, ENVIO EM MISSÃO",
+    `Vinde, Espírito Santo, e fazei de nós testemunhas vivas do Evangelho.
+
+Concedei-nos coragem para anunciar a fé, viver o amor e servir com alegria. Enviai-nos como instrumentos da Vossa graça no mundo.
+
+Que tudo o que fizermos seja para a glória de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA AO SAGRADO CORAÇÃO DE JESUS
+
+  const scj = upsertNovena({
+    slug: makeSlug("NOVENA AO SAGRADO CORAÇÃO DE JESUS"),
+    titulo: "NOVENA AO SAGRADO CORAÇÃO DE JESUS",
+    periodo_inicio: "quarta-feira após a Solenidade de Corpus Christi",
+    periodo_fim: "quinta-feira seguinte",
+    subtitulo: "Manso e humilde de coração, fazei nosso coração semelhante ao Vosso",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Jesus Cristo, Filho amado do Pai, que nos revelastes no Vosso Sagrado Coração o amor infinito de Deus pelos homens, nós Vos adoramos, louvamos e bendizemos. Vosso Coração, manso e humilde, foi aberto na cruz como fonte de misericórdia, perdão e vida nova para toda a humanidade.
+
+Nós nos aproximamos de Vós com confiança, trazendo nossas alegrias, dores, pecados e esperanças. Concedei-nos a graça de rezar esta novena com coração sincero, espírito humilde e desejo verdadeiro de conversão. Que, ao contemplarmos Vosso Sagrado Coração, aprendamos a amar como Vós amais, a perdoar como Vós perdoais e a confiar sem reservas no amor do Pai. Concedei-nos também, se for de Vossa vontade, as graças que necessitamos para nossa vida e salvação.
+Amém.`,
+    oracao_final: `Sagrado Coração de Jesus,
+em Vós confio.
+Fazei meu coração semelhante ao Vosso,
+manso, humilde e cheio de amor.
+Recebei minha vida,
+minhas lutas e minhas esperanças,
+e conduzi-me sempre no caminho da salvação.
+Amém.`
+  });
+
+  upsertDia(
+    scj.id,
+    1,
+    "PRIMEIRO DIA – SAGRADO CORAÇÃO DE JESUS, AMOR INFINITO DO PAI",
+    `Sagrado Coração de Jesus, sois a revelação viva do amor do Pai por nós.
+
+Ajudai-nos a acreditar no amor de Deus, mesmo quando nos sentimos indignos ou feridos. Que jamais duvidemos de Vosso amor.
+
+Ensinai-nos a descansar no amor do Pai.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    scj.id,
+    2,
+    "SEGUNDO DIA – SAGRADO CORAÇÃO DE JESUS, MANSO E HUMILDE",
+    `Coração manso e humilde de Jesus, ensinai-nos a aprender de Vós.
+
+Ajudai-nos a vencer o orgulho, a dureza e a impaciência. Dai-nos um coração semelhante ao Vosso.
+
+Formai em nós a humildade verdadeira.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    scj.id,
+    3,
+    "TERCEIRO DIA – SAGRADO CORAÇÃO DE JESUS, FONTE DE MISERICÓRDIA",
+    `Sagrado Coração de Jesus, de Vós brota misericórdia sem limites.
+
+Perdoai nossos pecados e curai nossas feridas interiores. Ajudai-nos a confiar na Vossa misericórdia.
+
+Ensinai-nos a ser misericordiosos com os outros.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    scj.id,
+    4,
+    "QUARTO DIA – SAGRADO CORAÇÃO DE JESUS, AMOR FERIDO E REJEITADO",
+    `Sagrado Coração de Jesus, tantas vezes sois ferido pela indiferença e pelo pecado.
+
+Aceitai nossa oração como ato de reparação. Ajudai-nos a consolar Vosso Coração com nossa fidelidade.
+
+Ensinai-nos a amar quando não somos amados.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    scj.id,
+    5,
+    "QUINTO DIA – SAGRADO CORAÇÃO DE JESUS, OBEDIÊNCIA AO PAI",
+    `Sagrado Coração de Jesus, vivestes inteiramente unido à vontade do Pai.
+
+Ajudai-nos a aceitar a vontade de Deus, mesmo quando ela nos custa. Que aprendamos a dizer “sim” com confiança.
+
+Ensinai-nos a viver na obediência amorosa.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    scj.id,
+    6,
+    "SEXTO DIA – SAGRADO CORAÇÃO DE JESUS, FONTE DE PAZ",
+    `Sagrado Coração de Jesus, sois nossa paz verdadeira.
+
+Acalmai nossas inquietações, curai nossas ansiedades e devolvei-nos a serenidade interior.
+
+Ensinai-nos a confiar em Vós em todas as circunstâncias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    scj.id,
+    7,
+    "SÉTIMO DIA – SAGRADO CORAÇÃO DE JESUS, AMOR QUE SE ENTREGA NA CRUZ",
+    `Sagrado Coração de Jesus, Vosso amor se revelou plenamente na cruz.
+
+Ajudai-nos a compreender o valor do sacrifício. Que saibamos oferecer nossas dores unidas às Vossas.
+
+Ensinai-nos a amar até o fim.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    scj.id,
+    8,
+    "OITAVO DIA – SAGRADO CORAÇÃO DE JESUS, MORADA DOS QUE CONFIAM",
+    `Sagrado Coração de Jesus, sois refúgio seguro para todos os que confiam em Vós.
+
+Acolhei-nos em Vosso Coração. Guardai-nos nas provações e fortalecei nossa fé.
+
+Ensinai-nos a viver sempre unidos a Vós.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    scj.id,
+    9,
+    "NONO DIA – SAGRADO CORAÇÃO DE JESUS, REI E CENTRO DE NOSSAS VIDAS",
+    `Sagrado Coração de Jesus, acolhei esta novena que rezamos com amor e confiança.
+
+Reinai em nosso coração, em nossas famílias e em nossa vida. Fazei de nós instrumentos do Vosso amor no mundo.
+
+Concedei-nos perseverança na fé e fidelidade até o fim.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  // NOVENA À SAGRADA FAMÍLIA
+
+  const familia = upsertNovena({
+    slug: makeSlug("NOVENA À SAGRADA FAMÍLIA"),
+    titulo: "NOVENA À SAGRADA FAMÍLIA",
+    subtitulo: "Jesus, Maria e José, minha família vossa é",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Jesus, Maria e José, Sagrada Família de Nazaré, modelo perfeito de amor, união e fidelidade a Deus, nós nos aproximamos de vós com confiança e coração aberto. Em vossa casa simples, Deus foi amado, servido e obedecido em todas as coisas, transformando a vida cotidiana em caminho de santidade.
+
+Acolhei-nos em vosso lar. Ensinai-nos a viver o amor verdadeiro, a paciência nas dificuldades, a fé nas provações e a esperança nas incertezas. Concedei-nos a graça de rezar esta novena com espírito humilde e desejo sincero de conversão. Abençoai nossas famílias, nosso trabalho e nosso caminho, e alcançai-nos, se for da vontade de Deus, as graças que necessitamos para nossa vida e salvação.
+Amém.`,
+    oracao_final: `Jesus, Maria e José,
+Sagrada Família de Nazaré,
+protegei nossas famílias.
+Ajudai-nos a viver unidos no amor,
+firmes na fé
+e confiantes na providência de Deus.
+Fazei de nossos lares
+lugares de paz, oração e esperança.
+Amém.`
+  });
+
+  upsertDia(
+    familia.id,
+    1,
+    "PRIMEIRO DIA – SAGRADA FAMÍLIA, CASA ONDE DEUS HABITA",
+    `Sagrada Família de Nazaré, vossa casa foi morada viva de Deus entre os homens.
+
+Ajudai-nos a fazer de nossa casa um lugar onde Deus é amado e respeitado. Que nossos lares sejam espaços de fé, oração e paz.
+
+Ensinai-nos a acolher Deus em nossa vida diária.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    familia.id,
+    2,
+    "SEGUNDO DIA – JESUS, FILHO OBEDIENTE",
+    `Jesus, em Nazaré vivestes submisso a Maria e José, santificando a obediência e o amor filial.
+
+Ajudai-nos a viver a obediência com amor. Que saibamos respeitar, escutar e servir uns aos outros.
+
+Ensinai-nos a obedecer por amor, e não por medo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    familia.id,
+    3,
+    "TERCEIRO DIA – MARIA, MÃE ATENTA E AMOROSA",
+    `Maria Santíssima, em silêncio e ternura cuidastes de Jesus e de José, guardando tudo em vosso coração.
+
+Ajudai-nos a amar com paciência e delicadeza. Que saibamos escutar mais e julgar menos.
+
+Ensinai-nos a amar como mãe, mesmo quando é difícil.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    familia.id,
+    4,
+    "QUARTO DIA – SÃO JOSÉ, PAI JUSTO E PROTETOR",
+    `São José, fostes o guardião fiel da Sagrada Família, trabalhador honesto e homem de fé silenciosa.
+
+Protegei nossas famílias. Ajudai-nos a viver a responsabilidade, o trabalho digno e a confiança em Deus.
+
+Ensinai-nos a servir sem buscar reconhecimento.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    familia.id,
+    5,
+    "QUINTO DIA – SAGRADA FAMÍLIA, UNIÃO NO AMOR",
+    `Sagrada Família, vivestes unida no amor, mesmo em meio às dificuldades, viagens e incertezas.
+
+Ajudai-nos a fortalecer a união em nossas famílias. Que saibamos perdoar, dialogar e recomeçar sempre.
+
+Ensinai-nos que o amor se constrói dia após dia.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    familia.id,
+    6,
+    "SEXTO DIA – SAGRADA FAMÍLIA, FÉ NAS PROVAÇÕES",
+    `Jesus, Maria e José, enfrentastes perseguições, pobreza e insegurança confiando sempre em Deus.
+
+Ajudai-nos a confiar em Deus nas dificuldades familiares. Que não percamos a fé nas crises e provações.
+
+Ensinai-nos a esperar mesmo quando tudo parece incerto.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    familia.id,
+    7,
+    "SÉTIMO DIA – SAGRADA FAMÍLIA, VIDA SIMPLES E SANTA",
+    `Sagrada Família de Nazaré, santificastes a vida simples e o trabalho cotidiano.
+
+Ajudai-nos a encontrar Deus nas tarefas diárias. Que aprendamos a viver a santidade no comum da vida.
+
+Ensinai-nos que a santidade nasce da fidelidade diária.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    familia.id,
+    8,
+    "OITAVO DIA – SAGRADA FAMÍLIA, ESCOLA DE AMOR E PERDÃO",
+    `Jesus, Maria e José, em vosso lar reinaram o amor, a compreensão e o perdão.
+
+Ajudai-nos a perdoar em nossas famílias. Que saibamos recomeçar mesmo após as feridas.
+
+Ensinai-nos a amar como Deus ama.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    familia.id,
+    9,
+    "NONO DIA – SAGRADA FAMÍLIA, BÊNÇÃO PARA TODAS AS FAMÍLIAS",
+    `Sagrada Família de Nazaré, acolhei esta novena que rezamos com amor e confiança.
+
+Abençoai nossas famílias, nossos lares e nossas relações. Guardai-nos na fé, na esperança e no amor.
+
+Fazei de nossas famílias reflexo do amor de Deus no mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+ // NOVENA DE PENTECOSTES
+
+const pentecostes = upsertNovena({
+    slug: makeSlug("NOVENA DE PENTECOSTES"),
+    titulo: "NOVENA DE PENTECOSTES",
+    periodo_inicio: "sexta-feira após a Solenidade da Ascensão do Senhor",
+    periodo_fim: "sábado antes de Pentecostes",
+    subtitulo: "Vinde, Espírito Santo",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus Pai todo-poderoso, que após a Ressurreição de Vosso Filho enviastes o Espírito Santo sobre Maria e os Apóstolos reunidos em oração, nós Vos louvamos e bendizemos por este dom precioso que renova a face da terra e transforma os corações.
+
+Nós nos colocamos hoje no Cenáculo, unidos a Maria, esperando com fé a efusão do Espírito Santo. Abri nosso coração para receber Sua ação, purificai nossa vida, fortalecei nossa fé e renovai nossa esperança. Concedei-nos a graça de rezar esta novena com perseverança e coração dócil, para que sejamos renovados interiormente e enviados como testemunhas do Evangelho. Concedei-nos também, se for de Vossa vontade, as graças que necessitamos para nossa vida e salvação.
+Amém.`,
+    oracao_final: `Vinde, Espírito Santo,
+enchei os corações dos Vossos fiéis
+e acendei neles o fogo do Vosso amor.
+
+Enviai o Vosso Espírito
+e tudo será criado,
+e renovareis a face da terra.
+
+Ó Deus, que instruístes os corações dos fiéis
+com a luz do Espírito Santo,
+fazei que apreciemos retamente todas as coisas
+segundo o mesmo Espírito
+e gozemos sempre de Sua consolação.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    pentecostes.id,
+    1,
+    "PRIMEIRO DIA – PENTECOSTES, PROMESSA DO PAI",
+    `Espírito Santo, fostes prometido por Jesus como dom do Pai para fortalecer Seus discípulos.
+
+Ajudai-nos a confiar nas promessas de Deus. Que aprendamos a esperar com fé, mesmo quando não vemos imediatamente os frutos.
+
+Ensinai-nos a perseverar na oração.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pentecostes.id,
+    2,
+    "SEGUNDO DIA – PENTECOSTES, ESPÍRITO DE UNIDADE",
+    `Espírito Santo, reunistes os discípulos em um só coração e uma só alma.
+
+Curai as divisões em nossa vida, em nossa família e na Igreja. Concedei-nos espírito de comunhão e amor fraterno.
+
+Ensinai-nos a viver unidos em Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pentecostes.id,
+    3,
+    "TERCEIRO DIA – PENTECOSTES, FOGO QUE TRANSFORMA",
+    `Espírito Santo, descestes como línguas de fogo sobre os Apóstolos.
+
+Inflamai nosso coração com o Vosso amor. Queimais em nós tudo o que não vem de Deus e renovai nossa vida interior.
+
+Ensinai-nos a viver com fervor espiritual.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pentecostes.id,
+    4,
+    "QUARTO DIA – PENTECOSTES, LUZ QUE ILUMINA",
+    `Espírito Santo, sois luz que dissipa as trevas e conduz à verdade.
+
+Iluminai nossa mente e nossas decisões. Ajudai-nos a discernir a vontade de Deus em nossa vida.
+
+Ensinai-nos a caminhar na verdade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pentecostes.id,
+    5,
+    "QUINTO DIA – PENTECOSTES, CORAGEM NA MISSÃO",
+    `Espírito Santo, transformastes discípulos medrosos em testemunhas corajosas.
+
+Dai-nos coragem para viver e anunciar a fé. Que não tenhamos medo de testemunhar o Evangelho.
+
+Ensinai-nos a confiar no poder de Deus que age em nós.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pentecostes.id,
+    6,
+    "SEXTO DIA – PENTECOSTES, DOM DOS CARISMAS",
+    `Espírito Santo, distribuís dons e carismas para a edificação da Igreja.
+
+Ajudai-nos a reconhecer e usar bem os dons que recebemos. Que coloquemos tudo a serviço do bem.
+
+Ensinai-nos a servir com humildade e amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pentecostes.id,
+    7,
+    "SÉTIMO DIA – PENTECOSTES, ESPÍRITO QUE CONSOLA",
+    `Espírito Santo, sois o Consolador prometido por Jesus.
+
+Consolai os corações aflitos, curai as feridas da alma e fortalecei os que sofrem.
+
+Ensinai-nos a confiar na presença de Deus em todas as circunstâncias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pentecostes.id,
+    8,
+    "OITAVO DIA – PENTECOSTES, SANTIFICADOR DAS ALMAS",
+    `Espírito Santo, sois Aquele que santifica e renova os corações.
+
+Purificai nossa vida de todo pecado. Ajudai-nos a crescer na graça e na santidade.
+
+Ensinai-nos a desejar a santidade com sinceridade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pentecostes.id,
+    9,
+    "NONO DIA – PENTECOSTES, IGREJA EM MISSÃO",
+    `Espírito Santo, no dia de Pentecostes nasceu a Igreja missionária.
+
+Acolhei esta novena que rezamos com fé e confiança. Renovai nossa vida e enviai-nos como discípulos missionários.
+
+Que sejamos instrumentos do Vosso amor no mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  // NOVENA DE SANTO EXPEDITO
+
+const expedito = upsertNovena({
+    slug: makeSlug("NOVENA DE SANTO EXPEDITO"),
+    titulo: "NOVENA DE SANTO EXPEDITO",
+    periodo_inicio: "10/04",
+    periodo_fim: "18/04",
+    subtitulo: "Intercessor nas causas justas e urgentes",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus todo-poderoso e misericordioso, que fortalecestes Santo Expedito com coragem, fidelidade e prontidão para seguir Cristo até o martírio, nós Vos louvamos e bendizemos por este santo que nos ensina a não adiar nossa conversão nem nossa resposta ao Vosso chamado.
+
+Por intercessão de Santo Expedito, concedei-nos a graça de rezar esta novena com fé confiante, coração decidido e esperança viva. Ajudai-nos a enfrentar com coragem as situações difíceis, urgentes e aparentemente sem solução. Que, sustentados pela vossa graça, saibamos agir no tempo certo, confiando plenamente na Vossa providência. Concedei-nos também, se for da Vossa vontade, as graças que necessitamos para nossa vida e salvação.
+Amém.`,
+    oracao_final: `Santo Expedito,
+mártir fiel de Cristo,
+intercedei por nós nas causas urgentes.
+Ajudai-nos a não adiar nossa conversão,
+a confiar na providência de Deus
+e a agir com fé e coragem.
+Amém.
+`
+  });
+
+  upsertDia(
+    expedito.id,
+    1,
+    "PRIMEIRO DIA – SANTO EXPEDITO, CHAMADO À CONVERSÃO IMEDIATA",
+    `Santo Expedito, ouvistes o chamado de Deus e não adiastes vossa resposta.
+
+Ajudai-nos a não postergar nossa conversão. Que saibamos dizer “sim” a Deus hoje, sem desculpas nem adiamentos.
+
+Ensinai-nos que o tempo de Deus é agora.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    expedito.id,
+    2,
+    "SEGUNDO DIA – SANTO EXPEDITO, CORAGEM NA DECISÃO",
+    `Santo Expedito, escolhestes Cristo com firmeza, mesmo diante das dificuldades.
+
+Ajudai-nos a tomar decisões corretas, guiadas pela fé e não pelo medo.
+
+Ensinai-nos a confiar em Deus quando precisamos escolher.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    expedito.id,
+    3,
+    "TERCEIRO DIA – SANTO EXPEDITO, FIDELIDADE SEM RETORNO",
+    `Santo Expedito, não olhastes para trás depois de escolher Cristo.
+
+Ajudai-nos a permanecer firmes no caminho do bem. Que não sejamos vencidos pela tentação de desistir.
+
+Ensinai-nos a ser fiéis até o fim.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    expedito.id,
+    4,
+    "QUARTO DIA – SANTO EXPEDITO, FORÇA NAS DIFICULDADES",
+    `Santo Expedito, enfrentastes perseguições e sofrimentos confiando em Deus.
+
+Ajudai-nos a enfrentar os desafios da vida com fé. Que não desanimemos diante das dificuldades.
+
+Ensinai-nos a confiar na força que vem de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    expedito.id,
+    5,
+    "QUINTO DIA – SANTO EXPEDITO, INTERCESSOR DAS CAUSAS URGENTES",
+    `Santo Expedito, sois conhecido como poderoso intercessor nas causas urgentes.
+
+Apresentai a Deus nossas necessidades imediatas. Intercedei por aquilo que humanamente parece impossível.
+
+Ensinai-nos a confiar na providência divina.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    expedito.id,
+    6,
+    "SEXTO DIA – SANTO EXPEDITO, OBEDIÊNCIA À VONTADE DE DEUS",
+    `Santo Expedito, obedecestes prontamente à vontade de Deus.
+
+Ajudai-nos a obedecer com amor e confiança. Que não resistamos à graça divina.
+
+Ensinai-nos a viver segundo a vontade do Pai.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    expedito.id,
+    7,
+    "SÉTIMO DIA – SANTO EXPEDITO, VITÓRIA SOBRE A TENTAÇÃO",
+    `Santo Expedito, vencestes as tentações que tentavam atrasar vosso compromisso com Deus.
+
+Ajudai-nos a vencer tudo o que nos afasta do Senhor. Que saibamos rejeitar o pecado e o adiamento do bem.
+
+Ensinai-nos a escolher Deus todos os dias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    expedito.id,
+    8,
+    "OITAVO DIA – SANTO EXPEDITO, TESTEMUNHO DE ESPERANÇA",
+    `Santo Expedito, mesmo nas provações, permanecestes cheio de esperança em Deus.
+
+Ajudai-nos a manter a esperança viva, mesmo quando tudo parece difícil.
+
+Ensinai-nos a confiar que Deus age no tempo certo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    expedito.id,
+    9,
+    "NONO DIA – SANTO EXPEDITO, NOSSO PODEROSO INTERCESSOR",
+    `Santo Expedito, acolhei esta novena que rezamos com fé e confiança.
+
+Intercedei por nossas necessidades urgentes, fortalecei nossa fé e ajudai-nos a viver com prontidão e fidelidade ao Evangelho.
+
+Que saibamos agradecer pelas graças alcançadas e confiar sempre na ação de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SANTA FAUSTINA KOWALSKA 
+
+  const trocar = upsertNovena({
+    slug: makeSlug("NOVENA A SANTA FAUSTINA KOWALSKA"),
+    titulo: "NOVENA A SANTA FAUSTINA KOWALSKA",
+    periodo_inicio: "",
+    periodo_fim: "",
+    subtitulo: "“Jesus, eu confio em Vós”",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita misericórdia, que escolhestes Santa Faustina Kowalska para revelar ao mundo as profundezas do Vosso amor misericordioso, nós Vos louvamos e bendizemos por este testemunho simples, humilde e totalmente entregue à Vossa vontade.
+
+Por intercessão de Santa Faustina, concedei-nos a graça de rezar esta novena com coração confiante, alma humilde e fé viva. Ajudai-nos a mergulhar no mistério da Vossa misericórdia, a confiar plenamente em Vós e a testemunhar Vosso amor no cotidiano. Concedei-nos também, se for da Vossa vontade, as graças que necessitamos para nossa vida e salvação.
+Amém.`,
+    oracao_final: `Ó Jesus misericordioso,
+em Vós confio.
+Pela intercessão de Santa Faustina,
+mergulhai-nos no oceano da Vossa misericórdia,
+curai nossas feridas
+e conduzi-nos no caminho da santidade.
+Amém.`
+  });
+
+  upsertDia(
+    trocar.id,
+    1,
+    "PRIMEIRO DIA – SANTA FAUSTINA, CHAMADA À CONFIANÇA TOTAL",
+    `Santa Faustina, Jesus vos ensinou a confiar totalmente em Sua misericórdia.
+
+Ajudai-nos a confiar em Deus mesmo quando não entendemos Seus caminhos. Que aprendamos a dizer com o coração: Jesus, eu confio em Vós.
+
+Ensinai-nos a abandonar-nos nas mãos do Senhor.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    2,
+    "SEGUNDO DIA – SANTA FAUSTINA, HUMILDADE PROFUNDA",
+    `Santa Faustina, vivestes escondida, simples e humilde, agradando a Deus no silêncio.
+
+Ajudai-nos a viver a humildade verdadeira. Que não busquemos reconhecimento, mas apenas a vontade de Deus.
+
+Ensinai-nos a servir com amor silencioso.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    3,
+    "TERCEIRO DIA – SANTA FAUSTINA, AMOR À VONTADE DE DEUS",
+    `Santa Faustina, aceitastes a vontade de Deus mesmo quando ela vos trouxe sofrimento.
+
+Ajudai-nos a amar a vontade divina em todas as circunstâncias. Que aprendamos a dizer “sim” mesmo na dor.
+
+Ensinai-nos a confiar que Deus nunca erra.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    4,
+    "QUARTO DIA – SANTA FAUSTINA, CONFIDENTE DA MISERICÓRDIA",
+    `Santa Faustina, fostes escolhida para anunciar ao mundo a misericórdia infinita de Deus.
+
+Ajudai-nos a acolher a misericórdia divina em nossa vida. Que não tenhamos medo de nos aproximar de Jesus.
+
+Ensinai-nos que a misericórdia é maior que todo pecado.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    5,
+    "QUINTO DIA – SANTA FAUSTINA, AMOR AO SOFRIMENTO OFERECIDO",
+    `Santa Faustina, unistes vossos sofrimentos à cruz de Cristo.
+
+Ajudai-nos a oferecer nossas dores por amor. Que saibamos transformar o sofrimento em oração.
+
+Ensinai-nos o valor redentor da cruz.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    6,
+    "SEXTO DIA – SANTA FAUSTINA, VIDA DE ORAÇÃO CONSTANTE",
+    `Santa Faustina, vossa vida era sustentada pela oração profunda e confiante.
+
+Ajudai-nos a cultivar uma vida de oração fiel. Que busquemos Jesus todos os dias.
+
+Ensinai-nos a rezar com simplicidade e amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    7,
+    "SÉTIMO DIA – SANTA FAUSTINA, AMOR PELA EUCARISTIA",
+    `Santa Faustina, encontráveis força e consolo na presença de Jesus Eucarístico.
+
+Ajudai-nos a amar profundamente a Eucaristia. Que ela seja o centro de nossa vida.
+
+Ensinai-nos a reconhecer Jesus vivo no altar.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    8,
+    "OITAVO DIA – SANTA FAUSTINA, MISERICÓRDIA PARA COM O PRÓXIMO",
+    `Santa Faustina, aprendestes que quem recebe misericórdia deve oferecê-la aos outros.
+
+Ajudai-nos a ser misericordiosos. Que saibamos perdoar, compreender e amar.
+
+Ensinai-nos a viver a misericórdia no dia a dia.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    trocar.id,
+    9,
+    "NONO DIA – SANTA FAUSTINA, NOSSA INTERCESSORA JUNTO A JESUS",
+    `Santa Faustina, acolhei esta novena que rezamos com fé e confiança.
+
+Intercedei por nós junto a Jesus Misericordioso. Ajudai-nos a viver na confiança, na humildade e no amor.
+
+Que jamais nos afastemos da misericórdia de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
     console.log("Seed inicial inserido ");
 }
 
@@ -8715,7 +9911,7 @@ const NovenaCreateSchema = z.object({
 const NovenaUpdateSchema = NovenaCreateSchema.partial();
 
 const DiaSchema = z.object({
-  dia_numero: z.number().int().min(1).max(13),
+  dia_numero: z.number().int().min(1).max(9),
   titulo: z.string().min(3),
   texto: z.string().min(3)
 });
