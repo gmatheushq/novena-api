@@ -1547,8 +1547,4325 @@ Ave-Maria
 Glória ao Pai`
   );
 
-  console.log("Seed inicial inserido ");
+//NOVENA DA PURIFICAÇÃO DE MARIA
+
+  const purificacao = upsertNovena({
+    slug: makeSlug("NOVENA DA PURIFICAÇÃO DE MARIA"),
+    titulo: "NOVENA DA PURIFICAÇÃO DE MARIA",
+    periodo_inicio: "24/01",
+    periodo_fim: "01/02",
+    subtitulo: "Da pureza de Maria nasce a esperança",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Maria Santíssima, Mãe puríssima e obediente ao Senhor, que vos apresentastes no Templo para cumprir a Lei, mesmo sendo cheia de graça e isenta de toda mancha do pecado, acolhei-nos sob vossa proteção materna.
+
+Vós nos ensinais que a verdadeira pureza nasce da obediência, da humildade e do amor a Deus. Concedei-nos a graça de rezar esta novena com coração sincero, desejoso de purificação interior, para que, livres do pecado e renovados pela graça, possamos viver segundo a vontade do Senhor e alcançar as graças necessárias para nossa vida e salvação, conforme Seu divino querer.
+Amém.`,
+    oracao_final: `Ó Maria Santíssima,
+Mãe puríssima e obediente ao Senhor,
+purificai nosso coração e nossa vida.
+Conduzi-nos no caminho da santidade
+e ajudai-nos a viver sempre na graça de Deus.
+Amém.
+`
+  });
+
+  upsertDia(
+    purificacao.id,
+    1,
+    "PRIMEIRO DIA – MARIA, EXEMPLO DE PUREZA",
+    `Ó Maria Santíssima, sois o mais perfeito exemplo de pureza de corpo e de alma. Toda a vossa vida foi entregue a Deus com coração indiviso.
+
+Ajudai-nos a buscar a pureza em nossos pensamentos, palavras e ações. Ensinai-nos a viver com um coração limpo, livre do pecado e aberto à graça.
+
+Que nosso desejo maior seja agradar a Deus em tudo.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    purificacao.id,
+    2,
+    "SEGUNDO DIA – MARIA, OBEDIENTE À LEI DO SENHOR",
+    `Ó Mãe fiel, mesmo não necessitando de purificação, submetestes-vos à Lei por amor e obediência a Deus.
+
+Ensinai-nos a obedecer com humildade aos mandamentos do Senhor e aos ensinamentos da Igreja. Que saibamos acolher a vontade de Deus mesmo quando não a compreendemos plenamente.
+
+Ajudai-nos a viver na fidelidade e na confiança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    purificacao.id,
+    3,
+    "TERCEIRO DIA – MARIA, HUMILDE SERVA DE DEUS",
+    `Ó Virgem Santíssima, vossa humildade vos levou a cumprir silenciosamente a vontade divina, sem buscar honras ou privilégios.
+
+Livrai-nos do orgulho e da vaidade. Ensinai-nos a viver com simplicidade, reconhecendo nossa dependência de Deus.
+
+Que nossa vida seja marcada pela humildade e pelo serviço.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    purificacao.id,
+    4,
+    "QUARTO DIA – MARIA, OFERTA AGRADÁVEL AO SENHOR",
+    `Ó Mãe obediente, ao apresentar Jesus no Templo, oferecestes ao Pai o maior dom da humanidade.
+
+Ajudai-nos a oferecer a Deus nossa vida, nossas alegrias e nossos sofrimentos. Que tudo o que somos e temos seja colocado a serviço do Senhor.
+
+Ensinai-nos a viver como oferta viva e agradável a Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    purificacao.id,
+    5,
+    "QUINTO DIA – MARIA, MÃE QUE ACOLHE A DOR",
+    `Ó Maria Santíssima, ao ouvir a profecia de Simeão, aceitastes com fé a dor que atravessaria vosso coração.
+
+Ajudai-nos a acolher o sofrimento com confiança em Deus. Consolai os que sofrem no corpo e na alma.
+
+Que saibamos unir nossas dores às de Cristo, oferecendo-as para a salvação do mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    purificacao.id,
+    6,
+    "SEXTO DIA – MARIA, CAMINHO DE PURIFICAÇÃO INTERIOR",
+    `Ó Mãe puríssima, conduzi-nos no caminho da conversão e da purificação do coração.
+
+Ajudai-nos a reconhecer nossos pecados e a buscar com sinceridade o perdão de Deus. Que aprendamos a viver na graça, evitando tudo o que nos afasta do Senhor.
+
+Renovai nosso coração pelo poder do Espírito Santo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    purificacao.id,
+    7,
+    "SÉTIMO DIA – MARIA, LUZ NA VIDA DOS FIÉIS",
+    `Ó Virgem fiel, vossa vida ilumina o caminho dos cristãos. Em vós aprendemos a viver com fé, pureza e obediência.
+
+Iluminai nossas escolhas e decisões. Ajudai-nos a caminhar segundo a luz do Evangelho.
+
+Que sejamos sinais da luz de Cristo no mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    purificacao.id,
+    8,
+    "OITAVO DIA – MARIA, PROTETORA DAS ALMAS",
+    `Ó Mãe Santíssima, guardai-nos sob vossa proteção. Defendei-nos das tentações e dos perigos que ameaçam nossa alma.
+
+Intercedei para que vivamos em estado de graça e perseveremos no caminho do bem até o fim.
+
+Que confiemos sempre em vosso cuidado materno.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    purificacao.id,
+    9,
+    "NONO DIA – MARIA, NOSSA MÃE E INTERCESSORA",
+    `Ó Maria Santíssima, acolhei esta novena que rezamos com fé e amor. Apresentai nossos pedidos a Deus e alcançai-nos as graças necessárias para nossa purificação interior.
+
+Conduzi-nos a Jesus, fonte de toda pureza e salvação. Protegei-nos hoje e sempre, e ajudai-nos a viver como filhos fiéis de Deus.
+
+Obrigado, Mãe puríssima, por vosso exemplo e intercessão.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+// NOVENA A SÃO BRÁS
+const bras = upsertNovena({
+    slug: makeSlug("NOVENA A SÃO BRÁS"),
+    titulo: "NOVENA A SÃO BRÁS",
+    periodo_inicio: "25/01",
+    periodo_fim: "02/02",
+    subtitulo: "Pela intercessão de São Brás, sejamos livres de todo mal",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó glorioso São Brás, bispo fiel e mártir de Cristo, que dedicastes vossa vida ao cuidado das almas e ao alívio dos sofrimentos do povo, nós recorremos à vossa poderosa intercessão. Vós que, pela graça de Deus, fostes instrumento de cura e proteção, especialmente contra os males da garganta, olhai por nós com bondade.
+
+Intercedei por nós junto ao Senhor, para que, ao rezarmos esta novena, sejamos fortalecidos na fé, na esperança e no amor. Alcançai-nos as graças de que necessitamos para nossa vida espiritual e corporal, se assim for da vontade de Deus, e ensinai-nos a confiar sempre em Sua misericórdia.
+Amém.`,
+    oracao_final: `Ó glorioso São Brás,
+bispo fiel e mártir de Cristo,
+protegei-nos contra os males da garganta
+e alcançai-nos saúde do corpo e da alma.
+Fortalecei-nos na fé e conduzi-nos à vida eterna.
+Amém.`
+  });
+
+  upsertDia(
+    bras.id,
+    1,
+    "PRIMEIRO DIA – SÃO BRÁS, SERVO FIEL DE DEUS",
+    `Ó São Brás, desde o início de vossa missão escolhestes servir a Deus com fidelidade e zelo pastoral. Como bispo, cuidastes do povo confiado a vós com amor e dedicação.
+
+Ajudai-nos a viver nossa fé com fidelidade e responsabilidade. Que saibamos cumprir nossa missão cristã com amor, mesmo nas dificuldades.
+
+Ensinai-nos a colocar Deus acima de todas as coisas.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bras.id,
+    2,
+    "SEGUNDO DIA – SÃO BRÁS, EXEMPLO DE CARIDADE",
+    `Ó glorioso São Brás, vosso coração era movido pela caridade cristã. Vós cuidáveis dos doentes e aflitos, levando-lhes consolo e esperança.
+
+Ensinai-nos a amar o próximo com gestos concretos de caridade. Que sejamos atentos às necessidades dos que sofrem no corpo e na alma.
+
+Ajudai-nos a viver o amor de Cristo no dia a dia.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bras.id,
+    3,
+    "TERCEIRO DIA – SÃO BRÁS, INSTRUMENTO DE CURA",
+    `Ó São Brás, por vossa intercessão Deus concedeu curas e sinais de Sua misericórdia. Por isso, sois invocado como protetor contra os males da garganta.
+
+Intercedei por todos os que sofrem enfermidades, especialmente doenças da garganta, do corpo e da alma. Alcançai-nos saúde, conforto e paz.
+
+Que saibamos confiar sempre no poder curador de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bras.id,
+    4,
+    "QUARTO DIA – SÃO BRÁS, DEFENSOR DA FÉ",
+    `Ó fiel mártir, não temestes as ameaças nem as perseguições. Permanecestes firme na fé, preferindo obedecer a Deus antes que aos homens.
+
+Ajudai-nos a defender nossa fé com coragem e coerência. Que não tenhamos medo de testemunhar o Evangelho com palavras e atitudes.
+
+Fortalecei-nos para permanecermos fiéis até o fim.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bras.id,
+    5,
+    "QUINTO DIA – SÃO BRÁS, MODELO DE CONFIANÇA EM DEUS",
+    `Ó São Brás, mesmo diante do sofrimento e da morte, confiastes plenamente em Deus. Vossa esperança estava firmada na vida eterna.
+
+Ensinai-nos a confiar no Senhor em todos os momentos, especialmente nas provações. Que jamais percamos a esperança, mesmo nas dificuldades.
+
+Ajudai-nos a abandonar-nos nas mãos de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bras.id,
+    6,
+    "SEXTO DIA – SÃO BRÁS, PROTETOR DOS AFLITOS",
+    `Ó santo bondoso, sede refúgio para os que sofrem, os doentes, os angustiados e os que passam por momentos difíceis.
+
+Intercedei para que encontremos alívio em nossas dores e força para enfrentar os desafios da vida. Que sejamos consolados pela graça de Deus.
+
+Ajudai-nos também a consolar aqueles que sofrem.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bras.id,
+    7,
+    "SÉTIMO DIA – SÃO BRÁS, PASTOR ZELOSO",
+    `Ó São Brás, como pastor, conduzistes o rebanho com amor e fidelidade, dando a própria vida por Cristo.
+
+Intercedei pela Igreja, pelos bispos, sacerdotes e por todos os que exercem o ministério pastoral. Que sejam fortalecidos na fé e no amor.
+
+Ajudai-nos a amar e respeitar nossos pastores.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bras.id,
+    8,
+    "OITAVO DIA – SÃO BRÁS, EXEMPLO DE PERSEVERANÇA",
+    `Ó glorioso mártir, até o fim permanecestes firme na fé, sem renunciar a Cristo.
+
+Ajudai-nos a perseverar no caminho do bem, mesmo quando somos tentados a desanimar. Que nossa fé seja constante e nossa esperança inabalável.
+
+Conduzi-nos sempre no caminho da salvação.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bras.id,
+    9,
+    "NONO DIA – SÃO BRÁS, NOSSO INTERCESSOR JUNTO A DEUS",
+    `Ó São Brás, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos e necessidades.
+
+Intercedei por nossa saúde, por nossa vida espiritual e por nossas famílias. Protegei-nos de todo mal e conduzi-nos à vida eterna.
+
+Obrigado por vossa intercessão e proteção constante.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  const lourdes = upsertNovena({
+    slug: makeSlug("NOVENA D"),
+    titulo: "NOVENA D",
+    periodo_inicio: "02/02",
+    periodo_fim: "10/02",
+    subtitulo: "Com Maria de Lourdes, buscamos cura e paz.",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Maria Santíssima, Nossa Senhora de Lourdes, que aparecestes a Santa Bernadette como sinal do amor e da misericórdia de Deus, nós recorremos à vossa intercessão com fé e confiança. Vós vos revelastes como a Imaculada Conceição e convidastes à oração, à penitência e à conversão do coração.
+
+Olhai por nós, Mãe compassiva. Concedei-nos a graça de rezar esta novena com fé sincera, espírito humilde e confiança filial, para que, por vossa intercessão materna, alcancemos as graças necessárias para nossa vida espiritual e corporal, conforme a vontade de Deus.
+Amém.`,
+    oracao_final: `Ó Nossa Senhora de Lourdes,
+Mãe da misericórdia e da esperança,
+intercedei por nós junto a vosso Filho Jesus.
+Concedei-nos saúde do corpo e da alma,
+fortaleza na fé e perseverança no amor.
+Amém.`
+  });
+
+  upsertDia(
+    lourdes.id,
+    1,
+    "PRIMEIRO DIA – NOSSA SENHORA DE LOURDES, MÃE DA MISERICÓRDIA",
+    `Ó Nossa Senhora de Lourdes, em vossas aparições manifestastes o rosto misericordioso de Deus, acolhendo os pequenos, os pobres e os sofredores.
+
+Ajudai-nos a confiar na misericórdia divina, mesmo quando nos sentimos fracos e indignos. Ensinai-nos a recorrer a Deus com humildade e esperança.
+
+Que jamais duvidemos do amor de Deus por nós.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    lourdes.id,
+    2,
+    "SEGUNDO DIA – NOSSA SENHORA DE LOURDES, CHAMADO À CONVERSÃO",
+    `Ó Mãe Santíssima, em Lourdes convidastes todos à penitência e à conversão do coração.
+
+Ajudai-nos a reconhecer nossos pecados e a buscar sinceramente o perdão de Deus. Que nossa vida seja transformada pela graça e renovada no amor.
+
+Conduzi-nos no caminho da conversão verdadeira.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    lourdes.id,
+    3,
+    "TERCEIRO DIA – NOSSA SENHORA DE LOURDES, EXEMPLO DE HUMILDADE",
+    `Ó Virgem Maria, escolhestes manifestar-vos a uma jovem simples e humilde, revelando que Deus se agrada dos pequenos.
+
+Livrai-nos do orgulho e da autossuficiência. Ensinai-nos a viver com humildade e confiança, reconhecendo nossa dependência de Deus.
+
+Que nosso coração seja simples e aberto à graça.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    lourdes.id,
+    4,
+    "QUARTO DIA – NOSSA SENHORA DE LOURDES, MÃE DOS SOFREDORES",
+    `Ó Mãe compassiva, Lourdes tornou-se lugar de consolo para os doentes, aflitos e sofredores.
+
+Olhai com ternura para todos os que sofrem no corpo e na alma. Intercedei pelos enfermos, pelos desanimados e pelos que carregam cruzes pesadas.
+
+Concedei-lhes conforto, força e paz.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    lourdes.id,
+    5,
+    "QUINTO DIA – NOSSA SENHORA DE LOURDES, FONTE DE CURA E ESPERANÇA",
+    `Ó Nossa Senhora de Lourdes, Deus quis fazer brotar uma fonte de água como sinal de cura e esperança.
+
+Ajudai-nos a confiar que Deus pode curar nossas feridas, visíveis e invisíveis. Renovai nossa esperança quando tudo parece impossível.
+
+Que jamais percamos a confiança no poder de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    lourdes.id,
+    6,
+    "SEXTO DIA – NOSSA SENHORA DE LOURDES, MÃE DA ORAÇÃO",
+    `Ó Virgem Santíssima, em Lourdes convidastes à oração perseverante e confiante.
+
+Ensinai-nos a rezar com o coração, a buscar Deus na oração diária e a confiar em Sua providência.
+
+Que a oração seja nossa força nas dificuldades e nossa alegria nos momentos de paz.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    lourdes.id,
+    7,
+    "SÉTIMO DIA – NOSSA SENHORA DE LOURDES, GUIA NO CAMINHO DA FÉ",
+    `Ó Mãe fiel, conduzi-nos no caminho da fé verdadeira. Ajudai-nos a permanecer firmes no Evangelho, mesmo diante das provações.
+
+Iluminai nossas escolhas e fortalecei nossa confiança em Deus.
+
+Que caminhemos sempre sob vossa proteção materna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    lourdes.id,
+    8,
+    "OITAVO DIA – NOSSA SENHORA DE LOURDES, PROTETORA DOS FRACOS",
+    `Ó Nossa Senhora de Lourdes, sede refúgio para os fracos, os pobres e os que se sentem abandonados.
+
+Ajudai-nos a reconhecer Cristo nos que sofrem e a praticar a caridade com generosidade.
+
+Que sejamos instrumentos do amor de Deus na vida dos outros.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    lourdes.id,
+    9,
+    "NONO DIA – NOSSA SENHORA DE LOURDES, NOSSA MÃE E INTERCESSORA",
+    `Ó Mãe Santíssima, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos e necessidades.
+
+Conduzi-nos a Jesus, fonte de toda salvação. Protegei nossas famílias, fortalecei nossa fé e alcançai-nos as graças necessárias para nossa vida.
+
+Obrigado, Nossa Senhora de Lourdes, por vosso amor e intercessão.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SÃO PATRÍCIO
+
+  const patricio = upsertNovena({
+    slug: makeSlug("NOVENA A SÃO PATRÍCIO"),
+    titulo: "NOVENA A SÃO PATRÍCIO",
+    periodo_inicio: "08/03",
+    periodo_fim: "16/03",
+    subtitulo: "Cristo comigo, Cristo em mim, Cristo atrás e à minha frente",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó glorioso São Patrício, bispo fiel e missionário incansável, escolhido por Deus para levar a luz do Evangelho ao povo da Irlanda, nós recorremos à vossa intercessão com fé e confiança. Vós que, mesmo diante das provações, perseguições e perigos, jamais desististes da missão confiada pelo Senhor, ensinai-nos a confiar plenamente na providência divina.
+
+Intercedei por nós junto a Deus, para que, ao rezarmos esta novena, sejamos fortalecidos na fé, na esperança e no amor. Alcançai-nos as graças de que necessitamos para nossa vida espiritual e para o cumprimento da vontade de Deus, se assim for de Seu agrado.
+Amém.
+`,
+    oracao_final: `Ó glorioso São Patrício,
+missionário fiel e apóstolo da fé,
+intercedei por nós junto a Deus.
+Fortalecei-nos na fé,
+protegei-nos de todo mal
+e conduzi-nos à vida eterna.
+Amém.`
+  });
+
+  upsertDia(
+    patricio.id,
+    1,
+    "PRIMEIRO DIA – SÃO PATRÍCIO, CHAMADO POR DEUS",
+    `Ó São Patrício, desde jovem fostes chamado por Deus de maneira misteriosa, passando por sofrimentos que prepararam vosso coração para a missão.
+
+Ajudai-nos a compreender que Deus age também nas dificuldades da vida. Que saibamos reconhecer Seu chamado mesmo nos momentos de dor e incerteza.
+
+Ensinai-nos a confiar nos planos de Deus para nossa vida.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    patricio.id,
+    2,
+    "SEGUNDO DIA – SÃO PATRÍCIO, HOMEM DE ORAÇÃO",
+    `Ó santo missionário, vossa força vinha da oração constante e da intimidade com Deus.
+
+Ensinai-nos a cultivar uma vida de oração fiel e perseverante. Que aprendamos a buscar em Deus a força para enfrentar os desafios do dia a dia.
+
+Que a oração seja nossa proteção e nosso refúgio.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    patricio.id,
+    3,
+    "TERCEIRO DIA – SÃO PATRÍCIO, MISSIONÁRIO DO EVANGELHO",
+    `Ó São Patrício, obedecendo ao chamado de Deus, retornastes à terra onde havíeis sofrido para anunciar o Evangelho com coragem e amor.
+
+Ajudai-nos a anunciar Cristo com palavras e atitudes. Que não tenhamos medo de testemunhar nossa fé onde quer que estejamos.
+
+Fazei de nós instrumentos da evangelização.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    patricio.id,
+    4,
+    "QUARTO DIA – ÃO PATRÍCIO, DEFENSOR DA SANTÍSSIMA TRINDADE",
+    `Ó São Patrício, com simplicidade ensinastes o mistério da Santíssima Trindade, ajudando o povo a compreender o amor de Deus Pai, Filho e Espírito Santo.
+
+Ajudai-nos a viver em comunhão com a Trindade Santa. Que nossa fé seja firme e esclarecida, sustentada pelo amor divino.
+
+Ensinai-nos a professar nossa fé com clareza e fidelidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    patricio.id,
+    5,
+    "QUINTO DIA – SÃO PATRÍCIO, EXEMPLO DE HUMILDADE",
+    `Ó glorioso São Patrício, apesar dos frutos de vossa missão, permanecestes humilde, reconhecendo que tudo vinha de Deus.
+
+Livrai-nos do orgulho e da vaidade. Ensinai-nos a reconhecer que toda obra boa é fruto da graça divina.
+
+Que aprendamos a servir a Deus com coração simples e humilde.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    patricio.id,
+    6,
+    "SEXTO DIA – SÃO PATRÍCIO, FORTE NAS PROVAÇÕES",
+    `Ó fiel servo de Deus, enfrentastes perseguições, perigos e incompreensões, mas jamais abandonastes a fé.
+
+Ajudai-nos a permanecer firmes nas provações da vida. Que não desanimemos diante das dificuldades, mas confiemos sempre no Senhor.
+
+Fortalecei nossa fé e nossa perseverança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    patricio.id,
+    7,
+    "SÉTIMO DIA – SÃO PATRÍCIO, PROTETOR CONTRA O MAL",
+    `Ó São Patrício, confiastes plenamente no poder de Deus contra todo mal e toda adversidade.
+
+Protegei-nos contra as armadilhas do inimigo e contra tudo aquilo que nos afasta de Deus. Que vivamos sob a proteção do Senhor.
+
+Ajudai-nos a confiar na força da oração e da fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    patricio.id,
+    8,
+    "OITAVO DIA – SÃO PATRÍCIO, PASTOR ZELOSO",
+    `Ó santo bispo, cuidastes do povo que Deus vos confiou com amor, dedicação e espírito pastoral.
+
+Intercedei pelos bispos, sacerdotes e missionários. Que sejam fiéis à missão de anunciar o Evangelho.
+
+Ajudai-nos a amar a Igreja e a colaborar com sua missão.
+
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    patricio.id,
+    9,
+    "NONO DIA – SÃO PATRÍCIO, TESTEMUNHA DA ESPERANÇA",
+    `Ó glorioso São Patrício, vossa vida foi testemunho de esperança e confiança na promessa da vida eterna.
+
+Ajudai-nos a viver com os olhos voltados para o Céu. Que jamais percamos a esperança, mesmo nas tribulações.
+
+Conduzi-nos no caminho da fé até a glória eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SÃO JOSÉ
+
+  const jose = upsertNovena({
+    slug: makeSlug("NOVENA D"),
+    titulo: "NOVENA D",
+    periodo_inicio: "10/03",
+    periodo_fim: "18/03",
+    subtitulo: "Trabalhador fiel, sustentou a Sagrada Família",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó glorioso São José, esposo da Virgem Maria e pai adotivo de Jesus, a vós recorremos com confiança filial. Deus vos escolheu para guardar Seus maiores tesouros na terra e confiou-vos a missão de proteger a Sagrada Família com amor, fidelidade e obediência.
+
+Olhai por nós, poderoso intercessor. Concedei-nos a graça de rezar esta novena com fé sincera e coração humilde, para que, por vossa intercessão, alcancemos as graças necessárias para nossa vida espiritual, familiar e profissional, se assim for da vontade de Deus. Ensinai-nos a confiar sempre na providência divina e a viver segundo os desígnios do Senhor.
+Amém.`,
+    oracao_final: `Ó glorioso São José,
+protetor da Igreja e das famílias,
+guardião fiel de Jesus e Maria,
+rogai por nós.
+Ajudai-nos a viver na fé, na esperança e no amor
+e conduzi-nos à vida eterna.
+Amém.
+`
+  });
+
+  upsertDia(
+    jose.id,
+    1,
+    "PRIMEIRO DIA – SÃO JOSÉ, HOMEM JUSTO",
+    `Ó São José, a Sagrada Escritura vos chama de homem justo. Vossa vida foi marcada pela fidelidade a Deus e pela retidão de coração.
+
+Ajudai-nos a viver com justiça, honestidade e fidelidade aos mandamentos do Senhor. Que nossas escolhas sejam sempre guiadas pela vontade de Deus.
+
+Ensinai-nos a buscar a santidade nas atitudes simples do dia a dia.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jose.id,
+    2,
+    "SEGUNDO DIA – SÃO JOSÉ, ESPOSO FIEL DE MARIA",
+    `Ó São José, escolhestes amar e respeitar Maria com um amor puro, fiel e generoso, assumindo com responsabilidade a missão que Deus vos confiou.
+
+Ajudai-nos a viver relações marcadas pelo respeito, pela fidelidade e pelo amor verdadeiro. Protegei os esposos e as famílias.
+
+Que nossos lares sejam lugares de paz, fé e amor.
+
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jose.id,
+    3,
+    "TERCEIRO DIA – SÃO JOSÉ, PAI SOLICITO DE JESUS",
+    `Ó São José, cuidastes de Jesus com ternura, dedicação e responsabilidade, ensinando-Lhe o valor do trabalho e da obediência.
+
+Ajudai-nos a cuidar com amor daqueles que Deus nos confiou. Protegei as crianças, os jovens e todos os que precisam de cuidado e orientação.
+
+Ensinai-nos a viver a paternidade e a maternidade com responsabilidade e amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jose.id,
+    4,
+    "QUARTO DIA – SÃO JOSÉ, EXEMPLO DE OBEDIÊNCIA",
+    `Ó fiel São José, obedecestes prontamente à vontade de Deus, mesmo quando ela exigia sacrifícios e renúncias.
+
+Ajudai-nos a escutar a voz de Deus e a obedecer com confiança, mesmo quando o caminho é difícil ou incerto.
+
+Que aprendamos convosco a dizer “sim” aos planos do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jose.id,
+    5,
+    "QUINTO DIA – SÃO JOSÉ, TRABALHADOR FIEL",
+    `Ó São José, com o trabalho de vossas mãos sustentastes a Sagrada Família, vivendo com dignidade e simplicidade.
+
+Abençoai nosso trabalho e nossos esforços diários. Ajudai-nos a trabalhar com honestidade, responsabilidade e espírito de serviço.
+
+Que nunca nos falte o necessário para viver com dignidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jose.id,
+    6,
+    "SEXTO DIA – SÃO JOSÉ, MODELO DE HUMILDADE E SILÊNCIO",
+    `Ó São José, vivestes no silêncio, sem buscar reconhecimento, mas cumprindo fielmente a missão confiada por Deus.
+
+Ensinai-nos o valor do silêncio, da humildade e da confiança em Deus. Livrai-nos do orgulho e da vaidade.
+
+Que saibamos servir a Deus com coração simples e sincero.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jose.id,
+    7,
+    "SÉTIMO DIA – SÃO JOSÉ, PROTETOR DAS FAMÍLIAS",
+    `Ó São José, guardião da Sagrada Família, protegei nossos lares e nossas famílias.
+
+Afastai de nós todo mal, toda discórdia e toda falta de fé. Que nossos lares sejam lugares de amor, perdão e oração.
+
+Intercedei para que nossas famílias permaneçam unidas e firmes na fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jose.id,
+    8,
+    "OITAVO DIA – SÃO JOSÉ, INTERCESSOR PODEROSO",
+    `Ó glorioso São José, a Igreja vos reconhece como poderoso intercessor junto a Deus.
+
+Apresentai ao Senhor nossas necessidades e intenções. Alcançai-nos as graças que mais necessitamos para nossa vida espiritual e material.
+
+Aumentai nossa confiança na oração e na providência divina.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jose.id,
+    9,
+    "NONO DIA – SÃO JOSÉ, PADROEIRO DA BOA MORTE",
+    `Ó São José, que tivestes a graça de morrer nos braços de Jesus e Maria, sede nosso intercessor na hora da morte.
+
+Ajudai-nos a viver bem para morrer bem, na graça de Deus. Protegei-nos no último momento de nossa vida e conduzi-nos à glória eterna.
+
+Que, sob vossa proteção, alcancemos a salvação prometida por Cristo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA DA ANUNCIAÇÃO DO SENHOR
+
+  const anunciacao = upsertNovena({
+    slug: makeSlug("NOVENA DA ANUNCIAÇÃO DO SENHOR"),
+    titulo: "NOVENA DA ANUNCIAÇÃO DO SENHOR",
+    periodo_inicio: "16/03",
+    periodo_fim: "24/03",
+    subtitulo: "Verbum caro factum est",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Senhor Deus, Pai de infinito amor, no mistério da Anunciação revelastes ao mundo o vosso plano de salvação. Pela ação do Espírito Santo, o Vosso Filho eterno fez-Se carne no seio da Virgem Maria, iniciando a obra da nossa redenção.
+
+Nós Vos louvamos e bendizemos por tão grande mistério de amor. Concedei-nos a graça de rezar esta novena com fé sincera, coração aberto e espírito obediente, para que, a exemplo de Maria, saibamos acolher a Vossa vontade em nossa vida. Que este tempo de oração produza frutos de conversão, confiança e amor, e nos conceda as graças necessárias para nossa vida e salvação, conforme o Vosso divino querer.
+Amém.`,
+    oracao_final: `Ó Deus de amor e misericórdia,
+que pelo “sim” da Virgem Maria
+fizestes Vosso Filho habitar entre nós,
+concedei-nos um coração obediente e fiel.
+Que acolhamos Vossa vontade com amor
+e vivamos sempre na graça do Senhor.
+Por Cristo, nosso Senhor.
+Amém.
+`
+  });
+
+  upsertDia(
+    anunciacao.id,
+    1,
+    "PRIMEIRO DIA – O ANÚNCIO DO PLANO DE DEUS",
+    `No silêncio de Nazaré, Deus revelou Seu plano eterno de salvação. A Anunciação não foi apenas um anúncio, mas o início da realização da promessa feita à humanidade.
+
+Senhor, ajudai-nos a reconhecer que também falais conosco no silêncio do coração. Muitas vezes, Vossa voz se manifesta de forma simples, discreta, mas cheia de amor.
+
+Que saibamos escutar com atenção e acolher com fé aquilo que Deus nos pede.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anunciacao.id,
+    2,
+    "SEGUNDO DIA – MARIA, CHEIA DE GRAÇA",
+    `O anjo saudou Maria como “cheia de graça”. Nela, a graça de Deus encontrou plena acolhida e perfeita correspondência.
+
+Virgem Santíssima, ajudai-nos a viver na graça de Deus, afastando-nos do pecado e buscando uma vida santa. Ensinai-nos a valorizar a graça recebida no Batismo e a renová-la diariamente pela oração e pelos sacramentos.
+
+Que nosso coração seja morada digna do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anunciacao.id,
+    3,
+    "TERCEIRO DIA – O SIM LIVRE E CONSCIENTE DE MARIA",
+    `Diante do anúncio do anjo, Maria não foi forçada nem constrangida. Seu “sim” foi livre, consciente e cheio de amor.
+
+Senhor, ensinai-nos a dizer “sim” à Vossa vontade, mesmo quando ela exige renúncia e confiança. Que não sejamos guiados pelo medo, mas pela fé.
+
+Ajudai-nos a responder ao Vosso chamado com generosidade e entrega.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anunciacao.id,
+    4,
+    "QUARTO DIA – A HUMILDADE DA SERVA DO SENHOR",
+    `Maria se reconhece como “serva do Senhor”. Sua grandeza está na humildade e na total dependência de Deus.
+
+Livrai-nos do orgulho e da autossuficiência. Ensinai-nos a viver com humildade, reconhecendo que tudo o que somos e temos vem de Deus.
+
+Que nossa vida seja um serviço fiel à vontade do Pai.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anunciacao.id,
+    5,
+    "QUINTO DIA – O MISTÉRIO DA ENCARNAÇÃO",
+    `No momento da Anunciação, o Verbo eterno se fez carne. Deus entrou na história humana para nos salvar.
+
+Senhor Jesus, nós Vos adoramos e agradecemos por Vosso amor infinito. Ajudai-nos a acolher-Vos em nossa vida, permitindo que Vossa presença transforme nosso coração.
+
+Que jamais sejamos indiferentes ao mistério da Encarnação.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anunciacao.id,
+    6,
+    "SEXTO DIA – A AÇÃO DO ESPÍRITO SANTO",
+    `Foi pela ação do Espírito Santo que o Filho de Deus se encarnou no seio de Maria. O Espírito é o grande protagonista da obra da salvação.
+
+Espírito Santo, conduzi-nos e iluminai nossas escolhas. Ajudai-nos a confiar em Vossa ação em nossa vida, mesmo quando não compreendemos plenamente os caminhos de Deus.
+
+Renovai nosso coração e fortalecei nossa fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anunciacao.id,
+    7,
+    "SÉTIMO DIA – MARIA, MODELO DE FÉ E CONFIANÇA",
+    `Maria acreditou nas promessas de Deus e entregou-Se totalmente à Sua vontade. Sua fé foi maior do que o medo e a incerteza.
+
+Ajudai-nos a confiar em Deus nos momentos difíceis. Que nossa fé seja firme, mesmo quando não vemos respostas imediatas.
+
+Ensinai-nos a caminhar na confiança e na esperança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anunciacao.id,
+    8,
+    "OITAVO DIA – A ANUNCIAÇÃO E NOSSA VOCAÇÃO",
+    `O “sim” de Maria abriu caminho para a salvação do mundo. Cada vocação, vivida com fidelidade, também contribui para o plano de Deus.
+
+Senhor, ajudai-nos a descobrir e viver nossa vocação com alegria e responsabilidade. Que sejamos fiéis no estado de vida ao qual fomos chamados.
+
+Usai nossa vida como instrumento do Vosso amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anunciacao.id,
+    9,
+    "NONO DIA – A ANUNCIAÇÃO E A ESPERANÇA DA SALVAÇÃO",
+    `A Anunciação marca o início da nossa redenção. Em Maria, a esperança se tornou realidade.
+
+Senhor Deus, ao final desta novena, renovai nossa esperança. Que vivamos confiantes na Vossa promessa de salvação e perseverantes na fé até o fim.
+
+Que, a exemplo de Maria, saibamos acolher Cristo todos os dias em nossa vida.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  const gemma = upsertNovena({
+    slug: makeSlug("NOVENA D"),
+    titulo: "NOVENA D",
+    periodo_inicio: "02/04",
+    periodo_fim: "10/04",
+    subtitulo: "'Quem verdadeiramente ama, voluntariamente sofre'",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita misericórdia, que adornastes Santa Gemma Galgani com profundo amor pela Paixão de Vosso Filho e a conduzistes pelos caminhos da humildade, do sofrimento e da união íntima convosco, nós Vos louvamos e bendizemos.
+
+Por intercessão de Santa Gemma, concedei-nos a graça de rezar esta novena com fé sincera, coração humilde e espírito de abandono. Que, unidos à cruz de Cristo, saibamos oferecer nossas dores, lutas e alegrias para a salvação do mundo e para nossa santificação. Concedei-nos também as graças que necessitamos para nossa vida, se assim for da Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó Deus, que concedestes a Santa Gemma Galgani
+uma profunda união com a Paixão de Vosso Filho,
+concedei-nos, por sua intercessão,
+amor à cruz, fidelidade na oração
+e perseverança na fé.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    gemma.id,
+    1,
+    "PRIMEIRO DIA – SANTA GEMMA, ALMA APAIXONADA POR JESUS",
+    `Santa Gemma, desde jovem fostes profundamente atraída pelo amor de Jesus. Vosso coração desejava pertencer inteiramente a Ele, sem reservas.
+
+Ajudai-nos a amar Jesus acima de todas as coisas. Que nossa vida não seja dividida, mas totalmente entregue ao Senhor.
+
+Ensinai-nos a buscar uma relação íntima e sincera com Cristo.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gemma.id,
+    2,
+    "SEGUNDO DIA – SANTA GEMMA, AMANTE DA CRUZ",
+    `Ó Santa Gemma, vossa vida foi marcada pelo sofrimento aceito com amor e oferecido a Deus. Vistes na cruz não um castigo, mas um caminho de união com Cristo.
+
+Ajudai-nos a compreender o valor redentor do sofrimento. Que saibamos unir nossas dores às de Jesus, oferecendo-as com fé e confiança.
+
+Fortalecei-nos nas provações da vida.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gemma.id,
+    3,
+    "TERCEIRO DIA – SANTA GEMMA, EXEMPLO DE HUMILDADE",
+    `Santa Gemma, apesar das graças extraordinárias que recebestes, permanecestes profundamente humilde, escondida aos olhos do mundo.
+
+Livrai-nos do orgulho e da vaidade. Ensinai-nos a viver com simplicidade, reconhecendo que tudo vem de Deus.
+
+Que aprendamos a servir sem buscar reconhecimento.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gemma.id,
+    4,
+    "QUARTO DIA – SANTA GEMMA, VIDA DE ORAÇÃO",
+    `Ó Santa Gemma, encontráveis na oração força, consolo e intimidade com Deus. Vosso diálogo constante com o Senhor sustentava vossa vida espiritual.
+
+Ajudai-nos a cultivar uma vida de oração fiel e perseverante. Que aprendamos a rezar com o coração, confiando plenamente em Deus.
+
+Que a oração seja nossa fonte de força diária.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gemma.id,
+    5,
+    "QUINTO DIA – SANTA GEMMA, PUREZA DE CORAÇÃO",
+    `Santa Gemma, vosso coração era puro e totalmente voltado para Deus. Vivestes com grande amor à santidade e à obediência.
+
+Ajudai-nos a buscar a pureza de coração e de intenções. Que fujamos do pecado e vivamos na graça de Deus.
+
+Conduzi-nos no caminho da santidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gemma.id,
+    6,
+    "SEXTO DIA – SANTA GEMMA, UNIÃO COM A PAIXÃO DE CRISTO",
+    `Ó Santa Gemma, fostes profundamente unida à Paixão de Jesus, participando de Seus sofrimentos com amor e abandono.
+
+Ajudai-nos a contemplar a Paixão de Cristo com fé e gratidão. Que aprendamos a oferecer nossas dores pela conversão dos pecadores.
+
+Que nossa vida seja marcada pelo amor ao Cristo crucificado.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gemma.id,
+    7,
+    "SÉTIMO DIA – SANTA GEMMA, OBEDIÊNCIA E ABANDONO",
+    `Santa Gemma, mesmo diante das incompreensões e das provações, permanecestes obediente e abandonada à vontade de Deus.
+
+Ensinai-nos a confiar nos desígnios do Senhor, mesmo quando não os compreendemos. Que saibamos abandonar-nos com confiança nas mãos de Deus.
+
+Fortalecei nossa fé e nossa perseverança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gemma.id,
+    8,
+    "OITAVO DIA – SANTA GEMMA, AMOR À EUCARISTIA",
+    `Ó Santa Gemma, encontráveis na Eucaristia força, consolo e profunda união com Jesus.
+
+Ajudai-nos a amar o Santíssimo Sacramento. Que a Eucaristia seja o centro de nossa vida cristã.
+
+Ensinai-nos a viver em comunhão com Cristo presente no altar.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gemma.id,
+    9,
+    "NONO DIA – SANTA GEMMA, INTERCESSORA DOS AFLITOS",
+    `Santa Gemma, que tanto sofrestes nesta vida, sede intercessora para os que passam por dores físicas, espirituais e emocionais.
+
+Acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos e necessidades.
+
+Ajudai-nos a viver unidos a Cristo até o fim e a alcançar a glória eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SÃO JORGE
+
+const jorge = upsertNovena({
+    slug: makeSlug("NOVENA A SÃO JORGE"),
+    titulo: "NOVENA A SÃO JORGE",
+    periodo_inicio: "14/04",
+    periodo_fim: "22/04",
+    subtitulo: "O martírio selou sua fidelidade a Jesus",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó glorioso São Jorge, valente soldado de Cristo e mártir fiel do Evangelho, nós recorremos à vossa poderosa intercessão. Vós que enfrentastes as forças do mal com coragem, fé e total confiança em Deus, ensinai-nos a combater o bom combate da fé.
+
+Olhai por nós, protetor fiel. Concedei-nos a graça de rezar esta novena com fé sincera, coração confiante e espírito perseverante, para que, fortalecidos pela graça de Deus e por vossa intercessão, sejamos vencedores nas batalhas espirituais da vida e alcancemos as graças necessárias para nossa vida e salvação, conforme a vontade do Senhor.
+Amém.`,
+    oracao_final: `Ó glorioso São Jorge,
+valente defensor da fé cristã,
+protegei-nos nas batalhas da vida
+e ajudai-nos a vencer todo mal.
+Fortalecei nossa fé,
+guardai-nos sob a proteção de Deus
+e conduzi-nos à vida eterna.
+Amém.`
+  });
+
+  upsertDia(
+    jorge.id,
+    1,
+    "PRIMEIRO DIA – SÃO JORGE, SOLDADO FIEL DE CRISTO",
+    `Ó São Jorge, vossa vida foi marcada pela fidelidade absoluta a Jesus Cristo. Mesmo sendo soldado do exército romano, escolhestes servir antes de tudo ao Rei dos Céus.
+
+Ajudai-nos a colocar Deus acima de qualquer interesse humano. Que nossa vida seja testemunho de fidelidade ao Evangelho, mesmo quando isso exige sacrifício.
+
+Ensinai-nos a lutar com coragem pelas coisas de Deus.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jorge.id,
+    2,
+    "SEGUNDO DIA – SÃO JORGE, EXEMPLO DE CORAGEM NA FÉ",
+    `Ó glorioso mártir, não temestes as ameaças nem as perseguições. Vossa coragem nasceu da fé profunda em Cristo.
+
+Ajudai-nos a vencer o medo que paralisa nossa fé. Que saibamos enfrentar as dificuldades da vida confiando no poder de Deus.
+
+Fortalecei-nos para permanecermos firmes na fé em todas as circunstâncias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jorge.id,
+    3,
+    "TERCEIRO DIA – SÃO JORGE, DEFENSOR DA VERDADE",
+    `Ó São Jorge, preferistes perder honras e a própria vida a negar a verdade do Evangelho.
+
+Ajudai-nos a viver na verdade, rejeitando toda forma de injustiça, mentira e pecado. Que nossas palavras e atitudes reflitam os valores cristãos.
+
+Dai-nos firmeza para defender a fé com amor e coerência.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jorge.id,
+    4,
+    "QUARTO DIA – SÃO JORGE, VENCEDOR DO MAL",
+    `Ó valente guerreiro de Cristo, sois representado vencendo o dragão, símbolo do mal e do pecado.
+
+Ajudai-nos a vencer as tentações, os vícios e tudo aquilo que nos afasta de Deus. Protegei-nos contra as forças do mal que ameaçam nossa vida espiritual.
+
+Que, revestidos da armadura da fé, sejamos sempre vencedores em Cristo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jorge.id,
+    5,
+    "QUINTO DIA – SÃO JORGE, MODELO DE FORTALEZA NAS PROVAÇÕES",
+    `Ó São Jorge, mesmo diante de grandes sofrimentos, permanecestes firme e confiante em Deus.
+
+Ajudai-nos a suportar com paciência e esperança as provações da vida. Que jamais desanimemos diante das dificuldades.
+
+Ensinai-nos a confiar no Senhor em meio às lutas diárias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jorge.id,
+    6,
+    "SEXTO DIA – SÃO JORGE, PROTETOR DOS AFLITOS",
+    `Ó glorioso São Jorge, sede amparo para os que sofrem, os aflitos, os perseguidos e os que se sentem oprimidos.
+
+Intercedei por aqueles que enfrentam batalhas espirituais, familiares, profissionais ou de saúde. Alcançai-lhes força, paz e libertação.
+
+Que encontremos em Deus nossa segurança e proteção.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jorge.id,
+    7,
+    "SÉTIMO DIA – SÃO JORGE, EXEMPLO DE FIDELIDADE ATÉ O FIM",
+    `Ó fiel mártir, até o último momento permanecestes fiel a Cristo, selando vossa fé com o próprio sangue.
+
+Ajudai-nos a perseverar na fé até o fim de nossa vida. Que não nos afastemos do Senhor diante das dificuldades ou tentações.
+
+Fortalecei nossa esperança na vida eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jorge.id,
+    8,
+    "OITAVO DIA – SÃO JORGE, INTERCESSOR PODEROSO",
+    `Ó São Jorge, a Igreja reconhece em vós um poderoso intercessor nas lutas espirituais e nas dificuldades da vida.
+
+Apresentai a Deus nossos pedidos e necessidades. Intercedei por nossas famílias, nosso trabalho e nossa vida espiritual.
+
+Aumentai nossa confiança na oração e na proteção divina.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    jorge.id,
+    9,
+    "NONO DIA – SÃO JORGE, VITORIOSO EM CRISTO",
+    `Ó glorioso São Jorge, vossa vitória não foi humana, mas espiritual. Em Cristo, vencestes o mal e alcançastes a coroa da glória eterna.
+
+Ajudai-nos a viver confiantes na vitória de Cristo sobre todo mal. Que nossa vida seja marcada pela fé, pela coragem e pela esperança.
+
+Conduzi-nos no caminho da salvação até a glória eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+
+//NOVENA A SANTA GIANNA BERETTA MOLLA  
+
+const gianna = upsertNovena({
+    slug: makeSlug("NOVENA A SANTA GIANNA BERETTA MOLLA  "),
+    titulo: "NOVENA A SANTA GIANNA BERETTA MOLLA  ",
+    periodo_inicio: "19/04",
+    periodo_fim: "27/04",
+    subtitulo: "Médica por profissão, santa por amor",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita bondade, que chamastes Santa Gianna Beretta Molla a viver a santidade no cotidiano, como esposa, mãe e médica, nós Vos louvamos por seu testemunho luminoso de fé, amor e entrega total à vida.
+
+Por sua intercessão, concedei-nos a graça de rezar esta novena com fé sincera, coração generoso e espírito de confiança. Que, a exemplo de Santa Gianna, saibamos amar profundamente a vida, servir com alegria e acolher a vontade de Deus mesmo nos momentos de sacrifício. Concedei-nos também as graças que necessitamos para nossa vida e salvação, se assim for da Vossa santa vontade.
+Amém.
+`,
+    oracao_final: `Ó Deus de amor e misericórdia,
+que nos destes em Santa Gianna Beretta Molla
+um exemplo luminoso de amor à vida,
+concedei-nos, por sua intercessão,
+fidelidade à Vossa vontade,
+coragem no amor e perseverança na fé.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    gianna.id,
+    1,
+    "PRIMEIRO DIA – SANTA GIANNA, CHAMADA À SANTIDADE NO COTIDIANO",
+    `Santa Gianna, vivestes a santidade não em feitos extraordinários aos olhos do mundo, mas na fidelidade diária às pequenas e grandes responsabilidades da vida.
+
+Ajudai-nos a compreender que a santidade é possível em nossa realidade concreta: no trabalho, na família, nas decisões diárias. Que não busquemos a santidade longe da vida real, mas no amor vivido a cada dia.
+
+Ensinai-nos a transformar o cotidiano em caminho de santificação.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gianna.id,
+    2,
+    "SEGUNDO DIA – SANTA GIANNA, MULHER DE FÉ PROFUNDA",
+    `Santa Gianna, vossa vida foi sustentada por uma fé viva, alimentada pela oração, pelos sacramentos e pela confiança em Deus.
+
+Ajudai-nos a fortalecer nossa fé, especialmente nos momentos de dúvida e dificuldade. Que aprendamos a buscar em Deus a força necessária para enfrentar os desafios da vida.
+
+Ensinai-nos a confiar no Senhor em todas as circunstâncias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gianna.id,
+    3,
+    "TERCEIRO DIA – SANTA GIANNA, AMOR À VIDA",
+    `Santa Gianna, reconhecestes a vida humana como dom sagrado de Deus, digno de ser amado, protegido e defendido desde a concepção até a morte natural.
+
+Ajudai-nos a respeitar, amar e defender a vida em todas as suas fases. Que sejamos instrumentos da cultura da vida em um mundo tantas vezes marcado pela indiferença.
+
+Ensinai-nos a olhar cada vida com os olhos de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gianna.id,
+    4,
+    "QUARTO DIA – SANTA GIANNA, ESPOSA AMOROSA E FIEL",
+    `Santa Gianna, vivestes o matrimônio como verdadeira vocação, marcada pelo amor, pela fidelidade e pela entrega generosa.
+
+Intercedei pelos esposos, para que vivam seu matrimônio com amor sincero, diálogo, respeito e fé. Ajudai-nos a construir lares fundamentados no amor cristão.
+
+Que nossas famílias sejam lugares de vida, fé e esperança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gianna.id,
+    5,
+    "QUINTO DIA – SANTA GIANNA, MÃE GENEROSA E CORAJOSA",
+    `Santa Gianna, vivestes a maternidade como dom precioso, oferecendo vossa própria vida para que vossa filha pudesse viver.
+
+Ajudai as mães a viverem sua missão com amor, coragem e confiança em Deus. Protegei as gestantes e as crianças, especialmente as mais vulneráveis.
+
+Que aprendamos a amar com generosidade e espírito de sacrifício.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gianna.id,
+    6,
+    "SEXTO DIA – SANTA GIANNA, MÉDICA A SERVIÇO DA VIDA",
+    `Santa Gianna, exercestes a medicina como verdadeira missão, unindo competência profissional, ética e caridade cristã.
+
+Intercedei pelos profissionais da saúde, para que atuem sempre com respeito à vida, à dignidade humana e à vontade de Deus. Ajudai-nos a servir ao próximo com amor e responsabilidade.
+
+Que nosso trabalho seja sempre expressão de amor ao próximo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gianna.id,
+    7,
+    "SÉTIMO DIA – SANTA GIANNA, TESTEMUNHO DE SACRIFÍCIO E ENTREGA",
+    `Santa Gianna, em vosso momento mais difícil, escolhestes confiar plenamente em Deus, oferecendo vossa vida por amor.
+
+Ajudai-nos a aceitar com fé os sacrifícios que a vida nos apresenta. Que saibamos oferecer nossas dores e renúncias como ato de amor a Deus e aos irmãos.
+
+Ensinai-nos o verdadeiro significado do amor que se doa.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gianna.id,
+    8,
+    "OITAVO DIA – SANTA GIANNA, MODELO PARA AS FAMÍLIAS",
+    `Santa Gianna, vossa vida é exemplo luminoso para as famílias cristãs, chamadas a viver o amor, a fé e a fidelidade no dia a dia.
+
+Intercedei por nossas famílias, para que sejam protegidas de todo mal e fortalecidas na fé. Que nelas reinem o amor, o perdão e a oração.
+
+Ajudai-nos a construir famílias segundo o coração de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    gianna.id,
+    9,
+    "NONO DIA – SANTA GIANNA, INTERCESSORA PODEROSA JUNTO A DEUS",
+    `Santa Gianna Beretta Molla, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos, necessidades e intenções.
+
+Intercedei por nossa vida, por nossas famílias e por todos aqueles que necessitam de esperança, cura e paz. Conduzi-nos no caminho da santidade até a vida eterna.
+
+Obrigado por vosso exemplo e vossa intercessão constante.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SANTA CATARINA DE SIENA 
+
+const catarina = upsertNovena({
+    slug: makeSlug("NOVENA A SANTA CATARINA DE SIENA"),
+    titulo: "NOVENA A SANTA CATARINA DE SIENA",
+    periodo_inicio: "20/04",
+    periodo_fim: "28/04",
+    subtitulo: "'Se fores aquilo que Deus quer, colocareis fogo no mundo'",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus eterno e misericordioso, que inflamastes o coração de Santa Catarina de Siena com ardente amor por Vós, pela verdade e pela Santa Igreja, nós Vos louvamos e bendizemos por tão grande testemunho de fé e coragem.
+
+Por intercessão de Santa Catarina, concedei-nos a graça de rezar esta novena com coração sincero, espírito humilde e desejo verdadeiro de conversão. Que, iluminados por sua vida e ensinamentos, aprendamos a amar-Vos acima de todas as coisas, a servir a Igreja com fidelidade e a viver o Evangelho com coragem e coerência. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó Deus eterno,
+que concedestes a Santa Catarina de Siena
+ardente amor pela verdade e pela Igreja,
+concedei-nos, por sua intercessão,
+fidelidade ao Evangelho,
+coragem para viver a fé
+e perseverança até a vida eterna.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    catarina.id,
+    1,
+    "PRIMEIRO DIA – SANTA CATARINA, AMANTE APAIXONADA DE DEUS",
+    `Santa Catarina, desde jovem vosso coração ardia de amor por Deus. Nada neste mundo era capaz de saciar vossa alma senão a união com o Senhor.
+
+Ajudai-nos a colocar Deus no centro de nossa vida. Que não busquemos falsas seguranças, mas encontremos em Deus nossa verdadeira alegria e paz.
+
+Ensinai-nos a amar o Senhor com todo o coração, alma e entendimento.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    catarina.id,
+    2,
+    "SEGUNDO DIA – SANTA CATARINA, EXEMPLO DE ORAÇÃO PROFUNDA",
+    `Santa Catarina, vossa vida foi sustentada por intensa vida de oração e intimidade com Deus. No silêncio e no recolhimento, encontráveis força e sabedoria.
+
+Ajudai-nos a cultivar uma vida de oração fiel e perseverante. Que aprendamos a escutar a voz de Deus no silêncio do coração.
+
+Ensinai-nos a rezar não apenas com palavras, mas com a vida inteira.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    catarina.id,
+    3,
+    "TERCEIRO DIA – SANTA CATARINA, OBEDIÊNCIA À VONTADE DE DEUS",
+    `Santa Catarina, mesmo desejando a vida retirada, aceitastes com generosidade a missão que Deus vos confiou no mundo.
+
+Ajudai-nos a discernir e acolher a vontade de Deus em nossa vida. Que saibamos dizer “sim” aos Seus desígnios, mesmo quando exigem renúncia e coragem.
+
+Ensinai-nos a confiar plenamente nos planos do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    catarina.id,
+    4,
+    "QUARTO DIA – SANTA CATARINA, AMOR À IGREJA",
+    `Santa Catarina, vosso amor pela Igreja era ardente e sincero. Não temestes corrigir, aconselhar e exortar com caridade, sempre buscando a unidade e a fidelidade ao Evangelho.
+
+Intercedei pela Santa Igreja, pelo Papa, pelos bispos, sacerdotes e por todo o povo de Deus. Que todos vivam na verdade, na santidade e no amor.
+
+Ajudai-nos a amar e servir a Igreja com fidelidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    catarina.id,
+    5,
+    "QUINTO DIA – SANTA CATARINA, DEFENSORA DA VERDADE",
+    `Santa Catarina, com coragem e sabedoria, defendestes a verdade do Evangelho, mesmo diante de incompreensões e resistências.
+
+Ajudai-nos a viver na verdade e a rejeitar toda forma de mentira, injustiça e pecado. Que nossas palavras e atitudes reflitam os valores do Evangelho.
+
+Concedei-nos coragem para testemunhar a fé com amor e firmeza.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    catarina.id,
+    6,
+    "SEXTO DIA – SANTA CATARINA, SERVA DOS POBRES E SOFREDORES",
+    `Santa Catarina, vosso amor a Deus se manifestava no cuidado com os pobres, doentes e abandonados.
+
+Ajudai-nos a reconhecer Cristo nos que sofrem. Que sejamos sensíveis às dores do próximo e pratiquemos a caridade com generosidade.
+
+Ensinai-nos a servir com humildade e compaixão.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    catarina.id,
+    7,
+    "SÉTIMO DIA – SANTA CATARINA, HUMILDADE E FORTALEZA",
+    `Santa Catarina, apesar das grandes graças recebidas, permanecestes humilde e totalmente dependente de Deus.
+
+Livrai-nos do orgulho e da autossuficiência. Ensinai-nos a viver com humildade e confiança, reconhecendo que tudo vem de Deus.
+
+Fortalecei-nos para permanecermos fiéis nas provações.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    catarina.id,
+    8,
+    "OITAVO DIA – SANTA CATARINA, UNIÃO COM CRISTO CRUCIFICADO",
+    `Santa Catarina, vossa vida foi profundamente marcada pela contemplação da Paixão de Cristo e pelo desejo de participar de Seus sofrimentos por amor.
+
+Ajudai-nos a contemplar a cruz com fé e gratidão. Que saibamos unir nossas dores às de Cristo, oferecendo-as pela salvação das almas.
+
+Ensinai-nos o valor redentor do sacrifício vivido com amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    catarina.id,
+    9,
+    "NONO DIA – SANTA CATARINA, INTERCESSORA E DOUTORA DA IGREJA",
+    `Santa Catarina de Siena, doutora da Igreja e fiel serva de Deus, acolhei esta novena que rezamos com fé e confiança.
+
+Apresentai a Deus nossos pedidos e necessidades. Intercedei por nossa vida espiritual, por nossa fidelidade ao Evangelho e por nossa perseverança até o fim.
+
+Conduzi-nos no caminho da santidade e da vida eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SANTO ATANÁSIO 
+
+  const atanasio = upsertNovena({
+    slug: makeSlug("NOVENA A SANTO ATANÁSIO"),
+    titulo: "NOVENA A SANTO ATANÁSIO ",
+    periodo_inicio: "24/04",
+    periodo_fim: "02/05",
+    subtitulo: "Defensor da fé apostólica e da divindade do Verbo",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus eterno e todo-poderoso, que suscitastes Santo Atanásio como intrépido defensor da verdadeira fé, concedendo-lhe coragem, sabedoria e fidelidade inabalável à verdade do Vosso Filho, nós Vos louvamos e bendizemos por tão grande testemunho.
+
+Por intercessão de Santo Atanásio, concedei-nos a graça de rezar esta novena com fé sincera, coração firme e amor profundo à verdade. Fortalecei-nos para que, em meio às confusões e desafios do nosso tempo, permaneçamos fiéis à doutrina da Igreja e ao Evangelho de Jesus Cristo. Concedei-nos também as graças de que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó Deus todo-poderoso,
+que fortalecestes Santo Atanásio
+na defesa da verdadeira fé,
+concedei-nos, por sua intercessão,
+fidelidade inabalável ao Evangelho,
+coragem para testemunhar a verdade
+e perseverança até a vida eterna.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    atanasio.id,
+    1,
+    "PRIMEIRO DIA – SANTO ATANÁSIO, DEFENSOR DA DIVINDADE DE CRISTO",
+    `Santo Atanásio, fostes chamado a defender a verdade central da nossa fé: Jesus Cristo é verdadeiro Deus e verdadeiro homem.
+
+Ajudai-nos a professar com firmeza nossa fé em Cristo, Filho eterno do Pai. Que jamais relativizemos a verdade do Evangelho por medo ou conveniência.
+
+Ensinai-nos a amar profundamente Jesus Cristo e a reconhecê-Lo como Senhor de nossa vida.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    atanasio.id,
+    2,
+    "SEGUNDO DIA – SANTO ATANÁSIO, AMOR À VERDADE",
+    `Santo Atanásio, enfrentastes perseguições, calúnias e exílios por amor à verdade, sem jamais trair a fé recebida da Igreja.
+
+Ajudai-nos a viver na verdade, mesmo quando ela é difícil ou impopular. Que não negociemos nossa fé por interesses humanos.
+
+Concedei-nos coragem para permanecer fiéis ao Evangelho em todas as circunstâncias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    atanasio.id,
+    3,
+    "TERCEIRO DIA – SANTO ATANÁSIO, FIDELIDADE À IGREJA",
+    `Santo Atanásio, mesmo perseguido e incompreendido, jamais vos afastastes da Igreja nem rompestes a comunhão.
+
+Intercedei para que amemos a Igreja com fidelidade e respeito. Que saibamos permanecer unidos ao Magistério e à Tradição.
+
+Ajudai-nos a viver nossa fé em comunhão e obediência.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    atanasio.id,
+    4,
+    "QUARTO DIA – SANTO ATANÁSIO, CORAGEM NAS PERSEGUIÇÕES",
+    `Santo Atanásio, fostes exilado diversas vezes, mas nunca abandonastes a missão confiada por Deus.
+
+Ajudai-nos a enfrentar as perseguições, incompreensões e dificuldades com fé e perseverança. Que não desanimemos diante das provações.
+
+Ensinai-nos a confiar que Deus sustenta os que permanecem fiéis.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    atanasio.id,
+    5,
+    "QUINTO DIA – SANTO ATANÁSIO, PASTOR ZELOSO",
+    `Santo Atanásio, cuidastes do rebanho confiado a vós com amor, firmeza e espírito pastoral.
+
+Intercedei pelos bispos, sacerdotes e pastores da Igreja. Que sejam fiéis à verdade e corajosos na missão.
+
+Ajudai-nos a rezar por nossos pastores e a colaborar com a missão da Igreja.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    atanasio.id,
+    6,
+    "SEXTO DIA – SANTO ATANÁSIO, HOMEM DE ORAÇÃO",
+    `Santo Atanásio, vossa força vinha da oração e da intimidade com Deus, especialmente nos momentos de solidão e exílio.
+
+Ensinai-nos a buscar na oração a força para permanecer firmes na fé. Que nossa vida espiritual seja sólida e perseverante.
+
+Ajudai-nos a confiar mais em Deus do que em nossas próprias forças.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    atanasio.id,
+    7,
+    "SÉTIMO DIA – SANTO ATANÁSIO, DEFENSOR DA FÉ CONTRA OS ERROS",
+    `Santo Atanásio, com sabedoria e firmeza, combatestes as heresias que ameaçavam a fé da Igreja.
+
+Ajudai-nos a conhecer melhor nossa fé e a discernir os erros que nos afastam da verdade. Que sejamos firmes, mas sempre caridosos.
+
+Concedei-nos clareza de mente e fidelidade ao Evangelho.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    atanasio.id,
+    8,
+    "OITAVO DIA – SANTO ATANÁSIO, EXEMPLO DE PERSEVERANÇA",
+    `Santo Atanásio, apesar de longos anos de luta, jamais desististes da missão confiada por Deus.
+
+Ajudai-nos a perseverar na fé até o fim. Que não nos deixemos vencer pelo cansaço espiritual nem pelo desânimo.
+
+Fortalecei nossa esperança na vitória final de Cristo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    atanasio.id,
+    9,
+    "NONO DIA – SANTO ATANÁSIO, DOUTOR DA IGREJA E INTERCESSOR PODEROSO",
+    `Santo Atanásio, doutor da Igreja e fiel servo da verdade, acolhei esta novena que rezamos com fé e confiança.
+
+Apresentai a Deus nossos pedidos e necessidades. Intercedei por nossa fidelidade à fé católica e por nossa perseverança até a vida eterna.
+
+Conduzi-nos no caminho da verdade, da santidade e da salvação.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+//NOVENA A NOSSA SENHORA DE FÁTIMA
+
+const fatima = upsertNovena({
+    slug: makeSlug("NOVENA A NOSSA SENHORA DE FÁTIMA"),
+    titulo: "NOVENA A NOSSA SENHORA DE FÁTIMA",
+    periodo_inicio: "04/05",
+    periodo_fim: "12/05",
+    subtitulo: "Rezar, reparar, confiar",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Maria Santíssima, Nossa Senhora de Fátima, que aparecestes aos três pastorinhos como Mãe cheia de amor e misericórdia, chamando o mundo à oração, à penitência e à conversão do coração, nós recorremos a vós com fé e confiança filial.
+
+Vós que viestes do Céu para nos recordar o caminho da salvação, acolhei-nos sob vossa proteção materna. Concedei-nos a graça de rezar esta novena com coração sincero, espírito humilde e desejo verdadeiro de mudança de vida. Que, por vossa poderosa intercessão, alcancemos as graças necessárias para nossa vida espiritual, para nossas famílias e para a paz do mundo, conforme a santa vontade de Deus.
+Amém.`,
+    oracao_final: `Ó Nossa Senhora de Fátima,
+Mãe da misericórdia e da paz,
+acolhei-nos sob vosso Imaculado Coração.
+Conduzi-nos à conversão, à oração e à santidade.
+Protegei nossas famílias
+e alcançai-nos a paz do coração e do mundo.
+Amém.`
+  });
+
+  upsertDia(
+    fatima.id,
+    1,
+    "PRIMEIRO DIA – NOSSA SENHORA DE FÁTIMA, MÃE QUE NOS VISITA",
+    `Nossa Senhora de Fátima, vós descestes do Céu para visitar vossos filhos, mostrando que Deus não abandona a humanidade, mesmo quando ela se afasta Dele.
+
+Ajudai-nos a reconhecer a presença amorosa de Deus em nossa vida. Que nunca nos esqueçamos de que o Céu se inclina sobre a terra para nos conduzir à salvação.
+
+Ensinai-nos a acolher vossas mensagens com fé e gratidão.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    fatima.id,
+    2,
+    "SEGUNDO DIA – NOSSA SENHORA DE FÁTIMA, CHAMADO À CONVERSÃO",
+    `Ó Mãe Santíssima, em Fátima chamastes o mundo à conversão sincera do coração, convidando-nos a abandonar o pecado e a voltar para Deus.
+
+Ajudai-nos a reconhecer nossas faltas e a buscar o perdão do Senhor com humildade. Que nossa vida seja transformada pela graça divina.
+
+Conduzi-nos no caminho da conversão verdadeira e duradoura.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    fatima.id,
+    3,
+    "TERCEIRO DIA – NOSSA SENHORA DE FÁTIMA, MÃE DA ORAÇÃO",
+    `Nossa Senhora de Fátima, pedistes insistentemente que rezássemos, especialmente o Santo Rosário, como caminho de salvação e de paz.
+
+Ensinai-nos a amar a oração e a perseverar nela todos os dias. Que o Rosário seja para nós fonte de graça, proteção e intimidade com Deus.
+
+Ajudai-nos a rezar com o coração e com confiança filial.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    fatima.id,
+    4,
+    "QUARTO DIA – NOSSA SENHORA DE FÁTIMA, MÃE DA PENITÊNCIA",
+    `Ó Mãe compassiva, convidastes os pastorinhos a oferecer sacrifícios e penitências pela conversão dos pecadores.
+
+Ajudai-nos a compreender o valor do sacrifício vivido com amor. Que saibamos oferecer nossas dificuldades, dores e renúncias pela salvação das almas.
+
+Ensinai-nos a viver uma vida de penitência unida ao amor de Cristo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    fatima.id,
+    5,
+    "QUINTO DIA – NOSSA SENHORA DE FÁTIMA, MÃE DO IMACULADO CORAÇÃO",
+    `Nossa Senhora de Fátima, revelastes o vosso Imaculado Coração como refúgio e caminho que conduz a Deus.
+
+Ajudai-nos a consagrar nossa vida ao vosso Coração Imaculado. Que encontremos em vós proteção, consolo e segurança espiritual.
+
+Conduzi-nos sempre para mais perto de Jesus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    fatima.id,
+    6,
+    "SEXTO DIA – NOSSA SENHORA DE FÁTIMA, INTERCESSORA DOS PECADORES",
+    `Ó Mãe misericordiosa, manifestastes grande preocupação com a salvação das almas, pedindo orações pelos pecadores.
+
+Intercedei por aqueles que estão afastados de Deus. Alcançai-lhes a graça da conversão e do retorno ao caminho da fé.
+
+Que nosso coração também se abra à misericórdia e à caridade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    fatima.id,
+    7,
+    "SÉTIMO DIA – NOSSA SENHORA DE FÁTIMA, RAINHA DA PAZ",
+    `Nossa Senhora de Fátima, vós pedistes orações pela paz no mundo e no coração dos homens.
+
+Intercedei pela paz em nossas famílias, comunidades e nações. Ajudai-nos a ser instrumentos de paz, promovendo o amor, o perdão e a reconciliação.
+
+Que a paz de Cristo reine em nossos corações.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    fatima.id,
+    8,
+    "OITAVO DIA – NOSSA SENHORA DE FÁTIMA, MODELO DE FÉ E OBEDIÊNCIA",
+    `Ó Virgem fiel, vosso “sim” a Deus abriu caminho para a salvação do mundo. Em Fátima, chamais-nos a viver com fé e obediência.
+
+Ajudai-nos a confiar plenamente em Deus, mesmo quando não compreendemos Seus planos. Que nossa fé seja firme e perseverante.
+
+Ensinai-nos a viver segundo a vontade do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    fatima.id,
+    9,
+    "NONO DIA – NOSSA SENHORA DE FÁTIMA, NOSSA MÃE E ESPERANÇA",
+    `Nossa Senhora de Fátima, acolhei esta novena que rezamos com amor e confiança. Apresentai a Deus nossos pedidos e necessidades.
+
+Renovai nossa esperança e fortalecei nossa fé. Conduzi-nos no caminho da santidade e da salvação, até a glória eterna.
+
+Obrigado, Mãe querida, por vosso cuidado e intercessão constante.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SANTA RITA DE CÁSSIA
+
+  const rita = upsertNovena({
+    slug: makeSlug("NOVENA A SANTA RITA DE CÁSSIA"),
+    titulo: "NOVENA A SANTA RITA DE CÁSSIA",
+    periodo_inicio: "13/05",
+    periodo_fim: "21/05",
+    subtitulo: "Da chaga do espinho, nasceu a esperança que não decepciona",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de misericórdia infinita, que concedestes a Santa Rita de Cássia a graça de viver com fidelidade em todos os estados de vida — como esposa, mãe e religiosa — e a tornastes sinal de esperança nas situações mais difíceis, nós Vos louvamos e bendizemos.
+
+Por intercessão de Santa Rita, concedei-nos a graça de rezar esta novena com fé sincera, coração confiante e espírito perseverante. Que, a exemplo desta santa tão amada, saibamos confiar plenamente em Vós, mesmo nas dores, contrariedades e causas que aos olhos humanos parecem impossíveis. Concedei-nos também as graças de que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó Deus de misericórdia,
+que fizestes de Santa Rita de Cássia
+um exemplo luminoso de fé nas provações,
+concedei-nos, por sua intercessão,
+confiança inabalável em Vós,
+paciência nas dores
+e esperança nas causas difíceis.
+Por Cristo, nosso Senhor.
+Amém.
+`
+  });
+
+  upsertDia(
+    rita.id,
+    1,
+    "PRIMEIRO DIA – SANTA RITA, MULHER CHAMADA POR DEUS",
+    `Santa Rita, desde o início de vossa vida, fostes escolhida por Deus para uma missão especial, mesmo enfrentando caminhos que não eram os que desejáveis.
+
+Ajudai-nos a confiar nos desígnios de Deus, mesmo quando nossos planos são contrariados. Que aprendamos a aceitar a vontade do Senhor com fé e abandono.
+
+Ensinai-nos a reconhecer que Deus conduz nossa história com amor.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    rita.id,
+    2,
+    "SEGUNDO DIA – SANTA RITA, ESPOSA PACIENTE E FIEL",
+    `Santa Rita, vivestes um matrimônio marcado por dificuldades, sofrimento e incompreensões, mas respondestes com paciência, oração e amor.
+
+Intercedei pelos esposos e pelas famílias que enfrentam crises e dificuldades. Ajudai-nos a viver o perdão, o diálogo e a fidelidade.
+
+Que aprendamos a transformar a dor em caminho de graça.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    rita.id,
+    3,
+    "TERCEIRO DIA – SANTA RITA, MÃE DEDICADA E SOFRIDA",
+    `Santa Rita, como mãe conhecestes profundas dores e angústias, entregando tudo nas mãos de Deus.
+
+Consolai as mães que sofrem pelos filhos. Intercedei pelos jovens, para que encontrem o caminho do bem e da fé.
+
+Ajudai-nos a confiar que Deus age mesmo nas situações mais dolorosas.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    rita.id,
+    4,
+    "QUARTO DIA – SANTA RITA, EXEMPLO DE PERDÃO",
+    `Santa Rita, respondestes ao ódio com perdão e à violência com oração, vivendo o Evangelho de Cristo de forma heroica.
+
+Ajudai-nos a perdoar de coração aqueles que nos feriram. Libertai-nos do rancor, da mágoa e do desejo de vingança.
+
+Que aprendamos a viver o perdão que cura e liberta.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    rita.id,
+    5,
+    "QUINTO DIA – SANTA RITA, CHAMADA À VIDA CONSAGRADA",
+    `Santa Rita, após tantas perdas, fostes chamada à vida religiosa, onde vivestes na humildade, na obediência e na oração constante.
+
+Ajudai-nos a escutar o chamado de Deus e a responder com generosidade. Que sejamos fiéis à vocação que o Senhor nos confiou.
+
+Ensinai-nos a buscar a santidade em qualquer estado de vida.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    rita.id,
+    6,
+    "SEXTO DIA – SANTA RITA, AMANTE DA PAIXÃO DE CRISTO",
+    `Santa Rita, vosso coração esteve profundamente unido à Paixão de Cristo, participando de Seus sofrimentos com amor e entrega.
+
+Ajudai-nos a contemplar a cruz com fé e confiança. Que saibamos unir nossas dores às de Jesus, oferecendo-as com amor.
+
+Ensinai-nos a encontrar sentido cristão no sofrimento vivido com Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    rita.id,
+    7,
+    "SÉTIMO DIA – SANTA RITA, EXEMPLO DE HUMILDADE E OBEDIÊNCIA",
+    `Santa Rita, mesmo favorecida por graças extraordinárias, permanecestes humilde e obediente em tudo.
+
+Livrai-nos do orgulho e da autossuficiência. Ensinai-nos a viver com humildade e confiança na providência divina.
+
+Que nossa vida seja marcada pela simplicidade e pela fidelidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    rita.id,
+    8,
+    "OITAVO DIA – SANTA RITA, SANTA DAS CAUSAS IMPOSSÍVEIS",
+    `Santa Rita, o povo cristão vos invoca como poderosa intercessora nas causas difíceis e humanamente impossíveis.
+
+Intercedei por nossas necessidades mais urgentes e por aquelas situações que parecem sem solução. Fortalecei nossa fé e nossa esperança.
+
+Que nunca deixemos de confiar no poder de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    rita.id,
+    9,
+    "NONO DIA – SANTA RITA, NOSSA INTERCESSORA JUNTO A DEUS",
+    `Santa Rita de Cássia, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos, dores e esperanças.
+
+Intercedei por nossa vida espiritual, por nossas famílias e por todas as causas que colocamos sob vossa proteção. Conduzi-nos no caminho da santidade e da vida eterna.
+
+Obrigado por vosso exemplo de fé, paciência e amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A NOSSA SENHORA AUXILIADORA
+
+  const auxiliadora = upsertNovena({
+    slug: makeSlug("NOVENA A NOSSA SENHORA AUXILIADORA"),
+    titulo: "NOVENA A NOSSA SENHORA AUXILIADORA",
+    periodo_inicio: "15/05",
+    periodo_fim: "23/05",
+    subtitulo: "Confiai em Maria Auxiliadora e vereis o que são milagres",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Maria Santíssima, Nossa Senhora Auxiliadora dos Cristãos, Mãe amorosa e poderosa intercessora, a vós recorremos com confiança filial. Desde os primeiros tempos da Igreja, sois reconhecida como auxílio seguro do povo de Deus nas lutas, perseguições e necessidades da vida.
+
+Olhai por nós, Mãe querida. Concedei-nos a graça de rezar esta novena com fé sincera, coração confiante e espírito perseverante, para que, amparados por vossa proteção materna, sejamos fortalecidos na fé, na esperança e no amor. Alcançai-nos as graças de que necessitamos para nossa vida espiritual, familiar e comunitária, conforme a santa vontade de Deus.
+Amém.`,
+    oracao_final: `Ó Nossa Senhora Auxiliadora dos Cristãos,
+Mãe poderosa e cheia de amor,
+sede nosso auxílio em todas as necessidades.
+Protegei nossas famílias, fortalecei nossa fé
+e conduzi-nos sempre a Jesus.
+Hoje e sempre, sejais nossa Auxiliadora.
+Amém.`
+  });
+
+  upsertDia(
+    auxiliadora.id,
+    1,
+    "PRIMEIRO DIA – NOSSA SENHORA AUXILIADORA, MÃE QUE PROTEGE",
+    `Nossa Senhora Auxiliadora, desde sempre sois reconhecida como Mãe protetora dos que a vós recorrem com confiança.
+
+Ajudai-nos a sentir vossa presença materna em nossa vida. Protegei-nos dos perigos visíveis e invisíveis e guardai-nos sob vosso manto de amor.
+
+Que jamais nos esqueçamos de recorrer a vós nos momentos de necessidade.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    auxiliadora.id,
+    2,
+    "SEGUNDO DIA – NOSSA SENHORA AUXILIADORA, AUXÍLIO NAS DIFICULDADES",
+    `Ó Mãe Auxiliadora, o povo cristão sempre experimentou vosso auxílio nas horas mais difíceis.
+
+Socorrei-nos em nossas angústias, problemas e aflições. Ajudai-nos a confiar que nunca estamos sozinhos, pois vós caminhais conosco.
+
+Renovai nossa esperança quando tudo parece difícil.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    auxiliadora.id,
+    3,
+    "TERCEIRO DIA – NOSSA SENHORA AUXILIADORA, DEFESA DOS CRISTÃOS",
+    `Nossa Senhora Auxiliadora, sois defensora fiel dos cristãos e guardiã da fé.
+
+Protegei-nos contra tudo o que ameaça nossa vida espiritual. Ajudai-nos a permanecer firmes na fé e fiéis ao Evangelho de Jesus Cristo.
+
+Que nunca nos afastemos da verdade do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    auxiliadora.id,
+    4,
+    "QUARTO DIA – NOSSA SENHORA AUXILIADORA, MÃE DA IGREJA",
+    `Ó Maria Santíssima, sois Auxiliadora da Igreja e de todos os seus filhos.
+
+Intercedei pelo Papa, pelos bispos, sacerdotes, religiosos e por todo o povo de Deus. Que a Igreja permaneça fiel à sua missão de anunciar o Evangelho.
+
+Ajudai-nos a amar, respeitar e servir a Igreja com fidelidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    auxiliadora.id,
+    5,
+    "QUINTO DIA – NOSSA SENHORA AUXILIADORA, AUXÍLIO DAS FAMÍLIAS",
+    `Nossa Senhora Auxiliadora, sede amparo e proteção para nossas famílias.
+
+Ajudai os lares que enfrentam dificuldades, desunião, doenças ou falta de fé. Que em nossas casas reinem o amor, o diálogo, o perdão e a oração.
+
+Protegei especialmente as famílias mais necessitadas.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    auxiliadora.id,
+    6,
+    "SEXTO DIA – NOSSA SENHORA AUXILIADORA, AMPARO DOS JOVENS",
+    `Ó Mãe Auxiliadora, tende especial cuidado pelos jovens, que tantas vezes enfrentam desafios, tentações e inseguranças.
+
+Protegei-os e conduzi-os no caminho do bem. Ajudai-os a fazer escolhas justas e a viver segundo os valores do Evangelho.
+
+Que encontrem em vós uma Mãe e uma guia segura.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    auxiliadora.id,
+    7,
+    "SÉTIMO DIA – NOSSA SENHORA AUXILIADORA, CONSOLADORA DOS AFLITOS",
+    `Nossa Senhora Auxiliadora, sois consolo para os que sofrem no corpo e na alma.
+
+Olhai pelos doentes, pelos aflitos, pelos desanimados e por todos os que carregam cruzes pesadas. Alcançai-lhes conforto, força e paz.
+
+Ajudai-nos também a sermos instrumentos de consolo para os outros.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    auxiliadora.id,
+    8,
+    "OITAVO DIA – NOSSA SENHORA AUXILIADORA, MODELO DE CONFIANÇA EM DEUS",
+    `Ó Virgem Santíssima, em todos os momentos de vossa vida confiastes plenamente na vontade de Deus.
+
+Ensinai-nos a confiar no Senhor, mesmo quando não compreendemos Seus planos. Que nossa fé seja firme e perseverante.
+
+Ajudai-nos a entregar nossa vida nas mãos de Deus com confiança filial.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    auxiliadora.id,
+    9,
+    "NONO DIA – NOSSA SENHORA AUXILIADORA, NOSSA ESPERANÇA E INTERCESSORA",
+    `Nossa Senhora Auxiliadora, acolhei esta novena que rezamos com fé e amor. Apresentai a Deus nossos pedidos, necessidades e esperanças.
+
+Sede sempre nosso auxílio nas lutas da vida. Conduzi-nos a Jesus e ajudai-nos a perseverar na fé até a vida eterna.
+
+Obrigado, Mãe querida, por vosso cuidado e proteção constantes.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SÃO JOSÉ DE ANCHIETA 
+
+  const anchieta = upsertNovena({
+    slug: makeSlug("NOVENA D"),
+    titulo: "NOVENA D",
+    periodo_inicio: "31/05",
+    periodo_fim: "08/06",
+    subtitulo: "“Apóstolo do Brasil, semeador do Evangelho",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita bondade, que chamastes São José de Anchieta a anunciar o Evangelho em terras brasileiras, fazendo dele missionário incansável, educador sábio e defensor dos mais fracos, nós Vos louvamos e bendizemos por tão grande testemunho de fé, coragem e amor.
+
+Por intercessão de São José de Anchieta, concedei-nos a graça de rezar esta novena com fé sincera, coração generoso e espírito missionário. Que, a exemplo deste santo apóstolo, saibamos anunciar Cristo com palavras e com a vida, amando o próximo e buscando sempre a justiça, a paz e a verdade. Concedei-nos também as graças de que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó Deus de amor e misericórdia,
+que fizestes de São José de Anchieta
+um incansável anunciador do Evangelho,
+concedei-nos, por sua intercessão,
+zelo missionário, amor à Igreja
+e coragem para viver a fé.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    anchieta.id,
+    1,
+    "PRIMEIRO DIA – SÃO JOSÉ DE ANCHIETA, CHAMADO MISSIONÁRIO",
+    `São José de Anchieta, desde jovem respondestes com generosidade ao chamado de Deus, deixando vossa terra natal para anunciar o Evangelho em terras distantes.
+
+Ajudai-nos a escutar o chamado de Deus em nossa vida. Que não tenhamos medo de sair de nós mesmos para servir ao Senhor e aos irmãos.
+
+Ensinai-nos a viver com espírito missionário em nosso dia a dia.
+
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anchieta.id,
+    2,
+    "SEGUNDO DIA – SÃO JOSÉ DE ANCHIETA, EVANGELIZADOR INCANSÁVEL",
+    `São José de Anchieta, dedicastes toda a vossa vida à evangelização, anunciando Jesus Cristo com zelo, criatividade e amor.
+
+Ajudai-nos a testemunhar nossa fé com coragem e alegria. Que saibamos anunciar o Evangelho com palavras, atitudes e exemplo de vida.
+
+Fazei de nós instrumentos da Boa-Nova no mundo.
+
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anchieta.id,
+    3,
+    "TERCEIRO DIA – SÃO JOSÉ DE ANCHIETA, DEFENSOR DOS POBRES E OPRIMIDOS",
+    `São José de Anchieta, fostes incansável defensor dos povos indígenas e dos mais vulneráveis, lutando pela dignidade humana e pela justiça.
+
+Ajudai-nos a reconhecer Cristo nos pobres, nos excluídos e nos que sofrem. Que sejamos sensíveis às injustiças e comprometidos com o bem comum.
+
+Ensinai-nos a viver a caridade com coragem e verdade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anchieta.id,
+    4,
+    "QUARTO DIA – SÃO JOSÉ DE ANCHIETA, HOMEM DE ORAÇÃO",
+    `São José de Anchieta, em meio às grandes atividades missionárias, mantivestes profunda vida de oração e união com Deus.
+
+Ajudai-nos a cultivar uma vida de oração fiel e perseverante. Que encontremos na oração força, discernimento e paz.
+
+Ensinai-nos a confiar mais em Deus do que em nossas próprias forças.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anchieta.id,
+    5,
+    "QUINTO DIA – SÃO JOSÉ DE ANCHIETA, EDUCADOR E FORMADOR",
+    `São José de Anchieta, fostes grande educador, utilizando a palavra, a escrita e a cultura como instrumentos de evangelização.
+
+Intercedei pelos educadores, catequistas e formadores. Que desempenhem sua missão com sabedoria, paciência e amor.
+
+Ajudai-nos a crescer no conhecimento da fé e no amor à verdade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anchieta.id,
+    6,
+    "SEXTO DIA – SÃO JOSÉ DE ANCHIETA, EXEMPLO DE HUMILDADE E OBEDIÊNCIA",
+    `São José de Anchieta, mesmo realizando grandes obras, permanecestes humilde e obediente à vontade de Deus e à Igreja.
+
+Livrai-nos do orgulho e da vaidade. Ensinai-nos a servir com humildade, reconhecendo que toda obra boa vem de Deus.
+
+Que saibamos viver com espírito de obediência e simplicidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anchieta.id,
+    7,
+    "SÉTIMO DIA – SÃO JOSÉ DE ANCHIETA, MISSIONÁRIO DA PAZ",
+    `São José de Anchieta, fostes instrumento de paz em meio a conflitos, promovendo o diálogo, a reconciliação e o entendimento.
+
+Ajudai-nos a ser construtores da paz em nossas famílias, comunidades e sociedade. Que rejeitemos a violência e busquemos sempre a reconciliação.
+
+Fazei de nós instrumentos da paz de Cristo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anchieta.id,
+    8,
+    "OITAVO DIA – SÃO JOSÉ DE ANCHIETA, AMOR À IGREJA",
+    `São José de Anchieta, servistes a Igreja com fidelidade e dedicação total, colocando vossos dons a serviço do Reino de Deus.
+
+Intercedei pela Igreja no Brasil e no mundo. Que permaneça fiel à missão de anunciar o Evangelho e servir aos mais necessitados.
+
+Ajudai-nos a amar e servir a Igreja com fidelidade e zelo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    anchieta.id,
+    9,
+    "NONO DIA – SÃO JOSÉ DE ANCHIETA, APÓSTOLO DO BRASIL E INTERCESSOR PODEROSO",
+    `São José de Anchieta, apóstolo do Brasil e fiel servo de Deus, acolhei esta novena que rezamos com fé e confiança.
+
+Apresentai a Deus nossos pedidos e necessidades. Intercedei por nossa vida espiritual, por nosso país e por todos aqueles que necessitam de esperança, fé e paz.
+
+Conduzi-nos no caminho da santidade e da vida eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //TREZENA A SANTO ANTÔNIO
+
+  const antonio = upsertNovena({
+    slug: makeSlug("TREZENA A SANTO ANTÔNIO"),
+    titulo: "TREZENA A SANTO ANTÔNIO",
+    periodo_inicio: "31/05",
+    periodo_fim: "12/06",
+    subtitulo: "Da intimidade com a Palavra nasceu a luz de sua doutrina",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita bondade, que concedestes a Santo Antônio a graça de anunciar o Evangelho com sabedoria, amor e poder, fazendo dele luz para os fiéis, consolo para os aflitos e auxílio para os necessitados, nós Vos louvamos e bendizemos por tão grande dom à Igreja.
+
+Por intercessão de Santo Antônio, concedei-nos a graça de rezar esta trezena com fé sincera, coração confiante e espírito humilde. Que, a exemplo deste grande santo, aprendamos a amar Vossa Palavra, a viver a caridade e a confiar plenamente em Vossa providência. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó glorioso Santo Antônio,
+amigo dos pobres e auxílio dos necessitados,
+rogai por nós junto a Deus.
+Alcançai-nos as graças de que precisamos,
+fortalecei nossa fé
+e conduzi-nos sempre pelo caminho do bem.
+Amém.`
+  });
+
+  upsertDia(
+    antonio.id,
+    1,
+    "PRIMEIRO DIA – SANTO ANTÔNIO, CHAMADO POR DEUS",
+    `Santo Antônio, desde jovem ouvistes o chamado de Deus e respondestes com generosidade, deixando tudo para seguir Cristo.
+
+Ajudai-nos a escutar o chamado de Deus em nossa vida. Que saibamos responder com coragem e fidelidade, sem medo das renúncias.
+
+Ensinai-nos a confiar que Deus conduz nossos passos.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    antonio.id,
+    2,
+    "SEGUNDO DIA – SANTO ANTÔNIO, AMANTE DA PALAVRA DE DEUS",
+    `Santo Antônio, vossa vida foi profundamente marcada pelo amor à Palavra de Deus, que estudáveis, meditáveis e anunciáveis com zelo.
+
+Ajudai-nos a amar as Sagradas Escrituras. Que a Palavra de Deus ilumine nossas decisões e fortaleça nossa fé.
+
+Ensinai-nos a viver segundo o Evangelho.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    antonio.id,
+    3,
+    "TERCEIRO DIA – SANTO ANTÔNIO, PODEROSO PREGADOR",
+    `Santo Antônio, fostes grande pregador, capaz de tocar os corações e conduzir muitos à conversão.
+
+Ajudai-nos a testemunhar nossa fé com palavras e atitudes. Que nossa vida seja anúncio vivo do Evangelho.
+
+Dai-nos coragem para viver e proclamar a verdade cristã.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    antonio.id,
+    4,
+    "QUARTO DIA – SANTO ANTÔNIO, DEFENSOR DOS POBRES",
+    `Santo Antônio, vosso coração era sensível às necessidades dos pobres, dos aflitos e dos esquecidos.
+
+Ajudai-nos a reconhecer Cristo nos que sofrem. Que sejamos generosos, solidários e atentos às dores do próximo.
+
+Ensinai-nos a viver a verdadeira caridade cristã.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    antonio.id,
+    5,
+    "QUINTO DIA – SANTO ANTÔNIO, AMIGO DOS AFLITOS",
+    `Santo Antônio, tantos recorrem a vós em momentos de angústia e encontram consolo e esperança.
+
+Intercedei por nós em nossas dificuldades. Ajudai-nos a confiar em Deus mesmo nas horas mais difíceis.
+
+Que jamais percamos a esperança na misericórdia divina.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    antonio.id,
+    6,
+    "SEXTO DIA – SANTO ANTÔNIO, INTERCESSOR DAS CAUSAS DIFÍCEIS",
+    `Santo Antônio, sois conhecido como poderoso intercessor nas causas difíceis e urgentes.
+
+Apresentai a Deus nossas necessidades e pedidos. Fortalecei nossa fé para confiar que nada é impossível para Deus.
+
+Ensinai-nos a esperar com paciência e confiança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    antonio.id,
+    7,
+    "SÉTIMO DIA – SANTO ANTÔNIO, EXEMPLO DE HUMILDADE",
+    `Santo Antônio, apesar de vossa sabedoria e dons, permanecestes profundamente humilde.
+
+Livrai-nos do orgulho e da vaidade. Ensinai-nos a reconhecer que tudo vem de Deus.
+
+Que saibamos servir com simplicidade e amor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    antonio.id,
+    8,
+    "OITAVO DIA – SANTO ANTÔNIO, MODELO DE VIDA CONSAGRADA",
+    `Santo Antônio, vivestes com fidelidade os votos religiosos, entregando-vos totalmente a Deus.
+
+Ajudai-nos a viver com fidelidade nossa vocação, seja ela qual for. Que sejamos fiéis aos compromissos assumidos com Deus.
+
+Ensinai-nos a viver com coração indiviso.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    antonio.id,
+    9,
+    "NONO DIA – SANTO ANTÔNIO, AMANTE DA EUCARISTIA",
+    `Santo Antônio, encontráveis na Eucaristia força, luz e intimidade com Cristo.
+
+Ajudai-nos a amar o Santíssimo Sacramento. Que a Eucaristia seja o centro de nossa vida cristã.
+
+Ensinai-nos a viver em comunhão com Jesus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+    upsertDia(
+    antonio.id,
+    10,
+    "DÉCIMO DIA – SANTO ANTÔNIO, PROTETOR DAS FAMÍLIAS",
+    `Santo Antônio, muitas famílias recorrem à vossa intercessão com confiança.
+
+Protegei nossos lares. Ajudai-nos a viver o amor, o perdão e a fé em família.
+
+Que nossos lares sejam lugares de paz e oração.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+    upsertDia(
+    antonio.id,
+    11,
+    "DÉCIMO PRIMEIRO DIA – SANTO ANTÔNIO, GUIA DOS JOVENS",
+    `Santo Antônio, sede guia e proteção para os jovens, que enfrentam tantos desafios.
+
+Ajudai-os a fazer boas escolhas e a seguir o caminho do bem. Que encontrem em Deus o sentido de sua vida.
+
+Protegei-os de todo mal.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+    upsertDia(
+    antonio.id,
+    12,
+    "DÉCIMO SEGUNDO DIA – SANTO ANTÔNIO, EXEMPLO DE CONFIANÇA EM DEUS",
+    `Santo Antônio, em tudo confiastes na providência divina.
+
+Ajudai-nos a confiar mais em Deus e menos em nossas próprias forças. Que saibamos entregar nossas preocupações ao Senhor.
+
+Ensinai-nos o abandono confiante nas mãos de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+    upsertDia(
+    antonio.id,
+    13,
+    "DÉCIMO TERCEIRO DIA – ",
+    `Santo Antônio, acolhei esta trezena que rezamos com fé e amor. Apresentai a Deus nossos pedidos e necessidades.
+
+Intercedei por nossa vida espiritual, por nossas famílias e por todos os que recorrem a vós com confiança.
+
+Conduzi-nos no caminho da santidade e da vida eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SÃO JOÃO BATISTA
+
+  const batista = upsertNovena({
+    slug: makeSlug("NOVENA A SÃO JOÃO BATISTA"),
+    titulo: "NOVENA A SÃO JOÃO BATISTA",
+    periodo_inicio: "15/06",
+    periodo_fim: "23/06",
+    subtitulo: "Voz que clama no deserto, preparando os caminhos do Senhor",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita bondade, que escolhestes São João Batista para preparar os caminhos do Senhor e anunciá-Lo como o Cordeiro que tira o pecado do mundo, nós Vos louvamos e bendizemos por tão grande missão confiada a este vosso servo fiel.
+
+Por intercessão de São João Batista, concedei-nos a graça de rezar esta novena com fé sincera, coração arrependido e desejo verdadeiro de conversão. Que, a exemplo deste grande profeta, saibamos preparar em nossa vida o caminho para Jesus, vivendo na verdade, na humildade e na fidelidade à Vossa vontade. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme o Vosso santo querer.
+Amém.`,
+    oracao_final: `Ó Deus todo-poderoso,
+que levantastes São João Batista
+para preparar os caminhos do Senhor,
+concedei-nos, por sua intercessão,
+um coração convertido, humilde e fiel.
+Que preparemos nossa vida
+para acolher Jesus Cristo, nosso Salvador.
+Amém.`
+  });
+
+  upsertDia(
+    batista.id,
+    1,
+    "PRIMEIRO DIA – SÃO JOÃO BATISTA, ESCOLHIDO DESDE O VENTRE MATERNO",
+    `São João Batista, antes mesmo de nascer, já fostes consagrado ao Senhor e escolhido para uma missão única na história da salvação.
+
+Ajudai-nos a reconhecer que também fomos chamados por Deus desde sempre. Que descubramos nossa missão e a vivamos com fidelidade.
+
+Ensinai-nos a confiar que Deus tem um plano para cada vida.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    batista.id,
+    2,
+    "SEGUNDO DIA – SÃO JOÃO BATISTA, PROFETA DO ALTÍSSIMO",
+    `São João Batista, fostes o último e o maior dos profetas, escolhido para anunciar a chegada do Messias.
+
+Ajudai-nos a escutar a voz de Deus e a discernir Seus apelos em nossa vida. Que sejamos atentos aos sinais do Senhor e fiéis à Sua Palavra.
+
+Ensinai-nos a viver guiados pela verdade do Evangelho.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    batista.id,
+    3,
+    "TERCEIRO DIA – SÃO JOÃO BATISTA, VOZ QUE CLAMA NO DESERTO",
+    `São João Batista, no deserto proclamastes a necessidade da conversão e do arrependimento sincero.
+
+Ajudai-nos a reconhecer nossos pecados e a buscar a conversão do coração. Que abandonemos tudo o que nos afasta de Deus.
+
+Ensinai-nos a preparar os caminhos do Senhor em nossa vida.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    batista.id,
+    4,
+    "QUARTO DIA – SÃO JOÃO BATISTA, EXEMPLO DE HUMILDADE",
+    `São João Batista, mesmo sendo reconhecido pelo povo, jamais buscastes glória para vós, mas apontastes sempre para Cristo.
+
+Livrai-nos do orgulho e da vaidade. Ensinai-nos a diminuir para que Cristo cresça em nós.
+
+Que nossa vida glorifique a Deus e não a nós mesmos.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    batista.id,
+    5,
+    "QUINTO DIA – SÃO JOÃO BATISTA, TESTEMUNHA DA VERDADE",
+    `São João Batista, defendestes a verdade com coragem, mesmo sabendo que isso vos custaria a liberdade e a própria vida.
+
+Ajudai-nos a viver na verdade e a rejeitar toda forma de mentira e injustiça. Que sejamos fiéis ao Evangelho, mesmo nas dificuldades.
+
+Dai-nos coragem para testemunhar nossa fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    batista.id,
+    6,
+    "SEXTO DIA – SÃO JOÃO BATISTA, PRECURSOR DO CORDEIRO DE DEUS",
+    `São João Batista, reconhecestes em Jesus o Cordeiro de Deus e conduzistes muitos a Ele.
+
+Ajudai-nos a conduzir as pessoas a Cristo com nosso exemplo de vida. Que nossas palavras e atitudes apontem sempre para Jesus.
+
+Ensinai-nos a amar profundamente o Salvador.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    batista.id,
+    7,
+    "SÉTIMO DIA – SÃO JOÃO BATISTA, MODELO DE VIDA SIMPLES E DESAPEGADA",
+    `São João Batista, escolhestes uma vida simples, desapegada dos bens e voltada inteiramente para Deus.
+
+Ajudai-nos a viver com simplicidade e desprendimento. Que não coloquemos nosso coração nas coisas passageiras.
+
+Ensinai-nos a buscar as coisas do alto.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    batista.id,
+    8,
+    "OITAVO DIA – SÃO JOÃO BATISTA, FIEL ATÉ O MARTÍRIO",
+    `São João Batista, permanecestes fiel à missão até o fim, selando vosso testemunho com o próprio sangue.
+
+Ajudai-nos a perseverar na fé até o fim da vida. Que não recuemos diante das dificuldades ou perseguições.
+
+Fortalecei nossa esperança na vida eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    batista.id,
+    9,
+    "NONO DIA – SÃO JOÃO BATISTA, INTERCESSOR JUNTO A DEUS",
+    `São João Batista, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos e necessidades.
+
+Intercedei por nossa conversão, por nossa vida espiritual e por nossa perseverança no caminho do bem. Conduzi-nos sempre a Jesus, o Cordeiro de Deus que tira o pecado do mundo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SÃO PEDRO E SÃO PAULO
+
+  const pedropaulo = upsertNovena({
+    slug: makeSlug("NOVENA A SÃO PEDRO E SÃO PAULO"),
+    titulo: "NOVENA A SÃO PEDRO E SÃO PAULO",
+    periodo_inicio: "20/06",
+    periodo_fim: "28/06",
+    subtitulo: "Enviados a anunciar Cristo até os confins do mundo",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus eterno e todo-poderoso, que escolhestes São Pedro e São Paulo como colunas da vossa Igreja, confiando a um a missão de confirmar os irmãos na fé e ao outro a tarefa de anunciar o Evangelho a todas as nações, nós Vos louvamos e bendizemos por tão grandes testemunhas do amor e da verdade.
+
+Por intercessão de São Pedro e São Paulo, concedei-nos a graça de rezar esta novena com fé sincera, coração firme e espírito missionário. Que, seguindo o exemplo destes santos apóstolos, aprendamos a amar profundamente a Igreja, a viver com fidelidade o Evangelho e a perseverar na fé até o fim. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó gloriosos São Pedro e São Paulo,
+colunas da Igreja e testemunhas fiéis de Cristo,
+rogai por nós junto a Deus.
+Fortalecei nossa fé,
+inflamai nosso coração no amor ao Evangelho
+e conduzi-nos no caminho da salvação.
+Amém.`
+  });
+
+  upsertDia(
+    pedropaulo.id,
+    1,
+    "PRIMEIRO DIA – SÃO PEDRO E SÃO PAULO, ESCOLHIDOS POR CRISTO",
+    `São Pedro e São Paulo, escolhidos diretamente por Cristo, fostes chamados não por vossos méritos, mas pela graça de Deus.
+
+Ajudai-nos a reconhecer que também somos chamados pelo Senhor, apesar de nossas limitações. Que saibamos acolher nossa vocação com humildade e gratidão.
+
+Ensinai-nos a confiar mais na graça de Deus do que em nossas próprias forças.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pedropaulo.id,
+    2,
+    "SEGUNDO DIA – SÃO PEDRO, ROCHA DA FÉ",
+    `São Pedro, Jesus confiou-vos as chaves do Reino dos Céus e fez de vós a rocha sobre a qual edificou a Sua Igreja.
+
+Ajudai-nos a permanecer firmes na fé da Igreja. Que jamais nos afastemos da verdade ensinada por Cristo e transmitida pelos apóstolos.
+
+Intercedei para que sejamos fiéis à Igreja em todas as circunstâncias.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pedropaulo.id,
+    3,
+    "TERCEIRO DIA – SÃO PAULO, APÓSTOLO DAS NAÇÕES",
+    `São Paulo, após o encontro com Cristo, dedicastes toda a vossa vida ao anúncio do Evangelho, levando a Boa-Nova aos povos mais distantes.
+
+Ajudai-nos a viver com espírito missionário. Que sejamos anunciadores de Cristo com palavras e atitudes, onde quer que estejamos.
+
+Ensinai-nos a não ter medo de testemunhar nossa fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pedropaulo.id,
+    4,
+    "QUARTO DIA – SÃO PEDRO, EXEMPLO DE CONVERSÃO E HUMILDADE",
+    `São Pedro, mesmo tendo negado o Senhor, fostes perdoado e restaurado por Seu amor misericordioso.
+
+Ajudai-nos a confiar no perdão de Deus quando caímos. Que saibamos levantar-nos, arrependidos, e recomeçar com fé renovada.
+
+Ensinai-nos a humildade e a confiança na misericórdia divina.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pedropaulo.id,
+    5,
+    "QUINTO DIA – SÃO PAULO, TRANSFORMADO PELA GRAÇA",
+    `São Paulo, de perseguidor da Igreja, tornastes-vos seu mais ardoroso defensor, mostrando o poder transformador da graça de Deus.
+
+Ajudai-nos a permitir que Cristo transforme nossa vida. Que não resistamos à ação do Espírito Santo em nosso coração.
+
+Ensinai-nos a viver uma conversão sincera e profunda.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pedropaulo.id,
+    6,
+    "SEXTO DIA – SÃO PEDRO E SÃO PAULO, AMOR À IGREJA",
+    `São Pedro e São Paulo, amastes a Igreja com todo o coração e destes a vida por ela.
+
+Intercedei pelo Papa, pelos bispos, sacerdotes e por todo o povo de Deus. Que a Igreja permaneça fiel à sua missão e unida na caridade.
+
+Ajudai-nos a amar, defender e servir a Igreja com fidelidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pedropaulo.id,
+    7,
+    "SÉTIMO DIA – SÃO PEDRO E SÃO PAULO, CORAGEM NAS PROVAÇÕES",
+    `São Pedro e São Paulo, enfrentastes perseguições, prisões e sofrimentos por amor a Cristo.
+
+Ajudai-nos a permanecer firmes na fé diante das dificuldades da vida. Que não desanimemos nas provações, mas confiemos no Senhor.
+
+Fortalecei nossa coragem e perseverança cristã.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pedropaulo.id,
+    8,
+    "OITAVO DIA – SÃO PEDRO E SÃO PAULO, TESTEMUNHAS DA VERDADE",
+    `São Pedro e São Paulo, anunciastes a verdade do Evangelho sem concessões, mesmo diante da morte.
+
+Ajudai-nos a viver na verdade e a rejeitar tudo o que nos afasta de Deus. Que nossa vida seja testemunho fiel de Cristo.
+
+Concedei-nos sabedoria e fidelidade à verdade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    pedropaulo.id,
+    9,
+    "NONO DIA – SÃO PEDRO E SÃO PAULO, GLORIFICADOS NO CÉU",
+    `São Pedro e São Paulo, após uma vida de entrega total, alcançastes a glória eterna prometida por Cristo.
+
+Acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos e necessidades.
+
+Intercedei por nós, para que perseveremos na fé até o fim e alcancemos a vida eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A SÃO BENTO 
+
+  const bento = upsertNovena({
+    slug: makeSlug("NOVENA A SÃO BENTO"),
+    titulo: "NOVENA A SÃO BENTO",
+    periodo_inicio: "02/07",
+    periodo_fim: "10/07",
+    subtitulo: "Crux sacra sit mihi lux",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus eterno e todo-poderoso, que escolhestes São Bento como mestre da vida espiritual, guia seguro no caminho da santidade e poderoso defensor contra as ciladas do mal, nós Vos louvamos e bendizemos por tão grande dom concedido à Igreja.
+
+Por intercessão de São Bento, concedei-nos a graça de rezar esta novena com fé sincera, coração vigilante e desejo verdadeiro de conversão. Que, seguindo seus ensinamentos de oração, trabalho, humildade e obediência, sejamos fortalecidos na fé, protegidos contra todo mal e conduzidos no caminho da paz. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó glorioso São Bento,
+pai espiritual e fiel servo de Deus,
+protegei-nos contra todo mal
+e conduzi-nos no caminho da santidade.
+Que, fortalecidos pela fé e pela oração,
+vivamos sempre na paz de Cristo.
+Amém.`
+  });
+
+  upsertDia(
+    bento.id,
+    1,
+    "PRIMEIRO DIA – SÃO BENTO, BUSCADOR DE DEUS",
+    `São Bento, desde jovem abandonastes as vaidades do mundo para buscar somente a Deus e viver segundo Sua vontade.
+
+Ajudai-nos a colocar Deus no centro de nossa vida. Que não nos deixemos seduzir pelo que passa, mas busquemos o que é eterno.
+
+Ensinai-nos a viver com o coração voltado para Deus.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bento.id,
+    2,
+    "SEGUNDO DIA – SÃO BENTO, MESTRE DA VIDA INTERIOR",
+    `São Bento, vossa vida foi marcada pelo silêncio, pela oração e pela escuta atenta da voz de Deus.
+
+Ajudai-nos a cultivar a vida interior. Que aprendamos a silenciar o coração para ouvir o Senhor.
+
+Ensinai-nos a rezar com perseverança e confiança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bento.id,
+    3,
+    "TERCEIRO DIA – SÃO BENTO, EXEMPLO DE HUMILDADE",
+    `São Bento, apesar de vossa sabedoria e autoridade espiritual, vivestes na humildade, reconhecendo que tudo vinha de Deus.
+
+Livrai-nos do orgulho e da autossuficiência. Ensinai-nos a viver com humildade e simplicidade de coração.
+
+Que saibamos depender mais de Deus do que de nós mesmos.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bento.id,
+    4,
+    "QUARTO DIA – SÃO BENTO, MODELO DE OBEDIÊNCIA",
+    `São Bento, ensinastes que a obediência é caminho seguro para a paz interior e para a santidade.
+
+Ajudai-nos a obedecer à vontade de Deus, aos Seus mandamentos e aos ensinamentos da Igreja.
+
+Que saibamos acolher a vontade divina mesmo quando ela exige renúncia.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bento.id,
+    5,
+    "QUINTO DIA – SÃO BENTO, DEFENSOR CONTRA O MAL",
+    `São Bento, pela graça de Deus, fostes poderoso defensor contra as ciladas do inimigo, vencendo o mal com a fé e a oração.
+
+Protegei-nos contra todo mal espiritual e corporal. Afastai de nós as tentações, os perigos e tudo o que nos afasta de Deus.
+
+Que vivamos sempre sob a proteção do Senhor.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bento.id,
+    6,
+    "SEXTO DIA – SÃO BENTO, MESTRE DO EQUILÍBRIO CRISTÃO",
+    `São Bento, ensinastes o equilíbrio entre oração e trabalho, mostrando que toda a vida pode ser oferecida a Deus.
+
+Ajudai-nos a viver com equilíbrio, responsabilidade e espírito de serviço. Que nosso trabalho seja realizado com honestidade e oferecido ao Senhor.
+
+Ensinai-nos a santificar o cotidiano.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bento.id,
+    7,
+    "SÉTIMO DIA – SÃO BENTO, PROMOTOR DA PAZ",
+    `São Bento, vossa vida e vossa regra conduzem à paz do coração e à harmonia na convivência fraterna.
+
+Intercedei para que reine a paz em nossas famílias, comunidades e no mundo. Ajudai-nos a ser instrumentos da paz de Cristo.
+
+Que aprendamos a viver na caridade e no perdão.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bento.id,
+    8,
+    "OITAVO DIA – SÃO BENTO, GUIA NO CAMINHO DA SANTIDADE",
+    `São Bento, por vossos ensinamentos, conduzistes muitos no caminho da santidade e da vida eterna.
+
+Ajudai-nos a perseverar no bem, mesmo diante das dificuldades. Que não desanimemos na caminhada cristã.
+
+Fortalecei nossa esperança e nossa fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    bento.id,
+    9,
+    "NONO DIA – SÃO BENTO, NOSSO PODEROSO INTERCESSOR",
+    `São Bento, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos e necessidades.
+
+Intercedei por nossa proteção espiritual, por nossa conversão e por nossa perseverança na fé até o fim.
+
+Conduzi-nos no caminho da salvação e da vida eterna.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  //NOVENA A NOSSA SENHORA DO CARMO
+
+  const carmo = upsertNovena({
+    slug: makeSlug("NOVENA A NOSSA SENHORA DO CARMO"),
+    titulo: "NOVENA A NOSSA SENHORA DO CARMO",
+    periodo_inicio: "07/07",
+    periodo_fim: "15/07",
+    subtitulo: "Virgem Santíssima, Mãe e Esplendor do Carmelo",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Maria Santíssima, Nossa Senhora do Carmo, Mãe e Rainha do Monte Carmelo, estrela luminosa que guia os filhos de Deus pelo caminho da oração, do silêncio e da fidelidade, a vós recorremos com confiança filial.
+
+Vós que prometestes vossa proteção especial àqueles que, com fé, se consagram a vós e usam o santo Escapulário, acolhei-nos sob vosso manto materno. Concedei-nos a graça de rezar esta novena com coração sincero, espírito humilde e profundo amor a Deus. Por vossa poderosa intercessão, alcançai-nos as graças de que necessitamos para nossa vida espiritual, para nossas famílias e para nossa salvação, conforme a santa vontade do Senhor.
+Amém.`,
+    oracao_final: `Ó Nossa Senhora do Carmo,
+Mãe e Rainha cheia de ternura,
+acolhei-nos sob vosso manto protetor.
+Guiai-nos no caminho da oração,
+da fidelidade e da santidade.
+Protegei-nos hoje e sempre
+e conduzi-nos à vida eterna.
+Amém.`
+  });
+
+  upsertDia(
+    carmo.id,
+    1,
+    "PRIMEIRO DIA – NOSSA SENHORA DO CARMO, MÃE QUE NOS CONDUZ A DEUS",
+    `Nossa Senhora do Carmo, sois Mãe amorosa que conduz seus filhos ao encontro com Deus.
+
+Ajudai-nos a caminhar sempre na presença do Senhor. Que nossa vida seja orientada pela fé e pelo desejo sincero de agradar a Deus.
+
+Ensinai-nos a confiar plenamente na condução divina.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    carmo.id,
+    2,
+    "SEGUNDO DIA – NOSSA SENHORA DO CARMO, SENHORA DO SILÊNCIO E DA ORAÇÃO",
+    `Ó Mãe do Carmelo, sois modelo de silêncio interior e profunda vida de oração.
+
+Ajudai-nos a cultivar o silêncio do coração para escutar a voz de Deus. Que a oração seja sustento e força em nossa vida diária.
+
+Ensinai-nos a rezar com perseverança e confiança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    carmo.id,
+    3,
+    "TERCEIRO DIA – NOSSA SENHORA DO CARMO, ESTRELA DA VIDA ESPIRITUAL",
+    `Nossa Senhora do Carmo, como estrela brilhante, iluminai nosso caminho rumo à santidade.
+
+Ajudai-nos a crescer na vida espiritual e a não nos desviar do caminho do bem. Que vossa luz nos guie nas decisões da vida.
+
+Conduzi-nos sempre mais perto de Jesus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    carmo.id,
+    4,
+    "QUARTO DIA – NOSSA SENHORA DO CARMO, MÃE DO ESCAPULÁRIO",
+    `Ó Mãe querida, entregastes o santo Escapulário como sinal de proteção, pertença e compromisso com uma vida cristã fiel.
+
+Ajudai-nos a viver dignamente as promessas ligadas ao Escapulário. Que sejamos fiéis a Deus, à oração e à caridade.
+
+Protegei-nos em todos os perigos do corpo e da alma.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    carmo.id,
+    5,
+    "QUINTO DIA – NOSSA SENHORA DO CARMO, PROTETORA NAS DIFICULDADES",
+    `Nossa Senhora do Carmo, sois auxílio seguro nos momentos de dor, angústia e incerteza.
+
+Socorrei-nos em nossas necessidades e provações. Ajudai-nos a confiar que jamais somos abandonados por vós.
+
+Renovai nossa esperança quando tudo parece difícil.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    carmo.id,
+    6,
+    "SEXTO DIA – NOSSA SENHORA DO CARMO, MODELO DE OBEDIÊNCIA E HUMILDADE",
+    `Ó Virgem Santíssima, aceitastes com humildade e obediência a vontade de Deus em toda a vossa vida.
+
+Ajudai-nos a aceitar os planos do Senhor, mesmo quando exigem renúncia. Que aprendamos convosco a dizer “sim” a Deus todos os dias.
+
+Ensinai-nos a viver com humildade e confiança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    carmo.id,
+    7,
+    "SÉTIMO DIA – NOSSA SENHORA DO CARMO, MÃE DA ESPERANÇA",
+    `Nossa Senhora do Carmo, sois sinal de esperança segura para os que confiam em Deus.
+
+Ajudai-nos a não desanimar diante das dificuldades da vida. Que nossa esperança esteja sempre firmada no Senhor.
+
+Consolai os aflitos e fortalecei os desanimados.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    carmo.id,
+    8,
+    "OITAVO DIA – NOSSA SENHORA DO CARMO, INTERCESSORA PODEROSA",
+    `Ó Mãe do Carmelo, vossa intercessão junto a Deus é fonte de muitas graças para os vossos filhos.
+
+Apresentai ao Senhor nossas súplicas e necessidades. Alcançai-nos as graças que mais precisamos para nossa vida espiritual.
+
+Que aprendamos a confiar plenamente em vossa intercessão.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    carmo.id,
+    9,
+    "NONO DIA – NOSSA SENHORA DO CARMO, NOSSA MÃE E PROTETORA ETERNA",
+    `Nossa Senhora do Carmo, acolhei esta novena que rezamos com fé e amor. Apresentai a Deus nossos pedidos e agradecimentos.
+
+Sede sempre nossa Mãe, nossa proteção e nossa guia no caminho da fé. Conduzi-nos com segurança até Jesus e à vida eterna.
+
+Obrigado, Mãe querida, por vosso amor constante.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  // NOVENA A SANT'ANA E SÃO JOAQUIM
+
+  const stnjqm = upsertNovena({
+    slug: makeSlug("NOVENA A SANT'ANA E SÃO JOAQUIM"),
+    titulo: "NOVENA A SANT'ANA E SÃO JOAQUIM",
+    periodo_inicio: "17/07",
+    periodo_fim: "25/07",
+    subtitulo: "Na fidelidade do lar, Deus preparou a Mãe do Salvador",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita bondade, que escolhestes Santa Ana e São Joaquim para serem os pais da Virgem Maria e cooperadores humildes do vosso plano de salvação, nós Vos louvamos e bendizemos por este exemplo luminoso de fé, perseverança e amor familiar.
+
+Por intercessão de Santa Ana e São Joaquim, concedei-nos a graça de rezar esta novena com fé sincera, coração confiante e espírito agradecido. Que, à luz de sua vida santa, aprendamos a confiar em Vossa providência, a viver a fé no seio da família e a educar as novas gerações no amor a Deus. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.
+`,
+    oracao_final: `Ó Deus de amor e misericórdia,
+que nos destes em Santa Ana e São Joaquim
+exemplos de fé, família e esperança,
+concedei-nos, por sua intercessão,
+lares santos, fé perseverante
+e confiança total em Vossa providência.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    stnjqm.id,
+    1,
+    "PRIMEIRO DIA – SANTA ANA E SÃO JOAQUIM, JUSTOS DIANTE DE DEUS",
+    `Santa Ana e São Joaquim, fostes reconhecidos como justos e fiéis diante de Deus, mesmo em meio às provações e à espera silenciosa.
+
+Ajudai-nos a viver com retidão e fidelidade ao Senhor. Que nossa vida seja agradável a Deus em pensamentos, palavras e ações.
+
+Ensinai-nos a perseverar na fé, mesmo quando as respostas tardam.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stnjqm.id,
+    2,
+    "SEGUNDO DIA – SANTA ANA E SÃO JOAQUIM, EXEMPLO DE FÉ CONFIANTE",
+    `Santa Ana e São Joaquim, confiastes plenamente em Deus, mesmo quando tudo parecia impossível aos olhos humanos.
+
+Ajudai-nos a confiar na providência divina. Que não percamos a esperança diante das dificuldades e das demoras da vida.
+
+Ensinai-nos a esperar com paciência e fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stnjqm.id,
+    3,
+    "TERCEIRO DIA – SANTA ANA E SÃO JOAQUIM, MODELOS DE VIDA FAMILIAR",
+    `Santa Ana e São Joaquim, vivestes o matrimônio como vocação sagrada, fundamentada no amor, na fidelidade e na oração.
+
+Intercedei por nossas famílias. Que nossos lares sejam lugares de fé, diálogo, perdão e amor cristão.
+
+Ajudai-nos a construir famílias segundo o coração de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stnjqm.id,
+    4,
+    "QUARTO DIA – SANTA ANA E SÃO JOAQUIM, EDUCADORES NA FÉ",
+    `Santa Ana e São Joaquim, fostes escolhidos para educar Maria, a futura Mãe do Salvador, ensinando-lhe o amor a Deus e à Sua Lei.
+
+Ajudai pais e educadores a transmitirem a fé com amor e exemplo. Que as novas gerações cresçam no temor do Senhor.
+
+Ensinai-nos a educar com sabedoria, paciência e fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stnjqm.id,
+    5,
+    "QUINTO DIA – SANTA ANA E SÃO JOAQUIM, MODELOS DE HUMILDADE",
+    `Santa Ana e São Joaquim, mesmo escolhidos para tão grande missão, vivestes na simplicidade e no silêncio.
+
+Ajudai-nos a viver com humildade e espírito simples. Que saibamos reconhecer que toda graça vem de Deus.
+
+Livrai-nos do orgulho e da autossuficiência.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stnjqm.id,
+    6,
+    "SEXTO DIA – SANTA ANA E SÃO JOAQUIM, AVÓS DE JESUS",
+    `Santa Ana e São Joaquim, sois honrados como avós de Jesus e protetores dos avós de todo o mundo.
+
+Intercedei pelos avós, para que sejam fontes de amor, sabedoria e fé para suas famílias. Ajudai-os a transmitir valores cristãos com ternura.
+
+Abençoai especialmente os idosos e os solitários.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stnjqm.id,
+    7,
+    "SÉTIMO DIA – SANTA ANA E SÃO JOAQUIM, CONSOLADORES DOS AFLITOS",
+    `Santa Ana e São Joaquim, conhecestes a dor da espera, a humilhação e a prova, mas nunca perdestes a confiança em Deus.
+
+Consolai os aflitos, os desanimados e os que sofrem. Ajudai-nos a confiar que Deus age no tempo certo.
+
+Renovai nossa esperança e nossa fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stnjqm.id,
+    8,
+    "OITAVO DIA – SANTA ANA E SÃO JOAQUIM, INTERCESSORES PODEROSOS",
+    `Santa Ana e São Joaquim, o povo cristão recorre a vós com confiança, reconhecendo vossa poderosa intercessão junto a Deus.
+
+Apresentai ao Senhor nossos pedidos e necessidades. Alcançai-nos as graças que mais necessitamos para nossa vida espiritual e familiar.
+
+Que nunca deixemos de confiar em vossa intercessão.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    stnjqm.id,
+    9,
+    "NONO DIA – SANTA ANA E SÃO JOAQUIM, MODELOS DE ESPERANÇA E FIDELIDADE",
+    `Santa Ana e São Joaquim, após uma vida de fé e entrega, fostes recompensados com a alegria de cooperar no plano da salvação.
+
+Acolhei esta novena que rezamos com amor e confiança. Intercedei por nossas famílias, por nossa perseverança na fé e por nossa caminhada rumo à vida eterna.
+
+Conduzi-nos sempre mais perto de Jesus, por Maria.
+
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+// NOVENA A SÃO JOÃO MARIA VIANNEY
+
+  const vianney = upsertNovena({
+    slug: makeSlug("NOVENA A SÃO JOÃO MARIA VIANNEY"),
+    titulo: "NOVENA A SÃO JOÃO MARIA VIANNEY",
+    periodo_inicio: "27/07",
+    periodo_fim: "04/08",
+    subtitulo: "Misericórdia que converte",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita misericórdia, que concedestes à Igreja em São João Maria Vianney um pastor segundo o Vosso Coração, simples, humilde e totalmente entregue ao cuidado das almas, nós Vos louvamos e bendizemos por este testemunho tão luminoso de santidade sacerdotal.
+
+Por intercessão de São João Maria Vianney, concedei-nos a graça de rezar esta novena com coração contrito, espírito humilde e profundo desejo de conversão. Que, ao contemplarmos sua vida e seu amor pelas almas, sejamos tocados pela misericórdia divina e conduzidos a uma vida mais fiel ao Evangelho. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó Deus de infinita misericórdia,
+que nos destes em São João Maria Vianney
+um pastor humilde e santo,
+concedei-nos, por sua intercessão,
+um coração arrependido,
+amor à Eucaristia
+e desejo sincero de conversão.
+Por Cristo, nosso Senhor.
+Amém.`
+  });
+
+  upsertDia(
+    vianney.id,
+    1,
+    "PRIMEIRO DIA – SÃO JOÃO MARIA VIANNEY, HOMEM CHAMADO POR DEUS",
+    `São João Maria Vianney, apesar de vossas limitações humanas, aceitastes o chamado de Deus com confiança e abandono total.
+
+Ajudai-nos a confiar que Deus chama e capacita aqueles que escolhe. Que não nos deixemos paralisar pelo medo ou pela sensação de indignidade.
+
+Ensinai-nos a dizer “sim” a Deus com simplicidade de coração.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    vianney.id,
+    2,
+    "SEGUNDO DIA – SÃO JOÃO MARIA VIANNEY, AMANTE DA ORAÇÃO",
+    `São João Maria Vianney, encontráveis na oração silenciosa a força para enfrentar as dificuldades do ministério e da vida.
+
+Ajudai-nos a redescobrir o valor da oração. Que saibamos permanecer na presença de Deus, mesmo quando não encontramos palavras.
+
+Ensinai-nos a rezar com o coração e com perseverança.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    vianney.id,
+    3,
+    "TERCEIRO DIA – SÃO JOÃO MARIA VIANNEY, AMIGO DA EUCARISTIA",
+    `São João Maria Vianney, vosso coração ardia de amor por Jesus presente na Eucaristia.
+
+Ajudai-nos a amar o Santíssimo Sacramento. Que a Eucaristia seja o centro de nossa vida cristã e fonte de conversão.
+
+Ensinai-nos a reconhecer em Jesus o maior tesouro de nossa vida.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    vianney.id,
+    4,
+    "QUARTO DIA – SÃO JOÃO MARIA VIANNEY, CONFESSOR DAS ALMAS",
+    `São João Maria Vianney, passastes longas horas no confessionário, acolhendo, escutando e reconciliando as almas com Deus.
+
+Ajudai-nos a buscar o sacramento da Reconciliação com sinceridade e confiança. Que não tenhamos medo da misericórdia divina.
+
+Ensinai-nos o valor do arrependimento e da conversão sincera.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    vianney.id,
+    5,
+    "QUINTO DIA – SÃO JOÃO MARIA VIANNEY, PASTOR CHEIO DE ZELO",
+    `São João Maria Vianney, vosso coração sacerdotal ardia de amor pelas almas confiadas a vós.
+
+Ajudai-nos a compreender o valor de cada alma diante de Deus. Que sejamos responsáveis por nossa vida espiritual e atentos à salvação dos outros.
+
+Intercedei por nossos sacerdotes, para que sejam pastores segundo o coração de Cristo.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    vianney.id,
+    6,
+    "SEXTO DIA – SÃO JOÃO MARIA VIANNEY, MODELO DE HUMILDADE",
+    `São João Maria Vianney, mesmo reconhecido por muitos, permanecestes profundamente humilde e dependente de Deus.
+
+Livrai-nos do orgulho e da vaidade espiritual. Ensinai-nos a reconhecer nossas fraquezas e a confiar na graça divina.
+
+Que aprendamos a servir sem buscar reconhecimento.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    vianney.id,
+    7,
+    "SÉTIMO DIA – SÃO JOÃO MARIA VIANNEY, SOFRIMENTO OFERECIDO A DEUS",
+    `São João Maria Vianney, aceitastes os sofrimentos físicos e espirituais como oferta de amor pela conversão das almas.
+
+Ajudai-nos a oferecer nossas dores e dificuldades a Deus. Que saibamos unir nossos sofrimentos aos de Cristo.
+
+Ensinai-nos a encontrar sentido redentor na cruz.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    vianney.id,
+    8,
+    "OITAVO DIA – SÃO JOÃO MARIA VIANNEY, AMOR À IGREJA",
+    `São João Maria Vianney, vivestes em total obediência e amor à Igreja, servindo com fidelidade até o fim.
+
+Ajudai-nos a amar a Igreja e a permanecer fiéis ao Evangelho. Que saibamos viver em comunhão, mesmo nas dificuldades.
+
+Intercedei pela santidade do clero e do povo de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    vianney.id,
+    9,
+    "NONO DIA – SÃO JOÃO MARIA VIANNEY, NOSSO INTERCESSOR JUNTO A DEUS",
+    `São João Maria Vianney, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos e necessidades.
+
+Intercedei por nossa conversão, por nossa vida espiritual e por nossa perseverança no caminho da santidade. Conduzi-nos ao Coração misericordioso de Jesus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  // NOVENA A SANTA FILOMENA
+
+  const filomena = upsertNovena({
+    slug: makeSlug("NOVENA A SANTA FILOMENA"),
+    titulo: "NOVENA A SANTA FILOMENA",
+    periodo_inicio: "02/08",
+    periodo_fim: "10/08",
+    subtitulo: "Virgem e mártir, fiel a Cristo até o fim",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus eterno e todo-poderoso, que Vos dignastes glorificar Santa Filomena, jovem mártir de fé pura e coração totalmente consagrado a Vós, nós Vos louvamos e bendizemos por este testemunho tão simples e ao mesmo tempo tão poderoso de amor fiel até o fim.
+
+Por intercessão de Santa Filomena, concedei-nos a graça de rezar esta novena com confiança de filhos, coração humilde e fé perseverante. Que, tocados por seu exemplo de pureza, coragem e entrega total, aprendamos a amar-Vos acima de todas as coisas e a confiar plenamente em Vossa providência. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó Deus todo-poderoso,
+que glorificastes Santa Filomena
+com a palma do martírio
+e a tornastes sinal de esperança para os fiéis,
+concedei-nos, por sua intercessão,
+pureza de coração,
+coragem na fé
+e confiança total em Vossa providência.
+Por Cristo, nosso Senhor.
+Amém.
+`
+  });
+
+  upsertDia(
+    filomena.id,
+    1,
+    "PRIMEIRO DIA – SANTA FILOMENA, AMADA E ESCOLHIDA POR DEUS",
+    `Santa Filomena, desde vossa juventude fostes escolhida por Deus para uma missão especial, vivendo inteiramente para Ele.
+
+Ajudai-nos a compreender que também somos amados e escolhidos por Deus. Que saibamos reconhecer nossa dignidade e nossa vocação cristã.
+
+Ensinai-nos a viver conscientes do amor que Deus tem por nós.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    filomena.id,
+    2,
+    "SEGUNDO DIA – SANTA FILOMENA, CORAÇÃO CONSAGRADO A DEUS",
+    `Santa Filomena, fizestes de vosso coração uma oferta total a Deus, escolhendo amá-Lo acima de tudo.
+
+Ajudai-nos a consagrar nossa vida ao Senhor. Que nada ocupe o lugar que pertence somente a Deus em nosso coração.
+
+Ensinai-nos a amar com fidelidade e pureza de intenção.
+
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    filomena.id,
+    3,
+    "TERCEIRO DIA – SANTA FILOMENA, EXEMPLO DE PUREZA",
+    `Santa Filomena, conservastes vosso corpo e vossa alma puros por amor a Cristo.
+
+Ajudai-nos a viver a pureza de coração, de pensamentos e de ações. Que saibamos respeitar nosso corpo e o dos outros como templo do Espírito Santo.
+
+Ensinai-nos a viver com integridade e fidelidade ao Evangelho.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    filomena.id,
+    4,
+    "QUARTO DIA – SANTA FILOMENA, CORAGEM NA PROVAÇÃO",
+    `Santa Filomena, enfrentastes perseguições, dores e ameaças sem jamais renegar vossa fé.
+
+Ajudai-nos a permanecer firmes na fé quando somos provados. Que não cedamos ao medo, mas confiemos na força que vem de Deus.
+
+Ensinai-nos a viver a fé com coragem e constância.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    filomena.id,
+    5,
+    "QUINTO DIA – SANTA FILOMENA, FIDELIDADE ATÉ O MARTÍRIO",
+    `Santa Filomena, preferistes entregar vossa própria vida a trair o amor de Cristo.
+
+Ajudai-nos a ser fiéis a Deus em todas as circunstâncias, mesmo quando isso exige sacrifício.
+
+Ensinai-nos que o verdadeiro amor é aquele que se doa sem reservas.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    filomena.id,
+    6,
+    "SEXTO DIA – SANTA FILOMENA, PODEROSA INTERCESSORA",
+    `Santa Filomena, escolhida por Deus para ser instrumento de muitas graças, sois conhecida como poderosa intercessora junto ao Céu.
+
+Intercedei por nós em nossas necessidades espirituais e materiais. Alcançai-nos as graças que mais precisamos.
+
+Aumentai nossa confiança na ação de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    filomena.id,
+    7,
+    "SÉTIMO DIA – SANTA FILOMENA, AMIGA DOS AFLITOS",
+    `Santa Filomena, muitos recorrem a vós nos momentos de dor, aflição e desespero, e encontram consolo e esperança.
+
+Olhai por aqueles que sofrem no corpo e na alma. Consolai os desanimados e fortalecei os que carregam cruzes pesadas.
+
+Ensinai-nos a confiar quando tudo parece difícil.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    filomena.id,
+    8,
+    "OITAVO DIA – SANTA FILOMENA, MODELO DE CONFIANÇA EM DEUS",
+    `Santa Filomena, mesmo jovem, confiastes plenamente em Deus, entregando-Lhe toda a vossa vida.
+
+Ajudai-nos a confiar em Deus com simplicidade e abandono. Que aprendamos a descansar em Sua vontade.
+
+Ensinai-nos a viver com fé confiante e perseverante.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    filomena.id,
+    9,
+    "NONO DIA – SANTA FILOMENA, NOSSA INTERCESSORA E AMIGA NO CÉU",
+    `Santa Filomena, acolhei esta novena que rezamos com fé e amor. Apresentai a Deus nossos pedidos, intenções e agradecimentos.
+
+Caminhai conosco, fortalecei nossa fé e ajudai-nos a perseverar no caminho da santidade até a vida eterna.
+
+Obrigado, Santa Filomena, por vosso carinho e intercessão constante.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  // NOVENA A SANTA CLARA
+
+const clara = upsertNovena({
+    slug: makeSlug("NOVENA A SANTA CLARA"),
+    titulo: "NOVENA A SANTA CLARA",
+    periodo_inicio: "02/08",
+    periodo_fim: "02/08",
+    subtitulo: "Nada desejar senão Cristo pobre e crucificado",
+    como_rezar: COMO_REZAR_PADRAO,
+    sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
+    oracao_inicial: `Ó Deus de infinita luz e bondade, que chamastes Santa Clara a seguir Vosso Filho com coração indiviso, vivendo na pobreza, na oração e na confiança absoluta em Vossa providência, nós Vos louvamos e bendizemos por este testemunho tão puro e luminoso de amor total a Vós.
+
+Por intercessão de Santa Clara, concedei-nos a graça de rezar esta novena com coração simples, espírito desprendido e desejo sincero de união convosco. Que, iluminados por sua vida e exemplo, aprendamos a confiar plenamente em Vós, a viver com humildade e a buscar as coisas do alto. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
+Amém.`,
+    oracao_final: `Ó Deus de eterna luz,
+que fizestes de Santa Clara
+um reflexo puro do Vosso amor,
+concedei-nos, por sua intercessão,
+um coração simples,
+fé confiante
+e amor indiviso por Vós.
+Por Cristo, nosso Senhor.
+Amém.
+`
+  });
+
+  upsertDia(
+    clara.id,
+    1,
+    "PRIMEIRO DIA – SANTA CLARA, CHAMADA PELA LUZ DE CRISTO",
+    `Santa Clara, vosso coração foi tocado pela luz de Cristo e nada mais vos satisfez senão segui-Lo de perto.
+
+Ajudai-nos a reconhecer o chamado de Deus em nossa vida. Que não nos deixemos seduzir pelas luzes passageiras deste mundo.
+
+Ensinai-nos a buscar a verdadeira Luz que vem de Deus.
+
+(Fazer o pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    clara.id,
+    2,
+    "SEGUNDO DIA – SANTA CLARA, CORAÇÃO TOTALMENTE ENTREGUE A DEUS",
+    `Santa Clara, deixastes tudo para pertencer inteiramente a Deus, sem reservas nem condições.
+
+Ajudai-nos a entregar nosso coração ao Senhor. Que aprendamos a confiar e a abandonar-nos em Suas mãos.
+
+Ensinai-nos a amar a Deus acima de todas as coisas.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    clara.id,
+    3,
+    "TERCEIRO DIA – SANTA CLARA, AMANTE DA POBREZA EVANGÉLICA",
+    `Santa Clara, escolhestes a pobreza não como privação, mas como liberdade para amar mais a Deus.
+
+Ajudai-nos a desapegar o coração do que é supérfluo. Que aprendamos a viver com simplicidade e gratidão.
+
+Ensinai-nos que a verdadeira riqueza está em Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    clara.id,
+    4,
+    "QUARTO DIA – SANTA CLARA, MULHER DA ORAÇÃO SILENCIOSA",
+    `Santa Clara, vossa vida foi profundamente marcada pela oração constante e silenciosa diante do Senhor.
+
+Ajudai-nos a encontrar tempo para a oração. Que aprendamos a permanecer na presença de Deus com confiança e amor.
+
+Ensinai-nos a escutar Deus no silêncio do coração.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    clara.id,
+    5,
+    "QUINTO DIA – SANTA CLARA, CONFIANÇA ABSOLUTA NA PROVIDÊNCIA",
+    `Santa Clara, mesmo nas dificuldades e privações, jamais duvidastes do cuidado amoroso de Deus.
+
+Ajudai-nos a confiar na providência divina. Que não nos deixemos dominar pelo medo do amanhã.
+
+Ensinai-nos a descansar em Deus com fé e serenidade.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    clara.id,
+    6,
+    "SEXTO DIA – SANTA CLARA, FORÇA NA FRAQUEZA",
+    `Santa Clara, mesmo na doença e na fragilidade física, permanecestes forte no espírito e unida a Deus.
+
+Ajudai-nos a aceitar nossas limitações com fé. Que saibamos oferecer nossas fraquezas como oração.
+
+Ensinai-nos que a força verdadeira vem de Deus.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    clara.id,
+    7,
+    "SÉTIMO DIA – SANTA CLARA, DEFENSORA CONFIANTE NO PODER DE DEUS",
+    `Santa Clara, confiaste plenamente no Senhor diante dos perigos, colocando tudo sob Sua proteção.
+
+Ajudai-nos a recorrer a Deus nos momentos de ameaça e medo. Que aprendamos a confiar mais na oração do que em nossas próprias forças.
+
+Ensinai-nos a vencer o mal com a fé.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    clara.id,
+    8,
+    "OITAVO DIA – SANTA CLARA, MODELO DE VIDA CONSAGRADA",
+    `Santa Clara, vivestes com fidelidade total a vocação que Deus vos confiou.
+
+Ajudai-nos a viver com fidelidade nossa própria vocação. Que sejamos coerentes com os compromissos assumidos com Deus.
+
+Ensinai-nos a perseverar no amor até o fim.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+  upsertDia(
+    clara.id,
+    9,
+    "NONO DIA – SANTA CLARA, LUZ QUE NOS CONDUZ A DEUS",
+    `Santa Clara, após uma vida de entrega total, sois agora luz no Céu para aqueles que recorrem a vós.
+
+Acolhei esta novena que rezamos com fé e carinho. Apresentai a Deus nossos pedidos, necessidades e agradecimentos.
+
+Conduzi-nos no caminho da santidade, da confiança e da paz interior.
+
+(Pedido pessoal)
+
+Pai-Nosso
+Ave-Maria
+Glória ao Pai`
+  );
+
+    console.log("Seed inicial inserido ");
 }
+
 
 seedIfEmpty();
 
