@@ -1379,7 +1379,7 @@ const candeias = upsertNovena({
     titulo: "NOVENA A NOSSA SENHORA DAS CANDEIAS",
     periodo_inicio: "24/01",
     periodo_fim: "01/02",
-    subtitulo: "A Mãe que apresenta a Luz ao mundo.",
+    subtitulo: "A Mãe que apresenta a Luz ao mundo",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Maria Santíssima, Nossa Senhora das Candeias, Mãe da Luz verdadeira, que apresentastes o Menino Jesus no Templo como luz para iluminar as nações, nós recorremos à vossa intercessão com fé e confiança.
@@ -2077,7 +2077,7 @@ Glória ao Pai`
     titulo: "NOVENA A SÃO PATRÍCIO",
     periodo_inicio: "08/03",
     periodo_fim: "16/03",
-    subtitulo: "Cristo comigo, Cristo em mim, Cristo atrás e à minha frente",
+    subtitulo: "“Cristo comigo, Cristo em mim, Cristo atrás e à minha frente”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó glorioso São Patrício, bispo fiel e missionário incansável, escolhido por Deus para levar a luz do Evangelho ao povo da Irlanda, nós recorremos à vossa intercessão com fé e confiança. Vós que, mesmo diante das provações, perseguições e perigos, jamais desististes da missão confiada pelo Senhor, ensinai-nos a confiar plenamente na providência divina.
@@ -2605,11 +2605,11 @@ Glória ao Pai`
   );
 
   const gemma = upsertNovena({
-    slug: makeSlug("NOVENA D"),
-    titulo: "NOVENA D",
+    slug: makeSlug("NOVENA A SANTA GEMMA"),
+    titulo: "NOVENA A SANTA GEMMA",
     periodo_inicio: "02/04",
     periodo_fim: "10/04",
-    subtitulo: "'Quem verdadeiramente ama, voluntariamente sofre'",
+    subtitulo: "“Quem verdadeiramente ama, voluntariamente sofre”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus de infinita misericórdia, que adornastes Santa Gemma Galgani com profundo amor pela Paixão de Vosso Filho e a conduzistes pelos caminhos da humildade, do sofrimento e da união íntima convosco, nós Vos louvamos e bendizemos.
@@ -3141,7 +3141,7 @@ const catarina = upsertNovena({
     titulo: "NOVENA A SANTA CATARINA DE SIENA",
     periodo_inicio: "20/04",
     periodo_fim: "28/04",
-    subtitulo: "'Se fores aquilo que Deus quer, colocareis fogo no mundo'",
+    subtitulo: "“Se fores aquilo que Deus quer, colocareis fogo no mundo”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus eterno e misericordioso, que inflamastes o coração de Santa Catarina de Siena com ardente amor por Vós, pela verdade e pela Santa Igreja, nós Vos louvamos e bendizemos por tão grande testemunho de fé e coragem.
@@ -4028,7 +4028,7 @@ Glória ao Pai`
     titulo: "NOVENA A SÃO JOSÉ DE ANCHIETA",
     periodo_inicio: "31/05",
     periodo_fim: "08/06",
-    subtitulo: "“Apóstolo do Brasil, semeador do Evangelho",
+    subtitulo: "Apóstolo do Brasil, semeador do Evangelho",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus de infinita bondade, que chamastes São José de Anchieta a anunciar o Evangelho em terras brasileiras, fazendo dele missionário incansável, educador sábio e defensor dos mais fracos, nós Vos louvamos e bendizemos por tão grande testemunho de fé, coragem e amor.
@@ -4561,7 +4561,7 @@ Glória ao Pai`
     titulo: "NOVENA A SÃO BENTO",
     periodo_inicio: "02/07",
     periodo_fim: "10/07",
-    subtitulo: "Crux sacra sit mihi lux",
+    subtitulo: "“Crux sacra sit mihi lux”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus eterno e todo-poderoso, que escolhestes São Bento como mestre da vida espiritual, guia seguro no caminho da santidade e poderoso defensor contra as ciladas do mal, nós Vos louvamos e bendizemos por tão grande dom concedido à Igreja.
@@ -5450,7 +5450,7 @@ const clara = upsertNovena({
     titulo: "NOVENA A SANTA CLARA",
     periodo_inicio: "02/08",
     periodo_fim: "02/08",
-    subtitulo: "Nada desejar senão Cristo pobre e crucificado",
+    subtitulo: "“Nunca perca de vista o seu ponto de partida”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus de infinita luz e bondade, que chamastes Santa Clara a seguir Vosso Filho com coração indiviso, vivendo na pobreza, na oração e na confiança absoluta em Vossa providência, nós Vos louvamos e bendizemos por este testemunho tão puro e luminoso de amor total a Vós.
@@ -5980,7 +5980,7 @@ Glória ao Pai`
     titulo: "NOVENA A SANTA MÔNICA",
     periodo_inicio: "18/08",
     periodo_fim: "26/08",
-    subtitulo: "Santa Mônica – mãe perseverante, mulher de fé inabalável, intercessora das famílias e dos filhos afastados",
+    subtitulo: "Mãe perseverante, mulher de fé inabalável, intercessora das famílias e dos filhos afastados",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus de infinita misericórdia, que concedestes a Santa Mônica a graça de perseverar na oração, nas lágrimas e na esperança, transformando seu amor materno em instrumento de conversão e salvação, nós Vos louvamos e bendizemos por tão belo testemunho de fé confiante.
@@ -6157,7 +6157,7 @@ Glória ao Pai`
     titulo: "NOVENA A SANTO AGOSTINHO",
     periodo_inicio: "19/08",
     periodo_fim: "27/08",
-    subtitulo: "Fizeste-nos, Senhor, para ti, e o nosso coração anda inquieto enquanto não descansar em ti",
+    subtitulo: "“Fizeste-nos, Senhor, para ti, e o nosso coração anda inquieto enquanto não descansar em ti”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus eterno e misericordioso, que conduzistes Santo Agostinho pelos caminhos da inquietação, da busca e da verdade, até que seu coração encontrasse descanso somente em Vós, nós Vos louvamos e bendizemos por este testemunho tão humano e tão divino de conversão e amor.
@@ -7045,7 +7045,7 @@ Glória ao Pai`
     titulo: "NOVENA DE SANTA TERESINHA DO MENINO JESUS",
     periodo_inicio: "22/09",
     periodo_fim: "30/09",
-    subtitulo: "'Farei cair uma chuva de rosas sobre o mundo'",
+    subtitulo: "“Farei cair uma chuva de rosas sobre o mundo”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus de infinita ternura, que revelastes os mistérios do Vosso Reino aos pequenos e humildes, e fizestes de Santa Teresinha do Menino Jesus uma testemunha luminosa do amor simples, confiante e total, nós Vos louvamos e bendizemos por este dom tão precioso concedido à Igreja.
@@ -7223,7 +7223,7 @@ Glória ao Pai`
     titulo: "NOVENA DE SÃO FRANCISCO DE ASSIS",
     periodo_inicio: "25/09",
     periodo_fim: "03/10",
-    subtitulo: "Senhor, fazei de mim um instrumento de vossa paz",
+    subtitulo: "“Senhor, fazei de mim um instrumento de vossa paz”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus altíssimo, bom e todo-poderoso, que tocastes o coração de São Francisco de Assis e o chamastes a seguir Vosso Filho Jesus Cristo na pobreza, na humildade e no amor perfeito, nós Vos louvamos e bendizemos por este testemunho tão luminoso de vida evangélica.
@@ -7753,7 +7753,7 @@ Glória ao Pai`
     titulo: "NOVENA DE SÃO GERALDO MAJELLA",
     periodo_inicio: "07/10",
     periodo_fim: "15/10",
-    subtitulo: "'A vontade de Deus é o paraíso do meu coração'",
+    subtitulo: "“A vontade de Deus é o paraíso do meu coração”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus de infinita bondade, que chamastes São Geraldo Majella a viver a santidade no silêncio, na humildade e na obediência amorosa, fazendo de sua vida simples um testemunho luminoso do Vosso amor, nós Vos louvamos e bendizemos por este dom tão precioso concedido à Igreja.
@@ -9714,8 +9714,8 @@ Glória ao Pai`
   const trocar = upsertNovena({
     slug: makeSlug("NOVENA A SANTA FAUSTINA KOWALSKA"),
     titulo: "NOVENA A SANTA FAUSTINA KOWALSKA",
-    periodo_inicio: "",
-    periodo_fim: "",
+    periodo_inicio: "26/09",
+    periodo_fim: "04/10",
     subtitulo: "“Jesus, eu confio em Vós”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
