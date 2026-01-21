@@ -1897,9 +1897,11 @@ Ave-Maria
 Glória ao Pai`
   );
 
+  //NOVENA NOSSA SENHORA DE LOURDES
+
   const lourdes = upsertNovena({
-    slug: makeSlug("NOVENA D"),
-    titulo: "NOVENA D",
+    slug: makeSlug("NOSSA SENHORA DE LOURDES"),
+    titulo: "NOSSA SENHORA DE LOURDES",
     periodo_inicio: "02/02",
     periodo_fim: "10/02",
     subtitulo: "Com Maria de Lourdes, buscamos cura e paz.",
@@ -2251,8 +2253,8 @@ Glória ao Pai`
   //NOVENA A SÃO JOSÉ
 
   const jose = upsertNovena({
-    slug: makeSlug("NOVENA D"),
-    titulo: "NOVENA D",
+    slug: makeSlug("NOVENA A SÃO JOSÉ"),
+    titulo: "NOVENA A SÃO JOSÉ",
     periodo_inicio: "10/03",
     periodo_fim: "18/03",
     subtitulo: "Trabalhador fiel, sustentou a Sagrada Família",
