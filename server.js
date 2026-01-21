@@ -22,6 +22,8 @@
  * GET    /novenas/:idOrSlug/dias/:diaNumero/roteiro
  */
 
+
+
 const express = require("express");
 const helmet = require("helmet");
 const morgan = require("morgan");
@@ -9897,6 +9899,318 @@ const app = express();
 app.use(express.json({ limit: "2mb" }));
 app.use(helmet());
 app.use(morgan("dev"));
+app.use("/images", express.static(path.join(__dirname, "public", "images")));
+
+/* ====== 👇 COLE AQUI 👇 ====== */
+
+const IMAGENS = [
+  {
+    slug: "sao-carlo-acutis",
+    name: "São Carlo Acutis",
+    aliases: ["acutis", "carlo acutis", "sao carlo acutis", "são carlo acutis"],
+    file: "beato-carlo-acutis.png"
+  },
+  {
+    slug: "santo-agostinho",
+    name: "Santo Agostinho",
+    aliases: ["agostinho", "sao agostinho", "santo agostinho"],
+    file: "santo-agostinho.png"
+  },
+  {
+    slug: "sao-jose-de-anchieta",
+    name: "São José de Anchieta",
+    aliases: ["anchieta", "jose de anchieta", "sao jose de anchieta"],
+    file: "sao-jose-de-anchieta.png"
+  },
+  {
+    slug: "anunciacao-do-senhor",
+    name: "Anunciação do Senhor",
+    aliases: ["anunciacao", "anunciação", "anunciacao do senhor", "anunciação do senhor"],
+    file: "anunciacao-do-senhor.png"
+  },
+  {
+    slug: "nossa-senhora-aparecida",
+    name: "Nossa Senhora Aparecida",
+    aliases: ["aparecida", "nossa senhora aparecida", "ns aparecida"],
+    file: "nossa-senhora-aparecida.png"
+  },
+  {
+    slug: "sao-francisco-de-assis",
+    name: "São Francisco de Assis",
+    aliases: ["assis", "francisco de assis", "sao francisco", "sao francisco de assis"],
+    file: "sao-francisco-de-assis.png"
+  },
+  {
+    slug: "assuncao-de-maria",
+    name: "Assunção de Maria",
+    aliases: ["assuncao", "assunção", "assuncao de maria", "assunção de maria"],
+    file: "assuncao-de-maria.png"
+  },
+  {
+    slug: "santo-atanasio",
+    name: "Santo Atanásio",
+    aliases: ["atanasio", "atanásio", "santo atanásio", "santo atanasio"],
+    file: "santo-atanasio.png"
+  },
+  {
+    slug: "nossa-senhora-auxiliadora",
+    name: "Nossa Senhora Auxiliadora",
+    aliases: ["auxiliadora", "auxiliadora dos cristaos", "nossa senhora auxiliadora", "ns auxiliadora"],
+    file: "nossa-senhora-auxiliadora.png"
+  },
+  {
+    slug: "sao-joao-batista",
+    name: "São João Batista",
+    aliases: ["batista", "joao batista", "sao joao batista", "são joão batista"],
+    file: "sao-joao-batista.png"
+  },
+  {
+    slug: "sao-bento",
+    name: "São Bento",
+    aliases: ["bento", "sao bento", "são bento"],
+    file: "sao-bento.png"
+  },
+  {
+    slug: "sao-bras",
+    name: "São Brás",
+    aliases: ["bras", "brás", "sao bras", "são brás"],
+    file: "sao-bras.png"
+  },
+  {
+    slug: "nossa-senhora-das-candeias",
+    name: "Nossa Senhora das Candeias",
+    aliases: ["candeias", "candelaria", "candelária", "nossa senhora das candeias", "ns das candeias"],
+    file: "nossa-senhora-das-candeias.png"
+  },
+  {
+    slug: "nossa-senhora-do-carmo",
+    name: "Nossa Senhora do Carmo",
+    aliases: ["carmo", "nossa senhora do carmo", "ns do carmo"],
+    file: "nossa-senhora-do-carmo.png"
+  },
+  {
+    slug: "santa-catarina",
+    name: "Santa Catarina",
+    aliases: ["catarina", "santa catarina"],
+    file: "santa-catarina.png"
+  },
+  {
+    slug: "santa-clara",
+    name: "Santa Clara",
+    aliases: ["clara", "santa clara"],
+    file: "santa-clara.png"
+  },
+  {
+    slug: "nossa-senhora-da-conceicao",
+    name: "Nossa Senhora da Conceição",
+    aliases: ["conceicao", "conceição", "imaculada conceicao", "imaculada conceição", "nossa senhora da conceicao", "ns da conceicao"],
+    file: "nossa-senhora-da-conceicao.png"
+  },
+  {
+    slug: "nossa-senhora-das-dores",
+    name: "Nossa Senhora das Dores",
+    aliases: ["dores", "nossa senhora das dores", "ns das dores"],
+    file: "nossa-senhora-das-dores.png"
+  },
+  {
+    slug: "santa-edwiges",
+    name: "Santa Edwiges",
+    aliases: ["edwirges", "edwiges", "santa edwiges"],
+    file: "santa-edwiges.png"
+  },
+  {
+    slug: "epifania-do-senhor",
+    name: "Epifania do Senhor",
+    aliases: ["epifania", "epifania do senhor", "reis magos", "dia de reis"],
+    file: "epifania-do-senhor.png"
+  },
+  {
+    slug: "espirito-santo",
+    name: "Espírito Santo",
+    aliases: ["espirito santo", "espírito santo", "divino espirito santo", "divino espírito santo"],
+    file: "espirito-santo.png"
+  },
+  {
+    slug: "santo-expedito",
+    name: "Santo Expedito",
+    aliases: ["expedito", "santo expedito"],
+    file: "santo-expedito.png"
+  },
+  {
+    slug: "nossa-senhora-de-fatima",
+    name: "Nossa Senhora de Fátima",
+    aliases: ["fatima", "fátima", "nossa senhora de fatima", "ns de fatima"],
+    file: "nossa-senhora-de-fatima.png"
+  },
+  {
+    slug: "santa-faustina-kowalska",
+    name: "Santa Faustina Kowalska",
+    aliases: ["faustina", "santa faustina", "faustina kowalska", "divina misericordia", "divina misericórdia"],
+    file: "santa-faustina-kowalska.png"
+  },
+  {
+    slug: "santa-filomena",
+    name: "Santa Filomena",
+    aliases: ["filomena", "santa filomena"],
+    file: "santa-filomena.png"
+  },
+  {
+    slug: "santa-gemma-galgani",
+    name: "Santa Gemma Galgani",
+    aliases: ["gemma", "santa gemma", "gemma galgani"],
+    file: "santa-gemma-galgani.png"
+  },
+  {
+    slug: "santa-giana-beretta-molla",
+    name: "Santa Gianna Beretta Molla",
+    aliases: ["giana", "gianna", "giana beretta molla", "gianna beretta molla", "santa gianna"],
+    file: "santa-giana-beretta-molla.png"
+  },
+  {
+    slug: "nossa-senhora-das-gracas",
+    name: "Nossa Senhora das Graças",
+    aliases: ["gracas", "graças", "nossa senhora das gracas", "ns das gracas", "medalha milagrosa", "medalha milagrosa"],
+    file: "nossa-senhora-das-gracas.png"
+  },
+  {
+    slug: "sao-jorge",
+    name: "São Jorge",
+    aliases: ["jorge", "sao jorge", "são jorge"],
+    file: "sao-jorge.png"
+  },
+  {
+    slug: "sao-jose",
+    name: "São José",
+    aliases: ["jose", "josé", "sao jose", "são josé"],
+    file: "sao-jose.png"
+  },
+  {
+    slug: "santa-maria-mae-de-deus",
+    name: "Santa Maria, mãe de Deus",
+    aliases: ["maria", "santa maria", "santa maria mae de deus", "santa maria mãe de deus", "mae de deus", "mãe de deus"],
+    file: "virgem-maria.png"
+  },
+  {
+    slug: "santa-monica",
+    name: "Santa Mônica",
+    aliases: ["monica", "mônica", "santa monica"],
+    file: "santa-monica.png"
+  },
+  {
+    slug: "sao-pedro-e-sao-paulo",
+    name: "São Pedro e São Paulo",
+    aliases: ["pedro", "paulo", "pedro e paulo", "sao pedro", "sao paulo", "sao pedro e sao paulo"],
+    file: "sao-pedro-e-sao-paulo.png"
+  },
+  {
+    slug: "pentecostes",
+    name: "Pentecostes",
+    aliases: ["pentecostes", "pentecostés", "espirito santo pentecostes", "pentecostes espirito santo"],
+    file: "pentecostes.png"
+  },
+  {
+    slug: "purificacao-de-maria",
+    name: "Purificação de Maria",
+    aliases: ["purificacao", "purificação", "purificacao de maria", "purificação de maria", "apresentacao do senhor", "apresentação do senhor"],
+    file: "purificacao-de-maria.png"
+  },
+  {
+    slug: "santa-rita-de-cassia",
+    name: "Santa Rita de Cássia",
+    aliases: ["rita", "santa rita", "santa rita de cassia", "cássia"],
+    file: "santa-rita-de-cassia.png"
+  },
+  {
+    slug: "sao-roque",
+    name: "São Roque",
+    aliases: ["roque", "sao roque", "são roque"],
+    file: "sao-roque.png"
+  },
+  {
+    slug: "sagrado-coracao-de-jesus",
+    name: "Sagrado Coração de Jesus",
+    aliases: ["sagrado coracao", "sagrado coração", "coracao de jesus", "coração de jesus"],
+    file: "sagrado-coracao-de-jesus.png"
+  },
+  {
+    slug: "sao-francisco-de-sales",
+    name: "São Francisco de Sales",
+    aliases: ["sales", "francisco de sales", "sao francisco de sales"],
+    file: "sao-francisco-de-sales.png"
+  },
+  {
+    slug: "sao-sebastiao",
+    name: "São Sebastião",
+    aliases: ["sebastiao", "sebastião", "sao sebastiao", "são sebastião"],
+    file: "sao-sebastiao.png"
+  },
+  {
+    slug: "santana-sao-joaquim-e-maria",
+    name: "Sant’Ana, São Joaquim e Maria",
+    aliases: ["santana", "sant ana", "santa ana", "joaquim", "sao joaquim", "santana sao joaquim", "sant ana e sao joaquim"],
+    file: "santana-sao-joaquim-e-maria.png"
+  },
+  {
+    slug: "sao-judas-tadeu",
+    name: "São Judas Tadeu",
+    aliases: ["tadeu", "judas tadeu", "sao judas", "sao judas tadeu", "são judas tadeu"],
+    file: "sao-judas-tadeu.png"
+  },
+  {
+    slug: "santa-teresinha-do-menino-jesus",
+    name: "Santa Teresinha do Menino Jesus",
+    aliases: ["teresinha", "terezinha", "santa teresinha", "santa teresinha do menino jesus", "teresa do menino jesus"],
+    file: "santa-teresinha-do-menino-jesus.png"
+  },
+  {
+    slug: "sao-joao-maria-vianney",
+    name: "São João Maria Vianney",
+    aliases: ["vianney", "joao vianney", "sao joao maria vianney", "cura d ars", "cura d'ars"],
+    file: "sao-joao-maria-vianney.png"
+  },
+  {
+    slug: "almas-do-purgatorio",
+    name: "Almas do Purgatório",
+    aliases: ["purgatorio", "purgatório", "almas do purgatorio", "almas do purgatório"],
+    file: "almas-do-purgatorio.png"
+  }
+];
+
+/* ====== FUNÇÕES AUXILIARES ====== */
+
+function normalize(s = "") {
+  return s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function scoreItem(item, qNorm) {
+  const nameNorm = normalize(item.name);
+  const aliasesNorm = (item.aliases || []).map(normalize);
+  let score = 0;
+
+  if (nameNorm === qNorm) score += 100;
+  if (nameNorm.includes(qNorm)) score += 60;
+  if (aliasesNorm.includes(qNorm)) score += 80;
+  if (aliasesNorm.some(a => a.includes(qNorm))) score += 50;
+
+  const words = qNorm.split(" ");
+  const bag = [nameNorm, ...aliasesNorm].join(" ");
+  score += words.filter(w => w.length >= 3 && bag.includes(w)).length * 8;
+
+  return score;
+}
+
+function imageUrl(req, file) {
+  return `${req.protocol}://${req.get("host")}/images/${file}`;
+}
+
+// ---------- Schemas ----------
+
 
 // ---------- Schemas ----------
 const NovenaCreateSchema = z.object({
@@ -9967,6 +10281,52 @@ app.get("/novenas/:idOrSlug", (req, res) => {
   const dias = getDiasByNovenaId(novena.id);
   return res.json({ ...novena, dias });
 });
+
+app.get("/imagens", (req, res) => {
+  const { q } = req.query;
+
+  if (!q) {
+    return res.json({
+      items: IMAGENS.map(i => ({
+        slug: i.slug,
+        name: i.name,
+        image: imageUrl(req, i.file)
+      }))
+    });
+  }
+
+  const qNorm = normalize(q);
+  const ranked = IMAGENS
+    .map(i => ({ i, score: scoreItem(i, qNorm) }))
+    .filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  if (!ranked.length) {
+    return res.status(404).json({ error: "Nenhuma imagem encontrada" });
+  }
+
+  const best = ranked[0].i;
+  res.json({
+    query: q,
+    match: {
+      slug: best.slug,
+      name: best.name,
+      image: imageUrl(req, best.file)
+    }
+  });
+});
+
+app.get("/imagens/:slug", (req, res) => {
+  const found = IMAGENS.find(i => i.slug === req.params.slug);
+  if (!found) return res.status(404).json({ error: "Slug não encontrado" });
+
+  res.json({
+    slug: found.slug,
+    name: found.name,
+    image: imageUrl(req, found.file)
+  });
+});
+
 
 app.post("/novenas", (req, res) => {
   const parsed = NovenaCreateSchema.safeParse(req.body);
