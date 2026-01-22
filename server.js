@@ -1379,8 +1379,8 @@ Glória ao Pai`
   );
 
 const candeias = upsertNovena({
-    slug: makeSlug("NOVENA A NOSSA SENHORA DAS CANDEIAS"),
-    titulo: "NOVENA A NOSSA SENHORA DAS CANDEIAS",
+    slug: makeSlug("NOSSA SENHORA DAS CANDEIAS"),
+    titulo: "NOSSA SENHORA DAS CANDEIAS",
     periodo_inicio: "24/01",
     periodo_fim: "01/02",
     subtitulo: "A Mãe que apresenta a Luz ao mundo",
