@@ -10039,8 +10039,8 @@ const IMAGENS = [
     file: "santa-clara.png"
   },
   {
-    slug: "nossa-senhora-da-conceicao",
-    name: "Nossa Senhora da Conceição",
+    slug: "imaculada conceicao",
+    name: "Imaculada Conceição",
     aliases: ["conceicao", "conceição", "imaculada conceicao", "imaculada conceição", "nossa senhora da conceicao", "ns da conceicao"],
     file: "nossa-senhora-da-conceicao.png"
   },
