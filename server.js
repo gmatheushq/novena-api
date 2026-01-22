@@ -8817,7 +8817,7 @@ Glória ao Pai`
     titulo: "NOVENA AO DIVINO ESPÍRITO SANTO",
     periodo_inicio: "sexta-feira após a Ascensão do Senhor",
     periodo_fim: "sábado antes de Pentecostes",
-    subtitulo: "Vinde, Espírito Santo, enchei os corações dos vossos fiéis e acendei neles o fogo do vosso amor",
+    subtitulo: "“O Espírito Santo é o grande protagonista da vida da Igreja e o motor da evangelização.”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Divino Espírito Santo,
@@ -9361,7 +9361,7 @@ const pentecostes = upsertNovena({
     titulo: "NOVENA DE PENTECOSTES",
     periodo_inicio: "sexta-feira após a Solenidade da Ascensão do Senhor",
     periodo_fim: "sábado antes de Pentecostes",
-    subtitulo: "Vinde, Espírito Santo",
+    subtitulo: "Vinde, Espírito Santo, enchei os corações dos vossos fiéis e acendei neles o fogo do vosso amor",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
     oracao_inicial: `Ó Deus Pai todo-poderoso, que após a Ressurreição de Vosso Filho enviastes o Espírito Santo sobre Maria e os Apóstolos reunidos em oração, nós Vos louvamos e bendizemos por este dom precioso que renova a face da terra e transforma os corações.
