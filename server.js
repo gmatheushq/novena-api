@@ -6518,14 +6518,14 @@ Glória ao Pai`
 //NOVENA DE SÃO PIO DE PIETRELCINA
 
 const pio = upsertNovena({
-    slug: makeSlug("NOVENA DE SÃO PIO DE PIETRELCINA"),
-    titulo: "NOVENA DE SÃO PIO DE PIETRELCINA",
+    slug: makeSlug("NOVENA DE SÃO PADRE PIO"),
+    titulo: "NOVENA DE SÃO PADRE PIO",
     periodo_inicio: "14/09",
     periodo_fim: "22/09",
     subtitulo: "Ore, espere e não se preocupe. A preocupação é inútil. Nosso Senhor misericordioso escutará a sua oração",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
-    oracao_inicial: `Ó Deus eterno e misericordioso, que concedestes a São Pio de Pietrelcina a graça singular de participar intimamente da cruz de Vosso Filho, unindo sofrimento, oração e amor pelas almas, nós Vos louvamos e bendizemos por este testemunho tão forte de fé viva e entrega total.
+    oracao_inicial: `Ó Deus eterno e misericordioso, que concedestes a São Padre Pio de Pietrelcina a graça singular de participar intimamente da cruz de Vosso Filho, unindo sofrimento, oração e amor pelas almas, nós Vos louvamos e bendizemos por este testemunho tão forte de fé viva e entrega total.
 
 Por intercessão de São Pio, concedei-nos a graça de rezar esta novena com coração sincero, fé confiante e profundo desejo de conversão. Que, ao contemplarmos sua vida marcada pela Eucaristia, pela confissão e pela união com a cruz de Cristo, sejamos transformados pela misericórdia divina e fortalecidos para carregar nossas próprias cruzes com amor. Concedei-nos também as graças que necessitamos para nossa vida e salvação, conforme a Vossa santa vontade.
 Amém.`,
