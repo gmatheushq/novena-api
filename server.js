@@ -1904,8 +1904,8 @@ Glória ao Pai`
   //NOVENA NOSSA SENHORA DE LOURDES
 
   const lourdes = upsertNovena({
-    slug: makeSlug("NOSSA SENHORA DE LOURDES"),
-    titulo: "NOSSA SENHORA DE LOURDES",
+    slug: makeSlug("NOVENA A NOSSA SENHORA DE LOURDES"),
+    titulo: "NOVENA A NOSSA SENHORA DE LOURDES",
     periodo_inicio: "02/02",
     periodo_fim: "10/02",
     subtitulo: "Com Maria de Lourdes, buscamos cura e paz.",
@@ -9939,14 +9939,14 @@ const IMAGENS = [
   {
     slug: "sao-francisco-de-assis",
     name: "São Francisco de Assis",
-    aliases: ["assis", "francisco de assis", "sao francisco", "sao francisco de assis"],
+    aliases: ["assis", "francisco de assis", "sao francisco de assis"],
     file: "sao-francisco-de-assis.png"
   },
   {
-    slug: "assuncao-de-maria",
-    name: "Assunção de Maria",
-    aliases: ["assuncao", "assunção", "assuncao de maria", "assunção de maria"],
-    file: "assuncao-de-maria.png"
+    slug: "nossa-senhora-da-assuncao",
+    name: "Nossa Senhora da Assunção",
+    aliases: ["assuncao", "assunção", "nossa senhora da assuncao", "nossa senhora da assunção"],
+    file: "nossa-senhora-da-assuncao.png"
   },
   {
     slug: "santo-atanasio",
@@ -9957,7 +9957,7 @@ const IMAGENS = [
   {
     slug: "nossa-senhora-auxiliadora",
     name: "Nossa Senhora Auxiliadora",
-    aliases: ["auxiliadora", "auxiliadora dos cristaos", "nossa senhora auxiliadora", "ns auxiliadora"],
+    aliases: ["auxiliadora", "nossa senhora auxiliadora", "ns auxiliadora"],
     file: "nossa-senhora-auxiliadora.png"
   },
   {
@@ -10021,6 +10021,12 @@ const IMAGENS = [
     file: "santa-edwiges.png"
   },
   {
+    slug: "nossa-senhora-de-lourdes",
+    name: "Nossa Senhora de Lourdes",
+    aliases: ["lourdes", "nossa senhora de lourdes", "lurdes"],
+    file: "lourdes.png"
+  },
+  {
     slug: "epifania-do-senhor",
     name: "Epifania do Senhor",
     aliases: ["epifania", "epifania do senhor", "reis magos", "dia de reis"],
@@ -10069,6 +10075,12 @@ const IMAGENS = [
     file: "santa-giana-beretta-molla.png"
   },
   {
+    slug: "sao-patricio",
+    name: "São Patrício",
+    aliases: ["patricio", "patrício", "sao patricio", "são patricio", "são patrício", "sao patrício"],
+    file: "sao-patricio.png"
+  },
+  {
     slug: "nossa-senhora-das-gracas",
     name: "Nossa Senhora das Graças",
     aliases: ["gracas", "graças", "nossa senhora das gracas", "ns das gracas", "medalha milagrosa", "medalha milagrosa"],
@@ -10090,7 +10102,7 @@ const IMAGENS = [
     slug: "santa-maria-mae-de-deus",
     name: "Santa Maria, mãe de Deus",
     aliases: ["maria", "santa maria", "santa maria mae de deus", "santa maria mãe de deus", "mae de deus", "mãe de deus"],
-    file: "virgem-maria.png"
+    file: "santa-maria.png"
   },
   {
     slug: "santa-monica",
@@ -10175,6 +10187,12 @@ const IMAGENS = [
     name: "Almas do Purgatório",
     aliases: ["purgatorio", "purgatório", "almas do purgatorio", "almas do purgatório"],
     file: "almas-do-purgatorio.png"
+  },
+  {
+    slug: "natal",
+    name: "Natal",
+    aliases: ["natal"],
+    file: "natal.png"
   }
 ];
 
