@@ -6870,7 +6870,7 @@ Glória ao Pai`
   //NOVENA AOS SANTOS ARCANJOS
 //(SAO MIGUEL, SAO GABRIEL E SAO RAFAEL)
 
-const arcanjo = upsertNovena({
+const arcanjos = upsertNovena({
     slug: makeSlug("NOVENA AOS SANTOS ARCANJOS"),
     titulo: "NOVENA AOS SANTOS ARCANJOS",
     periodo_inicio: "20/09",
@@ -6894,7 +6894,7 @@ Amém.`
   });
 
   upsertDia(
-    arcanjo.id,
+    arcanjos.id,
     1,
     "PRIMEIRO DIA – OS SANTOS ARCANJOS, SERVOS FIÉIS DE DEUS",
     `Santos Arcanjos, fostes criados para servir fielmente ao Senhor e cumprir Sua vontade com prontidão e amor.
@@ -6911,7 +6911,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    arcanjo.id,
+    arcanjos.id,
     2,
     "SEGUNDO DIA – SÃO MIGUEL ARCANJO, DEFENSOR NO COMBATE ESPIRITUAL",
     `São Miguel Arcanjo, príncipe das milícias celestes, defensor do povo de Deus contra as forças do mal.
@@ -6928,7 +6928,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    arcanjo.id,
+    arcanjos.id,
     3,
     "TERCEIRO DIA – SÃO MIGUEL ARCANJO, ZELO PELA GLÓRIA DE DEUS",
     `São Miguel Arcanjo, vosso nome proclama: “Quem como Deus?”. Vossa vida é um grito de fidelidade e adoração.
@@ -6945,7 +6945,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    arcanjo.id,
+    arcanjos.id,
     4,
     "QUARTO DIA – SÃO GABRIEL ARCANJO, MENSAGEIRO DA PALAVRA DE DEUS",
     `São Gabriel Arcanjo, mensageiro fiel, fostes enviado para anunciar os desígnios de Deus e levar Sua Palavra aos corações.
@@ -6962,7 +6962,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    arcanjo.id,
+    arcanjos.id,
     5,
     "QUINTO DIA – SÃO GABRIEL ARCANJO, PORTADOR DA BOA-NOVA",
     `São Gabriel Arcanjo, anunciastes a alegria da salvação e a vinda do Salvador ao mundo.
@@ -6979,7 +6979,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    arcanjo.id,
+    arcanjos.id,
     6,
     "SEXTO DIA – SÃO RAFAEL ARCANJO, COMPANHEIRO DE CAMINHO",
     `São Rafael Arcanjo, fostes enviado para acompanhar, proteger e conduzir no caminho seguro.
@@ -6996,7 +6996,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    arcanjo.id,
+    arcanjos.id,
     7,
     "SÉTIMO DIA – SÃO RAFAEL ARCANJO, CURA DO CORPO E DA ALMA",
     `São Rafael Arcanjo, instrumento da cura de Deus, fostes enviado para restaurar a saúde e trazer alívio.
@@ -7013,7 +7013,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    arcanjo.id,
+    arcanjos.id,
     8,
     "OITAVO DIA – OS SANTOS ARCANJOS, GUIAS NA VONTADE DE DEUS",
     `Santos Arcanjos, vossa missão é conduzir os homens no caminho da vontade divina.
@@ -7030,7 +7030,7 @@ Glória ao Pai`
   );
 
   upsertDia(
-    arcanjo.id,
+    arcanjos.id,
     9,
     "NONO DIA – OS SANTOS ARCANJOS, NOSSOS PROTETORES E INTERCESSORES",
     `Santos Arcanjos Miguel, Gabriel e Rafael, acolhei esta novena que rezamos com fé e confiança. Apresentai a Deus nossos pedidos, necessidades e agradecimentos.
@@ -9953,6 +9953,42 @@ const IMAGENS = [
     name: "Santo Atanásio",
     aliases: ["atanasio", "atanásio", "santo atanásio", "santo atanasio"],
     file: "santo-atanasio.png"
+  },
+  {
+    slug: "sagrada-familia",
+    name: "Sagrada Família",
+    aliases: ["familia", "família", "sagrada familia", "sagrada família"],
+    file: "sagrada-familia.png"
+  },
+  {
+    slug: "sao-joao-paulo-ii",
+    name: "São João Paulo II",
+    aliases: ["joao paulo", "joão paulo", "sao joao paulo ii", "são joão paulo ii", "são joão paulo"],
+    file: "sjpii.png"
+  },
+  {
+    slug: "sao padre pio",
+    name: "São Padre Pio",
+    aliases: ["pio", "padre pio", "são padre pio", "sao padre pio"],
+    file: "padre-pio.png"
+  },
+  {
+    slug: "sao miguel arcanjo",
+    name: "São Miguel Arcanjo",
+    aliases: ["são miguel", "miguel", "sao miguel arcanjo", "são miguel arcanjo"],
+    file: "sao-miguel.png"
+  },
+  {
+    slug: "sao vicente de paulo",
+    name: "São Vicente de Paulo",
+    aliases: ["são vicente", "são vicente de paulo", "vicente de paulo", "paula"],
+    file: "sao-vicente.png"
+  },
+  {
+    slug: "sao geraldo majella",
+    name: "São Geraldo Majella",
+    aliases: ["geraldo", "majella", "são geraldo majella", "sao geraldo majella"],
+    file: "sao-geraldo.png"
   },
   {
     slug: "nossa-senhora-auxiliadora",
