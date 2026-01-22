@@ -10075,6 +10075,12 @@ const IMAGENS = [
     file: "santa-giana-beretta-molla.png"
   },
   {
+    slug: "santos-arcanjos",
+    name: "Santos Arcanjos",
+    aliases: ["arcanjos", "santos arcanjos", "miguel rafael gabriel"],
+    file: "arcanjos.png"
+  },
+  {
     slug: "sao-patricio",
     name: "São Patrício",
     aliases: ["patricio", "patrício", "sao patricio", "são patricio", "são patrício", "sao patrício"],
