@@ -9910,7 +9910,7 @@ const IMAGENS = [
     slug: "sao-carlo-acutis",
     name: "São Carlo Acutis",
     aliases: ["acutis", "carlo acutis", "sao carlo acutis", "são carlo acutis"],
-    file: "beato-carlo-acutis.png"
+    file: "sao-carlo-acutis.png"
   },
   {
     slug: "santo-agostinho",
