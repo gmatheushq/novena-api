@@ -1,20 +1,20 @@
 const cron = require("node-cron");
-const { db, messaging } = require("./firebase");
-const admin = require("firebase-admin");
-const cron = require("node-cron");
+const { admin, firestore } = require("./firebase_admin");
 
-// ⚠️ Inicializa Firebase Admin UMA VEZ
-if (!admin.apps.length) {
-  const serviceAccount = JSON.parse(
-    process.env.FIREBASE_SERVICE_ACCOUNT_JSON
-  );
-
-  admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-  });
+function ordinalPt(day) {
+  const map = {
+    1: "primeiro",
+    2: "segundo",
+    3: "terceiro",
+    4: "quarto",
+    5: "quinto",
+    6: "sexto",
+    7: "sétimo",
+    8: "oitavo",
+    9: "nono",
+  };
+  return map[day] || `${day}º`;
 }
-
-const db = admin.firestore();
 
 /**
  * 🔔 Verifica novenas não rezadas e envia push
@@ -23,10 +23,9 @@ const db = admin.firestore();
 async function verificarNovenas(periodo) {
   console.log(`[CRON] Verificando novenas (${periodo})`);
 
-  const hoje = new Date();
-  const todayKey = hoje.toISOString().slice(0, 10); // YYYY-MM-DD
+  const todayKey = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 
-  const usersSnap = await db
+  const usersSnap = await firestore
     .collection("users")
     .where("novena.active", "==", true)
     .get();
@@ -44,13 +43,16 @@ async function verificarNovenas(periodo) {
     const token = user.fcmToken;
     if (!token) continue;
 
-    const dia = novena.day || 1;
-    const titulo = novena.title || "sua novena";
+    const day = Number(novena.day || 1);
+    const titulo = (novena.title || "").trim() || "sua novena";
 
+    const diaTxt = ordinalPt(day);
+
+    // Você pediu: sem “novena a ...” extra — o título já tem “NOVENA...”
     const body =
       periodo === "manha"
-        ? `Reze o ${dia}º dia da ${titulo}.`
-        : `Não se esqueça de rezar o ${dia}º dia da ${titulo}.`;
+        ? `Reze o ${diaTxt} dia da ${titulo}.`
+        : `Não se esqueça de rezar o ${diaTxt} dia da ${titulo}.`;
 
     try {
       await admin.messaging().send({
@@ -75,23 +77,16 @@ async function verificarNovenas(periodo) {
 }
 
 /**
- * ⏰ CRONS
+ * ⏰ CRONS (America/Sao_Paulo)
  * 10:00 → manhã
  * 20:30 → noite
  */
+cron.schedule("0 10 * * *", () => verificarNovenas("manha"), {
+  timezone: "America/Sao_Paulo",
+});
 
-// ⏰ 10:00
-cron.schedule(
-  "0 10 * * *",
-  () => verificarNovenas("manha"),
-  { timezone: "America/Sao_Paulo" }
-);
-
-// ⏰ 20:30
-cron.schedule(
-  "30 20 * * *",
-  () => verificarNovenas("noite"),
-  { timezone: "America/Sao_Paulo" }
-);
+cron.schedule("30 20 * * *", () => verificarNovenas("noite"), {
+  timezone: "America/Sao_Paulo",
+});
 
 console.log("⏰ Cron da Novena iniciado");
