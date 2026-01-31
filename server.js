@@ -10591,9 +10591,15 @@ app.get("/novenas/:idOrSlug/dias/:diaNumero/roteiro", (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Novena API rodando: http://localhost:${PORT}`);
   console.log(`DB: ${DB_PATH}`);
-});
 
-require("./novena_cron");
+  // só inicia cron se habilitado
+  if (process.env.RUN_CRON === "true") {
+    require("./novena_cron");
+    console.log("⏱️ Cron habilitado (RUN_CRON=true)");
+  } else {
+    console.log("⏸️ Cron desabilitado (RUN_CRON!=true)");
+  }
+});
 
 
 
