@@ -1379,8 +1379,8 @@ Glória ao Pai`
   );
 
 const candeias = upsertNovena({
-    slug: makeSlug("NOSSA SENHORA DAS CANDEIAS"),
-    titulo: "NOSSA SENHORA DAS CANDEIAS",
+    slug: makeSlug("NOVENA A NOSSA SENHORA DAS CANDEIAS"),
+    titulo: "NOVENA A NOSSA SENHORA DAS CANDEIAS",
     periodo_inicio: "24/01",
     periodo_fim: "01/02",
     subtitulo: "A Mãe que apresenta a Luz ao mundo",
@@ -5455,7 +5455,7 @@ const clara = upsertNovena({
     slug: makeSlug("NOVENA A SANTA CLARA"),
     titulo: "NOVENA A SANTA CLARA",
     periodo_inicio: "02/08",
-    periodo_fim: "02/08",
+    periodo_fim: "10/08",
     subtitulo: "“Nunca perca de vista o seu ponto de partida”",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
@@ -9183,6 +9183,7 @@ Glória ao Pai`
   const familia = upsertNovena({
     slug: makeSlug("NOVENA À SAGRADA FAMÍLIA"),
     titulo: "NOVENA À SAGRADA FAMÍLIA",
+    periodo_inicio: "sem data específica",
     subtitulo: "Jesus, Maria e José, minha família vossa é",
     como_rezar: COMO_REZAR_PADRAO,
     sinal_da_cruz: SINAL_DA_CRUZ_PADRAO,
@@ -10591,6 +10592,8 @@ app.listen(PORT, () => {
   console.log(`✅ Novena API rodando: http://localhost:${PORT}`);
   console.log(`DB: ${DB_PATH}`);
 });
+
+require("./novena_cron");
 
 
 
